@@ -5,3 +5,12 @@
 
 
 
+#root{
+  @include mixin.container-style(800px, auto, center, center, column);
+}
+
+.skin1{
+  @include mixin.container-style(600px, auto, center, center, column);
+  
+
+}
