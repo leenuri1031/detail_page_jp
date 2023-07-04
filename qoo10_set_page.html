@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    * {  margin: 0;  padding: 0;  box-sizing: border-box;  list-style: none;}
+    * {  scroll-behavior: smooth;}
+    * a {  color: #444444;  text-decoration: none;  cursor: pointer;}
+
+    #root {  
+      width: 100vw;  
+      height: auto;  
+      display: flex;  
+      justify-content: center;  
+      align-items: center;  
+      flex-direction: column;
+    }
+
+    #root > img {  
+      width: 600px;  
+      height: auto;
+    }
+
+    #root > a {  
+      width: 600px;  
+      height: auto;  
+      display: flex;  
+      justify-content: center;  
+      align-items: center;  
+      flex-direction: column;
+    }
+
+    #root > a > img {  
+      width: 600px;  
+      height: auto;
+    }
+    @media (max-width: 750px) {  
+      #root > img {    
+        width: 100vw;    
+        height: auto;  
+      }  
+      
+      #root > a {    
+        width: 100vw;    
+        height: auto;    
+        display: flex;    
+        justify-content: center;    
+        align-items: center;    
+        flex-direction: column;  
+      }  
+      
+      #root > a > img {   
+        width: 100vw;    
+        height: auto;  
+      }
+    }
+  </style>
+    
+</head>
+<body>
+  <!-- <div id="root">
+    <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/18f6dcd8-b749-4088-9421-ae61c992b4af.jpg"><br> 
+    <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/b2d18233-7da5-45cc-9232-574894550fd5.jpg"><br> 
+    <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/6bff9c26-d0a7-4bac-b96b-552f9514ce37.jpg">
+    <a href="https://www.qoo10.jp/g/1051008875" target="_blank" rel="noopener noreferrer">
+      <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/645c6d7f-83f8-46ac-948f-b24711b9d1dc.jpg">
+    </a> 
+    <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/27e3090d-517b-44d6-980c-1f125b07e22c.jpg"> 
+    <a href="https://www.qoo10.jp/g/1051027133" target="_blank" rel="noopener noreferrer">
+      <img  src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/85acef6b-ce9d-4bb9-985e-138552a0a840.jpg">
+    </a>
+    <img  src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/a0eb4493-2d9e-48a7-a5d0-3c6a49ff5684.jpg"> 
+    <a href="https://www.qoo10.jp/g/1050995151" target="_blank" rel="noopener noreferrer">
+      <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/505889f4-e9ef-40e9-847f-aa78b794e01c.jpg">
+    </a> 
+    <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/e0fa54ee-cfb9-4cdf-a5a9-743d7efa37d0.jpg"><br> 
+    <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/766eabfc-2af7-4ff9-8549-99a0dc126a55.jpg"><br> 
+    <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/2ccfd3be-3f00-418d-a6c1-cd1be314918e.jpg"><br> 
+    <a href="https://www.qoo10.jp/g/1051008875" target="_blank" rel="noopener noreferrer">
+      <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/fcded71b-9077-453f-95e9-9997ecb21874.jpg">
+    </a><br> 
+    <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/0defdd43-1678-415c-a523-98bb30963df0.jpg"><br> 
+    <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/0799a44e-1738-4233-95e6-826c8e0af637.jpg"><br> 
+    <a href="https://www.qoo10.jp/g/1051027133">
+      <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/1ab1006a-c02f-496d-ac53-f55580113753.jpg">
+    </a><br> 
+    <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/a7dfe58f-b4cd-4792-9cd4-5b332b5de219.jpg"><br> 
+    <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/b50659ba-b7b3-4bd6-a5f2-0f5df29498fc.jpg"><br> 
+    <a href="https://www.qoo10.jp/g/1050995151">
+      <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/5af558dd-e34b-40d0-9a29-abce629c713e.jpg"></a><br> 
+    <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/b17fac9b-0494-4cc0-91e3-59b6d1b8a74c.jpg"><br> 
+    <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/fb759f1f-8a13-4c57-9bf0-9b37b67eba4b.jpg"><br><br><br><br>
+  </div> -->
+
+  <div id="root">
+    <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/4998e3e9-a1a8-419b-a0bb-7adf1e74d00e.jpg"><br>
+    <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/3b677181-73ca-4766-8449-bc52b8769739.jpg"><br>
+    <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/4d1c083c-d3cb-43e9-bac5-51f713533586.jpg">
+    <a href="https://www.qoo10.jp/g/1051329646" target="_blank" rel="noopener noreferrer">
+      <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/e4975ea7-02c3-4c9b-bdc9-62e23ea3d070.jpg">
+    </a>
+      <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/351f180d-254f-41ec-acff-c17833c774a4.jpg">
+      <a href="https://www.qoo10.jp/g/1051338409" target="_blank" rel="noopener noreferrer">
+        <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/f7fcf1ec-38b5-4ab4-863d-8380b1add034.jpg">
+      </a>
+      <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/3d5960e6-79d6-45fb-aea2-dcff0626b1ad.jpg">
+      <a href="https://www.qoo10.jp/g/1051344010" target="_blank" rel="noopener noreferrer">
+        <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/996899bd-71ea-4c34-8f8d-8510ab330fbd.jpg">
+      </a>
+      <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/04de27f3-28a6-4f16-9203-2cb616c6f188.jpg">
+      <a href="https://www.qoo10.jp/g/1051309340" target="_blank" rel="noopener noreferrer">
+        <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/be82cd89-c3ef-4ef8-b619-47e9cbffaec9.jpg">
+      </a>
+      <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/7b49881f-7074-4466-b0a8-718490c480f5.jpg"><br>
+      <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/a9bc18f0-a6c3-4337-8b04-72acad755024.jpg"><br>
+      <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/1240a171-bbcb-4b92-8737-1ee97e5daa1c.jpg"><br>
+      <a href="https://www.qoo10.jp/g/1051329646" target="_blank" rel="noopener noreferrer">
+        <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/cdb4788c-6388-4208-8eaf-deaa72ceb0d1.jpg">
+      </a><br>
+      <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/eb260680-f02c-4e0f-b8a6-719ddf1c37ba.jpg"><br>
+      <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/521261db-b1dc-4658-8ad5-bf71f33c2996.jpg"><br>
+      <a href="https://www.qoo10.jp/g/1051338409" target="_blank" rel="noopener noreferrer">
+        <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/6b6ddea2-bd30-4c43-8b32-a96ecb6d342a.jpg">
+      </a><br>
+      <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/e9e7a584-828d-4dbe-a1be-aef6c175493e.jpg"><br>
+      <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/0a030c23-bbaf-4732-9324-956004e05ad3.jpg"><br>
+      <a href="https://www.qoo10.jp/g/1051344010" target="_blank" rel="noopener noreferrer">
+        <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/5412795a-fb63-4b6c-9956-3069167d37e7.jpg">
+      </a><br>
+      <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/2731628e-ecc5-4822-a01d-f8af7ac03165.jpg"><br><br>
+      <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/e0096787-0178-45ed-998a-fc607f9e73c1.jpg"><br>
+      <a href="https://www.qoo10.jp/g/1051309340" target="_blank" rel="noopener noreferrer">
+        <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/7b5f491d-e9a7-425f-9112-8d397378cd80.jpg" q_file_log_no="0">
+      </a><br>
+      <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/e958b043-3e91-465d-8d4d-62ddc3fc1a1d.jpg"><br>
+      <img src="https://gdetail.image-qoo10.jp/temp/gdetail/2023/07/04/2027fdee-10ff-483f-a931-a5d52179d8e5.jpg"><br><br><br><br>
+  </div>
+</body>
+</html>
