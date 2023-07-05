@@ -33,7 +33,7 @@
 }
 
 
-@mixin font($rem, $weight, $col) {
+@mixin font($rem, $weight, $col:#111) {
   font-size: $rem ;
   font-weight: $weight;
   color: $col;
@@ -56,6 +56,29 @@
   justify-content: $jus;
   align-items: $ali;
   flex-direction: $flexdirection;
+}
+
+@mixin add-explain($w, $h, $rem : 0.9rem){
+  width: $w;
+  height: $h;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #979797;
+  font-size: $rem;
+  font-weight: 600;
+}
+
+@mixin point-box($w, $h, $px, $col ,$radius:0){
+  width: $w;
+  height: $h;
+  border: solid $col $px;
+  border-radius: $radius;
+}
+
+@mixin border($px, $col,$radius:0){
+  border: solid $col $px;
+  border-radius: $radius;
 }
 
 
