@@ -30,6 +30,48 @@
   @include mixin.border(1px, #036EB7,5px);
 }
 
+.col-violet{
+  background-color: #CBCBE5;
+}
+
+.col-yellow-green{
+  background-color: #D1E6C5;
+}
+
+.col-pink{
+  background-color: #E7D3DE;
+}
+
+.ingredient-font-big{
+  @include mixin.font(1rem, 600);
+}
+
+.ingredient-font-small{
+  @include mixin.font(0.9rem, 600);
+}
+
+.qa-title{
+  font-family: 'Almarai';
+  @include mixin.font(1.5rem, 800);
+  text-decoration: underline;
+}
+
+.qa-num{
+  font-family: 'Poppins';
+  @include mixin.font(2.5rem, 600,var.$col-7);
+  letter-spacing: 2px;
+}
+
+.recommend-blue{
+  @include mixin.font(0.9rem, 700,var.$col-blue);
+  letter-spacing: 1px;
+}
+
+.recommend-purple{
+  @include mixin.font(0.9rem, 700,var.$col-1);
+  letter-spacing: 1px;
+}
+
 
 // -------------------------------------------
 
@@ -40,19 +82,26 @@
 
 .skin1{
   @include mixin.container-style(600px, 1260px, center, center, column);
-  &>div:nth-child(1){
-    @include mixin.container-style(100%, 100%, flex-start, space-around, column);
+  position: relative;
+  
+  &>img{
+    @include mixin.size(100%,100%);
+    @include mixin.posi(absolute,0,0,0);
+  }
+
+  &>div{
+    @include mixin.container-style(100%, 30%, flex-start, space-around, column);
+    @include mixin.posi(absolute,0,0,1);
     padding-top: 60px;
     padding-left: 60px;
     // border: 1px solid black;
-    background-image: url(https://elmundo-lee.com/wp/wp-content/uploads/2023/07/skin_booster_1.png);
-
     @for $i from 1 through 2{
       &>div:nth-child(#{$i}){
         @include mixin.container-style(420px, 40px, flex-start, center);
         @include mixin.font(1.3rem, 500, var.$col-3);
       }
     }
+
 
     &>div:nth-child(1){
       text-emphasis: filled;
@@ -64,7 +113,6 @@
       @include mixin.font(3rem, 800, var.$col-3);
       line-height: 1.5;
     }
-
   }
 }
 
@@ -79,6 +127,9 @@
 
     &>div:nth-child(1){
       @include mixin.container-style(80%,20%, flex-start, flex-end);
+      @include mixin.font(1.7rem, 600, var.$col-3);
+      line-height: 2;
+      letter-spacing: 0.5px;
       // border: solid beige 1px;
 
     }
@@ -183,14 +234,18 @@
 
     &>div:nth-child(1){
       @include mixin.container-style(100%, 330px, center,center);
-      background-image: url(https://elmundo-lee.com/wp/wp-content/uploads/2023/07/brand_story.png);
+      // background-image: url(https://elmundo-lee.com/wp/wp-content/uploads/2023/07/brand_story.png);
       position: relative;
+
+      &>img{
+        @include mixin.size(100%, 100%);
+        @include mixin.posi(absolute,0,0,0);
+      }
 
       &>p{
         @include mixin.size(90%, 40%);
-        font-size: 1.1rem;
+        @include mixin.font(1.1rem, 600);
         // background-color: antiquewhite;
-        font-weight: 600;
         line-height: 2;
         @include mixin.posi(absolute, 180px, 20px);
       }
@@ -232,7 +287,7 @@
         &>div:first-child{
           @include mixin.container-style(70%,20%,center,center);
           @include mixin.font(1.2rem, 600, var.$col-3);
-          background-color: var.$col-1;
+          background-color: var.$col-1; 
           text-align: center;
         }
       }
@@ -364,33 +419,45 @@
 
 .skin3{
   @include mixin.container-style(600px, 1140px,space-evenly, center, column);
-  background-image: url(https://elmundo-lee.com/wp/wp-content/uploads/2023/07/skin3.png);
+  position: relative;
+  // background-image: url(https://elmundo-lee.com/wp/wp-content/uploads/2023/07/skin3.png);
+  &>img{
+    @include mixin.size(100%,100%);
+    @include mixin.posi(absolute,0,0,0);
+  }
 
-  &>div:first-child{
-    @include mixin.container-style(100%, 20%,space-around, center, column);
-    // border: #202020 solid 1px;
-
+  &>div{
+    @include mixin.container-style(100%,100%,space-evenly,center,column);
+    @include mixin.posi(absolute,0,0,1);
+    
+    &>div:first-child{
+      @include mixin.container-style(100%, 20%,space-around, center, column);
+      // border: #202020 solid 1px;
+  
+      &>div:last-child{
+        @include mixin.container-style(80%,60%, center,flex-start,column);
+        // background-color: aliceblue;
+        &>div{
+          @include mixin.container-style(100%, 40%, flex-start,center);
+        }
+        &>div:nth-child(1){
+          @include mixin.font(1.5rem, 800);
+        }
+  
+        &>div:nth-child(2){
+          @include mixin.font(2rem, 800);
+        }
+      }
+    }
+  
     &>div:last-child{
-      @include mixin.container-style(80%,60%, center,flex-start,column);
-      // background-color: aliceblue;
-      &>div{
-        @include mixin.container-style(100%, 40%, flex-start,center);
-      }
-      &>div:nth-child(1){
-        @include mixin.font(1.5rem, 800);
-      }
-
-      &>div:nth-child(2){
-        @include mixin.font(2rem, 800);
-      }
+      @include mixin.container-style(100%, 60%,space-around, center);
+      position: relative;
+      // border: #202020 solid 1px;
     }
   }
 
-  &>div:last-child{
-    @include mixin.container-style(100%, 60%,space-around, center);
-    position: relative;
-    // border: #202020 solid 1px;
-  }
+
 
 }
 
@@ -471,13 +538,15 @@
   }
 }
 
-
 .skin4{
   @include mixin.container-style(600px, 4200px,space-between, center, column);
   // border: solid black 1px;
   
   &>div:first-child{
     @include mixin.container-style(100%,60px, center, center);
+    @include mixin.font(1.5rem, 600, var.$col-3);
+    line-height: 2;
+    letter-spacing: 1px;
     background-color: var.$col-1;
   }
 
@@ -1100,8 +1169,8 @@
   @include mixin.container-style(600px, 2820px,space-around, center, column);
 
   &>div:first-child{
-    @include mixin.container-style(100%,45%, center,center,column);
-    
+    @include mixin.container-style(100%,48%, space-around,center,column);
+    // border: #036EB7 solid 3px;
     &>div:nth-child(1){
       @include mixin.container-style(100%,60%,flex-start,center,column);
       position: relative;
@@ -1134,7 +1203,8 @@
 
     }
     &>div:nth-child(2){
-      @include mixin.container-style(100%,40%,flex-start,center,column);
+      @include mixin.container-style(100%,40%,space-around,center,column);
+      // border: #036EB7 solid 1px;
 
       &>div:first-child{
         @include mixin.container-style(100%,10%,center,center);
@@ -1153,21 +1223,320 @@
   }
 
   &>div:last-child{
-    @include mixin.container-style(100%,55%, center,center,column);
-    border: #036EB7 solid 1px;
+    @include mixin.container-style(100%,52%, space-evenly,center,column);
+    // border: #036EB7 solid 1px;
   }
 }
 
 .skin8-ingredient{
-  border: #036EB7 solid 1px;
+  // border: #036EB7 solid 1px;
 
   &>div:first-child{
-    @include mixin.container-style(100%, 20px, space-around, center);
-    background-color: #979797;
+    @include mixin.container-style(100%, 10%, space-around, center);
+
+    &>div{
+      @include mixin.container-style(32%, 100%, center, center);
+      // border: solid 1px royalblue;
+      @include mixin.font(1.1rem, 800);
+
+    }
+  }
+
+  &>div:last-child{
+    @include mixin.container-style(100%, 80%, space-around, center, column);
+    // background-color: azure;
+
+    @for $i from 1 through 3{
+      &>div:nth-child(#{$i}){
+        @include mixin.container-style(100%, 10%, space-around, center);
+        &>div{
+          @include mixin.container-style(32%, 90%, space-around, center);
+          // border: #202020 solid 1px;
+          @include mixin.font(1rem, 600);
+          text-align: center;
+        }
+      }
+    }
+
+    
+    &>div:nth-child(4){
+      @include mixin.container-style(100%, 25%, space-around, center);
+
+      &>div{
+        @include mixin.container-style(32%, 95%, space-around, center);
+        text-align: center;
+      }
+
+      &>div:nth-child(1){
+        @include mixin.font(1rem, 600);
+      }
+
+      &>div:nth-child(2){
+        @include mixin.font(1rem, 600);
+      }
+
+      &>div:nth-child(3){
+        @include mixin.font(0.9rem, 600);
+      }
+
+    }
+
+    
+    @for $i from 5 through 6{
+      &>div:nth-child(#{$i}){
+        @include mixin.container-style(100%, 10%, space-around, center);
+        &>div{
+          @include mixin.container-style(32%, 90%, space-around, center);
+          // border: #202020 solid 1px;
+          @include mixin.font(1rem, 600);
+          text-align: center;
+        }
+      }
+    }
   }
 }
 
-.skin9{
-  @include mixin.container-style(600px, 2220px,space-around, center, column);
+.skin8-bot{
 
+  &>div:first-child{
+    @include mixin.container-style(90%, 8%, flex-start, center);
+    @include mixin.font(1.5rem,800);
+    line-height: 2;
+    // border: #036EB7 solid 1px;
+  }
+
+  &>div:last-child{
+    @include mixin.container-style(90%, 80%, space-around,center, column);
+    background-color: #F8F9FA;
+
+    &>div:nth-child(1){
+      @include mixin.container-style(45%, 4%, center, center);
+      background-color: #F6F2F6;
+      border-radius: 50px;
+      box-shadow: 1px 4px 9px rgba(0,0,0,0.25) ;
+
+      &>div{
+        @include mixin.container-style(40%, 90%, center, center);
+        @include mixin.font(1.2rem,800);
+      }
+    }
+
+    @for $i from 2 through 5{
+      &>div:nth-child(#{$i}){
+        @include mixin.container-style(90%, 20%, space-between, center);
+        // border: #036EB7 solid 1px;
+
+        &>div:first-child{
+          @include mixin.box-style(180px, 180px, var.$col-3, 50%);
+          @include mixin.flex(center,center);
+          // border: #202020 solid 1px;
+          &>img{
+            @include mixin.size(120px, auto);
+          }
+        }
+
+        &>div:last-child{
+          @include mixin.container-style(55%,80%, space-around, center, column);
+
+          &>div:first-child{
+            @include mixin.container-style(100%,85%,space-around,flex-start,column);
+            background-color: #EBE9F1;
+
+            &>div:nth-child(1){
+              @include mixin.container-style(90%,15%,flex-start,center);
+              @include mixin.font(1.7rem,700, #9C3993);
+              // border: #036EB7 solid 1px;
+              padding-left: 10px;
+            }
+
+            &>div:nth-child(2){
+              @include mixin.container-style(90%,60%,flex-start,center);
+              @include mixin.font(0.9rem,600);
+              padding-left: 15px;
+              line-height: 1.8;
+              // border: #036EB7 solid 1px;
+            }
+          }
+
+          &>div:last-child{
+            @include mixin.container-style(100%,10%,flex-start,center);
+            // border: #036EB7 solid 1px;
+            @include mixin.font(0.75rem,500);
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+.skin9{
+  @include mixin.container-style(600px, 2240px,space-around, center, column);
+  // border: #036EB7 solid 1px;
+
+  &>div:nth-child(1){
+    @include mixin.container-style(100%,55%,space-around,center,column);
+
+    &>div:first-child{
+      @include mixin.container-style(100%,30.5%,flex-start,flex-start);
+      position: relative;
+      &>img{
+        @include mixin.size(100%, auto);
+        position: relative;
+        z-index:0;
+      }
+      &>div{
+        @include mixin.container-style(120px,60px,center,center);
+        @include mixin.posi(absolute, 40px, 40px);
+      }
+    }
+
+    &>div:last-child{
+      @include mixin.container-style(100%,69%,space-around,center,column);
+    }
+  }
+
+  &>div:nth-child(2){
+    @include mixin.container-style(100%,35%,space-evenly,center,column);
+    background-color: var.$col-8;
+
+    &>div:nth-child(1){
+      @include mixin.container-style(85%, 15%, flex-start, center);
+      // border: #CBCBE5 solid 2px;
+    }
+
+  }
+
+  &>div:nth-child(3){
+    @include mixin.container-style(100%,8%,center,center,column);
+    border-bottom: solid 3px var.$col-1;
+    &>div:first-child{
+      @include mixin.container-style(100%,70%,center,center);
+      border-top: solid 4px var.$col-1;
+      &>img{
+        @include mixin.size(90px, auto);
+      }
+    }
+
+    &>div:last-child{
+      @include mixin.container-style(100%,28%,center,center);
+      border-bottom: solid 2px var.$col-1;
+      @include mixin.font(1.2rem,500,var.$col-1);
+    }
+  }
+
+}
+
+.skin9-top{
+  &>div:last-child{
+    // border: #036EB7 solid 1px;
+
+    @for $i from 1 to 4{
+      &>div:nth-child(#{$i}){
+        @include mixin.container-style(95%, 20%, space-around, center);
+
+        &>div:first-child{
+          @include mixin.container-style(15%,100%,center,flex-start);
+          // border: #202020 solid 1px;
+        }
+
+        &>div:last-child{
+          @include mixin.container-style(80%,100%,center,center,column);
+
+          &>div:nth-child(1){
+            @include mixin.container-style(100%,25%,flex-start,center);
+            @include mixin.font(1.1rem,600);
+
+          }
+
+          &>div:nth-child(2){
+            @include mixin.container-style(100%,65%,flex-start,center);
+            @include mixin.font(0.9rem,600);
+            line-height: 2;
+          }
+        }
+      }
+    }
+
+    &>div:nth-child(4){
+      @include mixin.container-style(95%, 25%, space-around, center);
+
+      &>div:first-child{
+        @include mixin.container-style(15%,100%,center,flex-start);
+        // border: #202020 solid 1px;
+      }
+
+      &>div:last-child{
+        @include mixin.container-style(80%,100%,space-around,center,column);
+
+        &>div:nth-child(1){
+          @include mixin.container-style(100%,20%,flex-start,center);
+          @include mixin.font(1.1rem,600);
+
+        }
+
+        &>div:nth-child(2){
+          @include mixin.container-style(100%,70%,flex-start,center);
+          @include mixin.font(0.9rem,600);
+          line-height: 2;
+        }
+      }
+    }
+  }
+}
+
+.skin9-mid{
+  @for $i from 2 through 3{
+    &>div:nth-child(#{$i}){
+      @include mixin.container-style(85%,32%, center,center);
+      background-color: var.$col-3;
+      position: relative;
+
+      &>div:first-child{
+        @include mixin.container-style(70%, 90%, space-around, center,column);
+        // border: #036EB7 solid 1px;
+        
+        &>div:first-child{
+          @include mixin.container-style(100%, 60%, center, flex-start,column);
+          // border: #036EB7 solid 1px;
+
+          &>div:nth-child(1){
+            @include mixin.container-style(100%, 50%, flex-start,center);
+            @include mixin.font(1.3rem, 800);
+          }
+
+          &>div:nth-child(2){
+            @include mixin.container-style(100%, 40%, flex-start,flex-end);
+            line-height: 1.5;
+          }
+
+        }
+
+        &>div:last-child{
+          @include mixin.container-style(100%, 20%, space-around, flex-start,column);
+          @include mixin.font(0.9rem, 500, var.$col-bright-gray);
+          line-height: 1.8;
+        }
+      }
+
+      &>div:nth-child(2){
+        @include mixin.box-style(70%,1%, var.$col-gray);
+        @include mixin.posi(absolute, 65%,15%,0);
+      }
+
+      &>img{
+        @include mixin.size(15%, 90%);
+        @include mixin.posi(absolute, 10%,80%,1);
+        // border: #036EB7 solid 1px;
+      }
+
+
+    }
+  }
+
+  // &>div:nth-child(2){
+  //   &>img{
+  //   }
+  // }
 }
