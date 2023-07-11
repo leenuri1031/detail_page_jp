@@ -84,21 +84,16 @@
 
 .qa-num {
   font-family: "Poppins";
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #A5A4A4;
   letter-spacing: 2px;
 }
 
 .recommend-blue {
-  font-size: 0.9rem;
   font-weight: 700;
   color: #17438B;
   letter-spacing: 1px;
 }
 
 .recommend-purple {
-  font-size: 0.9rem;
   font-weight: 700;
   color: #872659;
   letter-spacing: 1px;
@@ -109,7 +104,7 @@
     width: 100vw;
     height: 14480px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
   }
@@ -1561,29 +1556,6 @@
     align-items: center;
     flex-direction: column;
   }
-  .skin8 > div:first-child {
-    width: 100%;
-    height: 48%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-  }
-  .skin8 > div:first-child > div:nth-child(1) {
-    width: 100%;
-    height: 60%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-  }
-  .skin8 > div:first-child > div:nth-child(1) > img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    z-index: 0;
-  }
   .skin8 > div:first-child > div:nth-child(1) > div:nth-child(2) {
     width: 95%;
     height: 40px;
@@ -1625,39 +1597,14 @@
     top: 70px;
     left: 20px;
     z-index: 100;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 800;
     color: #872659;
-    -webkit-text-emphasis: filled;
-            text-emphasis: filled;
-  }
-  .skin8 > div:first-child > div:nth-child(2) {
-    width: 100%;
-    height: 40%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
   }
   .skin8 > div:first-child > div:nth-child(2) > div:first-child {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
     font-size: 1.2rem;
     font-weight: 800;
     color: #111;
-    letter-spacing: 1px;
-  }
-  .skin8 > div:first-child > div:nth-child(2) > div:nth-child(2) {
-    width: 100%;
-    height: 80%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
   }
   .skin8 > div:first-child > div:nth-child(2) > div:last-child {
     width: 100%;
@@ -1666,119 +1613,28 @@
     justify-content: flex-end;
     align-items: center;
     color: #979797;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 600;
   }
-  .skin8 > div:last-child {
-    width: 100%;
-    height: 52%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-  }
-  .skin8-ingredient > div:first-child {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-  }
   .skin8-ingredient > div:first-child > div {
-    width: 32%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
     font-size: 0.9rem;
     font-weight: 800;
     color: #111;
   }
-  .skin8-ingredient > div:last-child {
-    width: 100%;
-    height: 80%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-  }
-  .skin8-ingredient > div:last-child > div:nth-child(1) {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-  }
   .skin8-ingredient > div:last-child > div:nth-child(1) > div {
-    width: 32%;
-    height: 90%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
     font-size: 0.7rem;
     font-weight: 700;
     color: #111;
-    text-align: center;
-  }
-  .skin8-ingredient > div:last-child > div:nth-child(2) {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
   }
   .skin8-ingredient > div:last-child > div:nth-child(2) > div {
-    width: 32%;
-    height: 90%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
     font-size: 0.7rem;
     font-weight: 700;
     color: #111;
-    text-align: center;
-  }
-  .skin8-ingredient > div:last-child > div:nth-child(3) {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
   }
   .skin8-ingredient > div:last-child > div:nth-child(3) > div {
-    width: 32%;
-    height: 90%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
     font-size: 0.7rem;
     font-weight: 700;
     color: #111;
-    text-align: center;
-  }
-  .skin8-ingredient > div:last-child > div:nth-child(4) {
-    width: 100%;
-    height: 25%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-  }
-  .skin8-ingredient > div:last-child > div:nth-child(4) > div {
-    width: 32%;
-    height: 95%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
   }
   .skin8-ingredient > div:last-child > div:nth-child(4) > div:nth-child(1) {
     font-size: 0.7rem;
@@ -1795,91 +1651,36 @@
     font-weight: 600;
     color: #111;
   }
-  .skin8-ingredient > div:last-child > div:nth-child(5) {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-  }
   .skin8-ingredient > div:last-child > div:nth-child(5) > div {
-    width: 32%;
-    height: 90%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
     font-size: 0.7rem;
     font-weight: 700;
     color: #111;
-    text-align: center;
-  }
-  .skin8-ingredient > div:last-child > div:nth-child(6) {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
   }
   .skin8-ingredient > div:last-child > div:nth-child(6) > div {
-    width: 32%;
-    height: 90%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
     font-size: 0.7rem;
     font-weight: 700;
     color: #111;
-    text-align: center;
   }
   .skin8-bot > div:first-child {
-    width: 90%;
-    height: 8%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 800;
     color: #111;
-    line-height: 2;
   }
   .skin8-bot > div:last-child {
-    width: 90%;
+    width: 95%;
     height: 80%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    background-color: #F8F9FA;
-  }
-  .skin8-bot > div:last-child > div:nth-child(1) {
-    width: 45%;
-    height: 4%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    background-color: #F6F2F6;
-    border-radius: 50px;
-    box-shadow: 1px 4px 9px rgba(0, 0, 0, 0.25);
   }
   .skin8-bot > div:last-child > div:nth-child(1) > div {
-    width: 40%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 800;
     color: #111;
   }
   .skin8-bot > div:last-child > div:nth-child(2) {
-    width: 90%;
+    width: 95%;
     height: 20%;
     display: flex;
     justify-content: space-between;
@@ -1887,74 +1688,67 @@
     flex-direction: row;
   }
   .skin8-bot > div:last-child > div:nth-child(2) > div:first-child {
-    width: 180px;
-    height: 180px;
+    width: 140px;
+    height: 140px;
     background-color: #fff;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
   }
   .skin8-bot > div:last-child > div:nth-child(2) > div:first-child > img {
-    width: 120px;
+    width: 100px;
     height: auto;
   }
   .skin8-bot > div:last-child > div:nth-child(2) > div:last-child {
     width: 55%;
-    height: 80%;
+    height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
   }
   .skin8-bot > div:last-child > div:nth-child(2) > div:last-child > div:first-child {
     width: 100%;
-    height: 85%;
+    height: 80%;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: column;
-    background-color: #EBE9F1;
   }
   .skin8-bot > div:last-child > div:nth-child(2) > div:last-child > div:first-child > div:nth-child(1) {
-    width: 90%;
+    width: 95%;
     height: 15%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: #9C3993;
-    padding-left: 10px;
   }
   .skin8-bot > div:last-child > div:nth-child(2) > div:last-child > div:first-child > div:nth-child(2) {
-    width: 90%;
+    width: 100%;
     height: 60%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 600;
     color: #111;
-    padding-left: 15px;
-    line-height: 1.8;
+    line-height: 1.5;
   }
   .skin8-bot > div:last-child > div:nth-child(2) > div:last-child > div:last-child {
     width: 100%;
-    height: 10%;
+    height: 15%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     font-weight: 500;
     color: #111;
   }
   .skin8-bot > div:last-child > div:nth-child(3) {
-    width: 90%;
+    width: 95%;
     height: 20%;
     display: flex;
     justify-content: space-between;
@@ -1962,74 +1756,67 @@
     flex-direction: row;
   }
   .skin8-bot > div:last-child > div:nth-child(3) > div:first-child {
-    width: 180px;
-    height: 180px;
+    width: 140px;
+    height: 140px;
     background-color: #fff;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
   }
   .skin8-bot > div:last-child > div:nth-child(3) > div:first-child > img {
-    width: 120px;
+    width: 100px;
     height: auto;
   }
   .skin8-bot > div:last-child > div:nth-child(3) > div:last-child {
     width: 55%;
-    height: 80%;
+    height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
   }
   .skin8-bot > div:last-child > div:nth-child(3) > div:last-child > div:first-child {
     width: 100%;
-    height: 85%;
+    height: 80%;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: column;
-    background-color: #EBE9F1;
   }
   .skin8-bot > div:last-child > div:nth-child(3) > div:last-child > div:first-child > div:nth-child(1) {
-    width: 90%;
+    width: 95%;
     height: 15%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: #9C3993;
-    padding-left: 10px;
   }
   .skin8-bot > div:last-child > div:nth-child(3) > div:last-child > div:first-child > div:nth-child(2) {
-    width: 90%;
+    width: 100%;
     height: 60%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 600;
     color: #111;
-    padding-left: 15px;
-    line-height: 1.8;
+    line-height: 1.5;
   }
   .skin8-bot > div:last-child > div:nth-child(3) > div:last-child > div:last-child {
     width: 100%;
-    height: 10%;
+    height: 15%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     font-weight: 500;
     color: #111;
   }
   .skin8-bot > div:last-child > div:nth-child(4) {
-    width: 90%;
+    width: 95%;
     height: 20%;
     display: flex;
     justify-content: space-between;
@@ -2037,74 +1824,67 @@
     flex-direction: row;
   }
   .skin8-bot > div:last-child > div:nth-child(4) > div:first-child {
-    width: 180px;
-    height: 180px;
+    width: 140px;
+    height: 140px;
     background-color: #fff;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
   }
   .skin8-bot > div:last-child > div:nth-child(4) > div:first-child > img {
-    width: 120px;
+    width: 100px;
     height: auto;
   }
   .skin8-bot > div:last-child > div:nth-child(4) > div:last-child {
     width: 55%;
-    height: 80%;
+    height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
   }
   .skin8-bot > div:last-child > div:nth-child(4) > div:last-child > div:first-child {
     width: 100%;
-    height: 85%;
+    height: 80%;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: column;
-    background-color: #EBE9F1;
   }
   .skin8-bot > div:last-child > div:nth-child(4) > div:last-child > div:first-child > div:nth-child(1) {
-    width: 90%;
+    width: 95%;
     height: 15%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: #9C3993;
-    padding-left: 10px;
   }
   .skin8-bot > div:last-child > div:nth-child(4) > div:last-child > div:first-child > div:nth-child(2) {
-    width: 90%;
+    width: 100%;
     height: 60%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 600;
     color: #111;
-    padding-left: 15px;
-    line-height: 1.8;
+    line-height: 1.5;
   }
   .skin8-bot > div:last-child > div:nth-child(4) > div:last-child > div:last-child {
     width: 100%;
-    height: 10%;
+    height: 15%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     font-weight: 500;
     color: #111;
   }
   .skin8-bot > div:last-child > div:nth-child(5) {
-    width: 90%;
+    width: 95%;
     height: 20%;
     display: flex;
     justify-content: space-between;
@@ -2112,69 +1892,62 @@
     flex-direction: row;
   }
   .skin8-bot > div:last-child > div:nth-child(5) > div:first-child {
-    width: 180px;
-    height: 180px;
+    width: 140px;
+    height: 140px;
     background-color: #fff;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
   }
   .skin8-bot > div:last-child > div:nth-child(5) > div:first-child > img {
-    width: 120px;
+    width: 100px;
     height: auto;
   }
   .skin8-bot > div:last-child > div:nth-child(5) > div:last-child {
     width: 55%;
-    height: 80%;
+    height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
   }
   .skin8-bot > div:last-child > div:nth-child(5) > div:last-child > div:first-child {
     width: 100%;
-    height: 85%;
+    height: 80%;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: column;
-    background-color: #EBE9F1;
   }
   .skin8-bot > div:last-child > div:nth-child(5) > div:last-child > div:first-child > div:nth-child(1) {
-    width: 90%;
+    width: 95%;
     height: 15%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: #9C3993;
-    padding-left: 10px;
   }
   .skin8-bot > div:last-child > div:nth-child(5) > div:last-child > div:first-child > div:nth-child(2) {
-    width: 90%;
+    width: 100%;
     height: 60%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 600;
     color: #111;
-    padding-left: 15px;
-    line-height: 1.8;
+    line-height: 1.5;
   }
   .skin8-bot > div:last-child > div:nth-child(5) > div:last-child > div:last-child {
     width: 100%;
-    height: 10%;
+    height: 15%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     font-weight: 500;
     color: #111;
   }
@@ -2186,57 +1959,11 @@
     align-items: center;
     flex-direction: column;
   }
-  .skin9 > div:nth-child(1) {
-    width: 100%;
-    height: 55%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-  }
-  .skin9 > div:nth-child(1) > div:first-child {
-    width: 100%;
-    height: 30.5%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: row;
-    position: relative;
-  }
-  .skin9 > div:nth-child(1) > div:first-child > img {
-    width: 100%;
-    height: auto;
-    position: relative;
-    z-index: 0;
-  }
   .skin9 > div:nth-child(1) > div:first-child > div {
-    width: 120px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 20px;
+    left: 20px;
     z-index: 100;
-  }
-  .skin9 > div:nth-child(1) > div:last-child {
-    width: 100%;
-    height: 69%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-  }
-  .skin9 > div:nth-child(2) {
-    width: 100%;
-    height: 35%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    background-color: #842858;
   }
   .skin9 > div:nth-child(2) > div:nth-child(1) {
     width: 85%;
@@ -2245,59 +1972,40 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
+    line-height: 1.8;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
   }
   .skin9 > div:nth-child(3) {
-    width: 100%;
-    height: 8%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-bottom: solid 3px #872659;
+    border-bottom: solid 2.5px #872659;
   }
   .skin9 > div:nth-child(3) > div:first-child {
-    width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    border-top: solid 4px #872659;
+    border-top: solid 3px #872659;
   }
   .skin9 > div:nth-child(3) > div:first-child > img {
-    width: 90px;
+    width: 60px;
     height: auto;
   }
   .skin9 > div:nth-child(3) > div:last-child {
-    width: 100%;
-    height: 28%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    border-bottom: solid 2px #872659;
-    font-size: 1.2rem;
+    border-bottom: solid 1.5px #872659;
+    font-size: 1rem;
     font-weight: 500;
     color: #872659;
   }
-  .skin9-top > div:last-child > div:nth-child(1) {
-    width: 95%;
-    height: 20%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-  }
   .skin9-top > div:last-child > div:nth-child(1) > div:first-child {
-    width: 15%;
+    width: 10%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: row;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #A5A4A4;
   }
   .skin9-top > div:last-child > div:nth-child(1) > div:last-child {
-    width: 80%;
+    width: 85%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -2306,45 +2014,43 @@
   }
   .skin9-top > div:last-child > div:nth-child(1) > div:last-child > div:nth-child(1) {
     width: 100%;
-    height: 25%;
+    height: 20%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #111;
   }
   .skin9-top > div:last-child > div:nth-child(1) > div:last-child > div:nth-child(2) {
+    display: none;
+  }
+  .skin9-top > div:last-child > div:nth-child(1) > div:last-child > div:nth-child(3) {
     width: 100%;
-    height: 65%;
+    height: 75%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: #111;
-    line-height: 2;
-  }
-  .skin9-top > div:last-child > div:nth-child(2) {
-    width: 95%;
-    height: 20%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
+    line-height: 1.8;
   }
   .skin9-top > div:last-child > div:nth-child(2) > div:first-child {
-    width: 15%;
+    width: 10%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: row;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #A5A4A4;
   }
   .skin9-top > div:last-child > div:nth-child(2) > div:last-child {
-    width: 80%;
+    width: 85%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -2353,45 +2059,43 @@
   }
   .skin9-top > div:last-child > div:nth-child(2) > div:last-child > div:nth-child(1) {
     width: 100%;
-    height: 25%;
+    height: 20%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #111;
   }
   .skin9-top > div:last-child > div:nth-child(2) > div:last-child > div:nth-child(2) {
+    display: none;
+  }
+  .skin9-top > div:last-child > div:nth-child(2) > div:last-child > div:nth-child(3) {
     width: 100%;
-    height: 65%;
+    height: 75%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: #111;
-    line-height: 2;
-  }
-  .skin9-top > div:last-child > div:nth-child(3) {
-    width: 95%;
-    height: 20%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
+    line-height: 1.8;
   }
   .skin9-top > div:last-child > div:nth-child(3) > div:first-child {
-    width: 15%;
+    width: 10%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: row;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #A5A4A4;
   }
   .skin9-top > div:last-child > div:nth-child(3) > div:last-child {
-    width: 80%;
+    width: 85%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -2400,45 +2104,51 @@
   }
   .skin9-top > div:last-child > div:nth-child(3) > div:last-child > div:nth-child(1) {
     width: 100%;
-    height: 25%;
+    height: 20%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #111;
   }
   .skin9-top > div:last-child > div:nth-child(3) > div:last-child > div:nth-child(2) {
+    display: none;
+  }
+  .skin9-top > div:last-child > div:nth-child(3) > div:last-child > div:nth-child(3) {
     width: 100%;
-    height: 65%;
+    height: 75%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: #111;
-    line-height: 2;
+    line-height: 1.8;
   }
   .skin9-top > div:last-child > div:nth-child(4) {
     width: 95%;
-    height: 25%;
+    height: 28%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
   }
   .skin9-top > div:last-child > div:nth-child(4) > div:first-child {
-    width: 15%;
+    width: 10%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: row;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #A5A4A4;
   }
   .skin9-top > div:last-child > div:nth-child(4) > div:last-child {
-    width: 80%;
+    width: 85%;
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -2447,177 +2157,122 @@
   }
   .skin9-top > div:last-child > div:nth-child(4) > div:last-child > div:nth-child(1) {
     width: 100%;
-    height: 20%;
+    height: 10%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #111;
   }
   .skin9-top > div:last-child > div:nth-child(4) > div:last-child > div:nth-child(2) {
+    display: none;
+  }
+  .skin9-top > div:last-child > div:nth-child(4) > div:last-child > div:nth-child(3) {
     width: 100%;
-    height: 70%;
+    height: 75%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: #111;
     line-height: 2;
   }
   .skin9-mid > div:nth-child(2) {
     width: 85%;
-    height: 32%;
+    height: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    background-color: #fff;
-    position: relative;
   }
   .skin9-mid > div:nth-child(2) > div:first-child {
-    width: 70%;
+    width: 80%;
     height: 90%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
   }
-  .skin9-mid > div:nth-child(2) > div:first-child > div:first-child {
-    width: 100%;
-    height: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-  }
   .skin9-mid > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(1) {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 800;
     color: #111;
   }
   .skin9-mid > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) {
-    width: 100%;
-    height: 40%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    flex-direction: row;
-    line-height: 1.5;
+    font-size: 0.8rem;
   }
   .skin9-mid > div:nth-child(2) > div:first-child > div:last-child {
-    width: 100%;
-    height: 20%;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-direction: column;
-    font-size: 0.9rem;
+    font-size: 0.7em;
     font-weight: 500;
     color: #BCB6B7;
-    line-height: 1.8;
   }
   .skin9-mid > div:nth-child(2) > div:nth-child(2) {
-    width: 70%;
+    width: 80%;
     height: 1%;
     background-color: #D4D4D4;
     border-radius: 0;
     position: absolute;
     top: 65%;
-    left: 15%;
+    left: 10%;
     z-index: 0;
   }
   .skin9-mid > div:nth-child(2) > img {
-    width: 15%;
-    height: 90%;
+    width: 18%;
+    height: 95%;
     position: absolute;
-    top: 10%;
-    left: 80%;
+    top: 5%;
+    left: 75%;
     z-index: 1;
   }
   .skin9-mid > div:nth-child(3) {
     width: 85%;
-    height: 32%;
+    height: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    background-color: #fff;
-    position: relative;
   }
   .skin9-mid > div:nth-child(3) > div:first-child {
-    width: 70%;
+    width: 80%;
     height: 90%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
   }
-  .skin9-mid > div:nth-child(3) > div:first-child > div:first-child {
-    width: 100%;
-    height: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-  }
   .skin9-mid > div:nth-child(3) > div:first-child > div:first-child > div:nth-child(1) {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 800;
     color: #111;
   }
   .skin9-mid > div:nth-child(3) > div:first-child > div:first-child > div:nth-child(2) {
-    width: 100%;
-    height: 40%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    flex-direction: row;
-    line-height: 1.5;
+    font-size: 0.8rem;
   }
   .skin9-mid > div:nth-child(3) > div:first-child > div:last-child {
-    width: 100%;
-    height: 20%;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-direction: column;
-    font-size: 0.9rem;
+    font-size: 0.7em;
     font-weight: 500;
     color: #BCB6B7;
-    line-height: 1.8;
   }
   .skin9-mid > div:nth-child(3) > div:nth-child(2) {
-    width: 70%;
+    width: 80%;
     height: 1%;
     background-color: #D4D4D4;
     border-radius: 0;
     position: absolute;
     top: 65%;
-    left: 15%;
+    left: 10%;
     z-index: 0;
   }
   .skin9-mid > div:nth-child(3) > img {
-    width: 15%;
-    height: 90%;
+    width: 18%;
+    height: 95%;
     position: absolute;
-    top: 10%;
-    left: 80%;
+    top: 5%;
+    left: 75%;
     z-index: 1;
   }
 }/*# sourceMappingURL=style_mobile.css.map */
