@@ -93,7 +93,7 @@
 // -------------------------------------------
 
 #root-ream{
-  @include mixin.container-style(100vw, 12620px, space-around, center, column);
+  @include mixin.container-style(100vw, 12800px, space-around, center, column);
 }
 
 .ream1{
@@ -1213,8 +1213,97 @@
 
 .ream8{ 
   @include mixin.container-style(100%, 1840px, space-around, center, column);
-  border: #036EB7 solid 1px;
+
+  &>div:first-child{
+    @include mixin.container-style(100%, 30%, space-around, center, column);
+    // border: #036EB7 solid 1px;
+
+    &>div:nth-child(1){
+      @include mixin.container-style(80%, 10%, center,center);
+      // background-color: #CBCBE5;
+      &>p{
+        @include mixin.font(1.2rem,700);
+        text-align: center;
+      }
+    }
+
+    &>div:nth-child(2){
+      @include mixin.container-style(95%, 80%, space-around,center,column);
+    }
+    
+    &>div:last-child{
+      @include mixin.add-explain(95%,5%,0.7rem);
+    }
+  }
+
+  &>div:nth-child(2){
+    @include mixin.container-style(100%, 50%, space-around, center, column);
+  // border: #036EB7 solid 1px;
+  }
+
+  &>div:last-child{
+    @include mixin.container-style(100%, 20%, space-around, center, column);
+  // border: #036EB7 solid 1px;
+  }
 }
+
+.ream8-ingredient{
+  &>div:first-child{
+    @include mixin.container-style(100%, 28px, space-around, center);
+    // border: #036EB7 solid 1px;
+    &>div{
+      @include mixin.container-style(32%, 100%, center, center);
+      @include mixin.font(0.9rem, 800);
+
+    }
+  }
+
+  &>div:last-child{
+    @include mixin.container-style(100%, 88%, space-evenly, center,column);
+
+    &>div{
+      @include mixin.font(0.7rem, 700);
+      text-align: center;
+    }
+
+    @for $i from 1 through 2{
+      &>div:nth-child(#{$i}){
+        @include mixin.container-style(100%, 12%, space-around, center);
+        // border: #036EB7 solid 1px;
+        &>div{
+          @include mixin.container-style(32%, 90%, space-around, center);
+        }
+      }
+    }
+
+    &>div:nth-child(3){
+      @include mixin.container-style(100%, 10%, space-around, center);
+      // border: #036EB7 solid 1px;
+      &>div{
+        @include mixin.container-style(32%, 90%, space-around, center);
+      }
+    }
+
+    @for $i from 4 through 6{
+      &>div:nth-child(#{$i}){
+        @include mixin.container-style(100%, 15%, space-around, center);
+        // border: #036EB7 solid 1px;
+        &>div{
+          @include mixin.container-style(32%, 90%, space-around, center);
+        }
+      }
+    }
+
+    &>div:nth-child(7){
+      @include mixin.container-style(100%, 10%, space-around, center);
+      // border: #036EB7 solid 1px;
+      &>div{
+        @include mixin.container-style(32%, 90%, space-around, center);
+      }
+    }
+  }
+}
+
 
 .ream9{
   @include mixin.container-style(100%, 1560px, space-around, center, column);
