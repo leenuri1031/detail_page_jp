@@ -53,7 +53,6 @@
 .qa-title{
   font-family: 'Almarai';
   @include mixin.font(1.5rem, 800);
-  text-decoration: underline;
 }
 
 .qa-num{
@@ -1371,6 +1370,7 @@
       &>div{
         @include mixin.container-style(120px,60px,center,center);
         @include mixin.posi(absolute, 40px, 40px);
+        text-decoration: underline;
       }
     }
 
@@ -2540,14 +2540,9 @@
             &>div:nth-child(1){
               @include mixin.container-style(100%,20%,flex-start,center);
               @include mixin.font(1rem,600);
-  
             }
-  
+
             &>div:nth-child(2){
-              display: none;
-            }
-            
-            &>div:nth-child(3){
               @include mixin.container-style(100%,75%,flex-start,center);
               @include mixin.font(0.8rem,600);
               line-height: 1.8;
@@ -2573,12 +2568,8 @@
             @include mixin.font(1rem,600);
   
           }
-  
-          &>div:nth-child(2){
-            display: none;
-          }
           
-          &>div:nth-child(3){
+          &>div:nth-child(2){
             @include mixin.container-style(100%,75%,flex-start,center);
             @include mixin.font(0.8rem,600);
             line-height: 2;
