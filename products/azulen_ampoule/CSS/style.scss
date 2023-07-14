@@ -807,7 +807,7 @@
   }
 
   &>div:nth-child(3){
-    @include mixin.container-style(100%,28%,space-around,center);
+    @include mixin.container-style(100%,28%,space-around,center,column);
   }
 }
 
@@ -878,7 +878,20 @@
   }
 }
 
+.azam5-bot{
+  &>div:nth-child(1){
+    @include mixin.container-style(100%,40%,space-around,center,column);
+  }
 
+  &>div:nth-child(2){
+    @include mixin.container-style(100%,30%,space-around,center);
+  }
+
+  &>div:nth-child(3){
+    @include mixin.container-style(100%,20%,space-around,center,column);
+  }
+
+}
 
 .azam6{
   @include mixin.container-style(100%, 2000px, space-around, center, column);
