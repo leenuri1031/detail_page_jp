@@ -74,7 +74,7 @@
 }
 
 
-// -------------------------------------------
+//media  -----------------------------------------------------------
 @media(max-width:500px){
   #root-skin{
     @include mixin.container-style(100vw, 14480px, space-between, center, column);
@@ -630,12 +630,6 @@
   
   .skin5-top-1{
     &>div:first-child{
-  
-      &>div:nth-child(1){
-        @include mixin.point-box(100px, 36px, 3px, var.$col-1, 10px);
-        @include mixin.font(1rem, 600);
-      }
-  
       &>div:nth-child(2){
         @include mixin.font(1.3rem, 800);
       }
@@ -651,7 +645,6 @@
   }
   
   .skin5-top-2{
-  
     &>div{
       // border: #202020 solid 1px;
       @include mixin.font(1rem, 800);
@@ -659,7 +652,6 @@
   }
   
   .skin5-bot-1{
-  
     &>div{
       @include mixin.container-style(90%, 25%, center, center);
   
@@ -671,7 +663,6 @@
   }
   
   .skin5-bot-2{
-  
     @for $i from 1 through 3{
       &>div:nth-child(#{$i}){
         @include mixin.container-style(90%, 30%, space-between, center, column);
@@ -740,10 +731,6 @@
   
     &>div:nth-child(1){
       &>div:first-child{
-        &>div:nth-child(1){
-          @include mixin.point-box(100px, 36px, 3px, var.$col-1, 10px);
-        }
-    
         &>div:nth-child(2){
           @include mixin.container-style(100%, 50%, flex-start, center);
           @include mixin.font(1.3rem, 800);
@@ -947,8 +934,6 @@
   }
   
   .skin8-ingredient{
-    // border: #036EB7 solid 1px;
-  
     &>div:first-child{
       &>div{
         @include mixin.font(0.9rem, 800);
@@ -956,7 +941,6 @@
     }
   
     &>div:last-child{
-  
       @for $i from 1 through 3{
         &>div:nth-child(#{$i}){
           &>div{
@@ -964,7 +948,6 @@
           }
         }
       }
-  
       
       &>div:nth-child(4){
         &>div:nth-child(1){
@@ -1099,14 +1082,9 @@
             &>div:nth-child(1){
               @include mixin.container-style(100%,20%,flex-start,center);
               @include mixin.font(1rem,600);
-  
             }
-  
+
             &>div:nth-child(2){
-              display: none;
-            }
-            
-            &>div:nth-child(3){
               @include mixin.container-style(100%,75%,flex-start,center);
               @include mixin.font(0.8rem,600);
               line-height: 1.8;
@@ -1132,12 +1110,8 @@
             @include mixin.font(1rem,600);
   
           }
-  
-          &>div:nth-child(2){
-            display: none;
-          }
           
-          &>div:nth-child(3){
+          &>div:nth-child(2){
             @include mixin.container-style(100%,75%,flex-start,center);
             @include mixin.font(0.8rem,600);
             line-height: 2;
@@ -1184,5 +1158,6 @@
     }
   }
 }
+
 
 
