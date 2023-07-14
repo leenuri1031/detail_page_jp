@@ -1,0 +1,902 @@
+@use './var'as var;
+@use './mixin' as mixin;
+@use './basic';
+// -------------------------------------------
+
+
+// text-style -------------------------------------------
+.text-check-title{
+  @include mixin.font(1.7rem, 600, var.$col-3);
+  line-height: 2;
+  letter-spacing: 0.5px;
+}
+
+.partial-col{
+  color: var.$col-1;
+}
+
+.text-deco{
+  text-decoration: underline var.$col-azam-2;
+}
+
+.review-box{
+  color: #036EB7;
+  @include mixin.border(1px, #036EB7,5px);
+}
+
+.col-blue{
+  color: var.$col-azam-2;
+}
+
+.col-violet{
+  background-color: #CBCBE5;
+}
+
+.col-yellow-green{
+  background-color: #D1E6C5;
+}
+
+.col-pink{
+  background-color: #E7D3DE;
+}
+
+.qa-title{
+  font-family: 'Almarai';
+  @include mixin.font(1.5rem, 800);
+}
+
+.qa-num{
+  font-family: 'Poppins';
+  letter-spacing: 2px;
+}
+
+.recommend-blue{
+  font-weight: 700;
+  color: var.$col-blue;
+  letter-spacing: 1px;
+}
+
+.recommend-purple{
+  font-weight: 700;
+  color: var.$col-1;
+  letter-spacing: 1px;
+}
+
+.strong{
+  font-weight: 800;
+}
+
+.font-serif-outline{
+  font-family: 'Noto Serif';
+  -webkit-text-stroke: 1px #353535;
+}
+// -------------------------------------------
+
+#root{
+  @include mixin.container-style(100vw, 14400px, space-between, center, column);
+}
+
+.azam1{
+  @include mixin.container-style(100%, 780px, space-around, center, column);
+
+  position: relative;
+
+  &>img{
+    @include mixin.size(100%,100%);
+    @include mixin.posi(absolute,0,0,0);
+  }
+
+  &>div{
+    @include mixin.container-style(100%,30%,flex-start,space-around,column);
+    @include mixin.posi(absolute,0,0,1);
+    padding-top: 40px;
+    padding-left: 40px;
+    
+    &>div:first-child{
+      @include mixin.container-style(90%, 100px, flex-end, flex-start,column);
+
+      &>div:first-child{
+        @include mixin.container-style(100%, 30%, flex-start, flex-end);
+        position: relative;
+        
+        &>div{
+          @include mixin.box-style(3px, 3px, var.$col-3, 50%);
+          position:relative
+        }
+        
+        &>div:nth-child(1){
+          left: 5px;
+        }
+        
+        &>div:nth-child(2){
+          left: 18px;
+        }
+        
+        &>div:nth-child(3){
+          left: 33px;
+        }
+        
+        &>div:nth-child(4){
+          left: 45px;
+        }
+        
+        &>div:nth-child(5){
+          left: 58px;
+        }
+        
+        &>div:nth-child(6){
+          left: 88px;
+        }
+        
+        &>div:nth-child(7){
+          left: 100px;
+        }
+        
+        &>div:nth-child(8){
+          left: 114px;
+        }
+        
+        &>div:nth-child(9){
+          left: 125px;
+        }
+        
+        &>div:nth-child(10){
+          left: 138px;
+        }
+
+        &>div:nth-child(11){
+          left: 152px;
+        }
+
+        &>div:nth-child(12){
+          left: 165px;
+        }
+
+      }
+
+      &>div:last-child{
+        @include mixin.container-style(100%, 60%, flex-start, flex-start);
+        @include mixin.font(1rem, 500, var.$col-3);
+      }
+    }
+
+    &>div:last-child{
+      @include mixin.container-style(80%, 200px, flex-start, center);
+      @include mixin.font(1.8rem, 800, var.$col-3);
+      line-height: 1.5;
+    }
+  }
+}
+
+.azam2{
+  @include mixin.container-style(100%, 880px, space-around, center, column);
+
+  &>div{
+    @include mixin.container-style(100%, 50%, space-evenly, center, column);
+  }
+
+  &>div:first-child{
+    background-color: var.$col-azam-1;
+    overflow: hidden;
+    &>div:nth-child(1){
+      @include mixin.container-style(80%,15%, flex-start, center);
+      @include mixin.font(1.2rem, 600, var.$col-3);
+      line-height: 1.8;
+    }
+
+    &>div:nth-child(2){
+      @include mixin.container-style(80%,65%, space-evenly, center, column);
+      background-color: #fff;
+    }
+
+    &>div:last-child{
+      @include mixin.container-style(85%,5%, flex-end, center);
+      @include mixin.font(0.6rem, 600, var.$col-3);
+      letter-spacing: 1px;
+    }
+  }
+
+  &>div:last-child{
+    &>div:nth-child(1){
+    @include mixin.container-style(90%, 30%, space-around, center, column);
+    // background-color: antiquewhite;
+    
+    &>div:first-child{
+      @include mixin.container-style(100%, 50%, flex-start, center);
+      @include mixin.font(1rem, 600);
+      line-height: 1.8;
+    }
+
+    &>div:last-child{
+      @include mixin.container-style(100%, 40%, flex-start, center);
+      @include mixin.font(1.2rem, 800,var.$col-azam-2);
+    }
+  }
+
+    &>div:nth-child(2){
+    @include mixin.container-style(90%, 60%, flex-start, center);
+    // border: solid black 1px;
+
+    &>img{
+      @include mixin.size(280px, 200px);
+    }
+
+    &>div{
+      @include mixin.container-style(10%, 200px, flex-start, center);
+      writing-mode: vertical-lr;
+      @include mixin.font(0.7rem,500);
+      transform: rotate(180deg);
+    }
+  }
+  }
+}
+
+.azam-check-point{
+  position: relative;
+
+  &>div:nth-child(1){
+    @include mixin.container-style(95%, 32%, space-evenly, center);
+  }
+
+  &>div:nth-child(2){
+    @include mixin.container-style(95%, 32%, space-evenly, center);
+  }
+
+  &>div:nth-child(3){
+    @include mixin.container-style(95%, 26%, space-evenly, center);
+  }
+  
+  @for $i from 1 through 3{
+    &>div:nth-child(#{$i}){
+      // background-color: #CBCBE5;
+      &>img{
+        @include mixin.size(40px, 40px);
+      }
+
+      &>div{
+        @include mixin.container-style(75%, 100%, space-around, flex-start, column);
+        
+        &>div:first-child{
+          @include mixin.container-style(100%, 25%, flex-start, center);
+          // border: solid black 1px;
+          @include mixin.font(0.9rem, 800, var.$col-azam-2);
+        }
+
+        &>div:last-child{
+          @include mixin.container-style(90%, 55%, flex-start, center);
+          // border: solid black 1px;
+          @include mixin.font(0.7rem, 600);
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+
+  &>img{
+    @include mixin.size(116px,auto);
+    @include mixin.posi(absolute, -5%, 88%);
+    transform: rotate(8deg);
+
+  }
+}
+
+.azam-brand-story{
+  @include mixin.container-style(100%, 1200px, space-around, center, column);
+
+  &>div:first-child{
+    @include mixin.container-style(100%, 440px, center, center, column);
+    
+    &>div:nth-child(1){
+      @include mixin.container-style(100%, 50%, center,center);
+      position: relative;
+
+      &>img{
+        @include mixin.size(100%, 100%);
+        @include mixin.posi(absolute,0,0,0);
+      }
+
+      &>p{
+        @include mixin.size(95%, 40%);
+        @include mixin.posi(absolute, 116px, 12px);
+        @include mixin.font(0.75rem, 600);
+        line-height: 2;
+        // border: #036EB7 solid 1px;
+      }
+    }
+
+    &>img{
+      @include mixin.size(100%, 100px);
+    }
+  }
+
+  &>div:last-child{
+    @include mixin.container-style(100%,760px,space-evenly,center,column);
+    // border: #036EB7 solid 2px;
+    
+    &>div:first-child{
+      @include mixin.container-style(100%,55%,space-around,center,column);
+
+      &>div:nth-child(1){
+        @include mixin.container-style(90%,5%,space-between,center);
+
+        &>div:first-child{
+          @include mixin.container-style(40%,100%,center,center);
+          @include mixin.font(1.1rem, 600);
+        }
+        &>div:last-child{
+          @include mixin.container-style(60%,10%,center,center);
+          background-color: #202020;
+        }
+      }
+
+      &>div:nth-child(2){
+        @include mixin.container-style(90%,50%,space-between,center, column);
+        // border: solid black 1px;
+
+        &>div:first-child{
+          @include mixin.container-style(70%,20%,center,center);
+          @include mixin.font(0.9rem, 600, var.$col-3);
+          background-color: var.$col-1; 
+          text-align: center;
+        }
+      }
+
+      &>div:nth-child(3){
+        @include mixin.container-style(90%,30%,space-evenly,center,column);
+
+        &>div:first-child{
+          @include mixin.box-style(60%,2%, var.$col-1);
+        }
+
+        &>div:last-child{
+          @include mixin.container-style(90%,65%,center,center);
+          @include mixin.font(0.8rem, 700);
+          text-align: center;
+          line-height: 2;
+        }
+      }
+    }
+
+    &>div:last-child{
+      @include mixin.container-style(100%,35%,space-around,center,column);
+      // border: solid 1px black;
+    }
+  }
+}
+
+.azam-brand-mid-bot{
+  @include mixin.container-style(100%,70%,center,center, column);
+
+  &>div:first-child{
+    @include mixin.container-style(100%,70%,space-around,center);
+    position: relative;
+    // border: #202020 solid 1px;
+
+    @for$i from 1 through 3{
+      &>div:nth-child(#{$i}){
+        @include mixin.container-style(90px, 90px, center, center);
+        border-radius: 50%;
+        border: solid 2px var.$col-1;
+        background-color: var.$col-3;
+        @include mixin.font(0.8rem, 800);
+      }
+    }
+
+    &>div:nth-child(1){
+      @include mixin.posi(absolute,0,0,0);
+    }
+
+    &>div:nth-child(2){
+      @include mixin.posi(absolute,0,70px,1);
+    }
+
+    &>div:nth-child(3){
+      @include mixin.posi(absolute,0,150px,2);
+    }
+
+    &>div:nth-child(4){
+      @include mixin.box-style(12%,2%, var.$col-1);
+      @include mixin.posi(absolute,45px,230px,4);
+    }
+
+    &>div:nth-child(5){
+      @include mixin.container-style(90px, 90px, center, center);
+      @include mixin.font(0.8rem, 800);
+      @include mixin.posi(absolute,0,260px,3);
+      border-radius: 50%;
+      border: solid 2px var.$col-1;
+      background-color: var.$col-3;
+    }
+  }
+
+  &>div:last-child{
+    @include mixin.container-style(100%,25%,flex-start,center);
+    // background-color: antiquewhite;
+
+    &>div{
+      @include mixin.container-style(20%,100%,center,flex-start);
+      @include mixin.font(0.8rem, 600);
+      text-align: center;
+      // border: red solid 1px;
+    }
+  }
+}
+
+.azam-brand-story-bot{
+
+  &>div:first-child{
+    @include mixin.container-style(100%,50%,space-around,center,column);
+    // border: solid 1px black;
+
+    &>img{
+      @include mixin.box-style(100px, 100px, var.$col-3, 50%);
+    }
+
+    &>div{
+      @include mixin.container-style(100%,30%,center,center);
+      @include mixin.font(0.7rem, 700);
+    }
+  }
+
+  &>div:last-child{
+    @include mixin.container-style(100%,50%,space-around,center,column);
+    // border: solid 1px black;
+    &>div:first-child{
+      @include mixin.container-style(95%,75%,center,center);
+      border: solid 4px var.$col-azam-2;
+      border-radius: 20px;
+
+      &>p{
+        @include mixin.size(100%, 100%);
+        padding-top: 15px;
+        @include mixin.font(0.75rem, 800);
+        text-align: center;
+        line-height: 1.8;
+      }
+    }
+  }
+}
+
+.azam-add-explain{
+  @include mixin.add-explain(95%,20px,0.6rem);
+  // background-color: #202020;
+}
+
+.azam3{
+  @include mixin.container-style(100%, 720px, center, center, column);
+  background-image: url(https://elmundo-lee.com/wp/wp-content/uploads/2023/07/azam3_img_1.png);
+  background-size: cover;
+
+  &>div:first-child{
+    
+    @include mixin.container-style(100%, 20%, space-around, center,column);
+
+    &>div:nth-child(1){
+      @include mixin.container-style(85%, 20%, space-between,center);
+      
+      &>div{
+        background-color: var.$col-azam-2;
+        @include mixin.font(0.75rem, 500,var.$col-3);
+        letter-spacing: 1.5px;
+      }
+
+      @for $i from 1 to 4 {
+        &>div:nth-child(#{$i}){
+          @include mixin.container-style(20%, 90%, space-around,center);
+        }
+      }
+
+      &>div:nth-child(4){
+        @include mixin.container-style(28%, 90%, space-around,center);
+        border: #036EB7 solid 1px;
+
+      }
+    }
+
+    &>div:nth-child(2){
+      @include mixin.container-style(85%, 60%, center,flex-start,column);
+      &>div:nth-child(1){
+        @include mixin.container-style(100%, 30%, center,flex-start,column);
+        @include mixin.font(1rem,700);
+      }
+      
+      &>div:nth-child(2){
+        @include mixin.container-style(100%, 50%, center,flex-start,column);
+        @include mixin.font(1.5rem,800);
+      }
+    }
+  }
+
+  &>div:last-child{
+    @include mixin.container-style(100%, 70%, space-around, center,column);
+  }
+}
+
+.azam3-bot{
+  // border: #036EB7 dotted 2px;
+  position: relative;
+
+  &>img{
+    @include mixin.size(140px,auto);
+    @include mixin.posi(absolute,60px,120px,0);
+    transform: rotate(-5deg);
+  }
+
+  &>div{
+    @include mixin.size(120px,45%);
+    // border: #036EB7 1px dotted;
+    &>img{
+      @include mixin.box-style(100px,100px,var.$col-3,50%);
+      border: dotted 1.7px var.$col-8;
+    }
+
+    &>div{
+      margin-top: 10px;
+      @include mixin.font(0.75rem, 700);
+      line-height: 1.8;
+    }
+  }
+
+  &>div:nth-child(2){
+    @include mixin.flex(center,flex-end,column);
+    @include mixin.posi(absolute,10%,62%,1);
+    text-align: end;
+  }
+
+  &>div:nth-child(3){
+    @include mixin.flex(center,flex-start,column);
+    @include mixin.posi(absolute,40%,5%,1);
+    text-align: start;
+  }
+
+  &>div:nth-child(4){
+    @include mixin.flex(center,flex-end,column);
+    @include mixin.posi(absolute,55%,62%,1);
+    text-align: end
+  }
+}
+
+.azam4{
+  @include mixin.container-style(100%, 2220px, space-around, center, column);
+
+  &>div:first-child{
+    @include mixin.container-style(100%,55%,space-between,center,column);
+
+    &>div:nth-child(1){
+      @include mixin.container-style(100%,3%,center,center);
+      @include mixin.font(1rem, 600, var.$col-3);
+      background-color: var.$col-azam-2;
+      letter-spacing: 1px;
+    }
+
+    @for $i from 2 through 3 {
+      &>div:nth-child(#{$i}){
+        @include mixin.container-style(100%,48%,space-around,center,column);
+      }
+    }
+  }
+  
+  &>div:last-child{
+    @include mixin.container-style(100%,45%,space-around,center,column);
+  }
+}
+
+.azam4-top-title{
+  &>div:first-child{
+    @include mixin.container-style(90%,25%, space-around, flex-start, column);
+
+    &>div:nth-child(2){
+      @include mixin.container-style(100%, 50%, flex-start, center);
+      @include mixin.font(1.3rem, 800);
+      line-height: 1.8;
+      padding-left: 10px;
+    }
+  }
+
+  &>div:last-child{
+    @include mixin.container-style(90%, 70%,space-around,center,column);
+    
+    &>div:nth-child(1){
+      @include mixin.container-style(95%, 70%, space-between,center);
+
+      &>div:nth-child(1){
+        @include mixin.container-style(48%, 100%,flex-start,flex-start);
+      }
+
+      &>div:nth-child(2){
+        @include mixin.container-style(45%, 100%,flex-end,flex-end);
+      }
+
+      &>div{
+        &>img{
+          @include mixin.size(100%,95%);
+        }
+      }
+    }
+
+    &>div:nth-child(2){
+      @include mixin.container-style(95%, 25%, center,flex-start,column);
+      &>p:nth-child(1){
+        @include mixin.font(0.8rem,800);
+        margin-bottom: 10px;
+      }
+
+      &>p:nth-child(2){
+        @include mixin.font(0.85rem,800);
+      }
+    }
+  }
+}
+
+.point-box{
+  @include mixin.point-box(100px, 36px, 3px, var.$col-azam-2, 10px);
+  @include mixin.flex(center,center);
+  @include mixin.font(0.9rem, 700);
+}
+
+.azam4-top-contents{
+  &>div:first-child{
+    @include mixin.container-style(90%,90%,space-around,center,column);
+    @include mixin.border(4px, var.$col-azam-3,20px);
+
+    &>div:nth-child(1){
+      @include mixin.container-style(95%, 10%, center, center);
+      @include mixin.font(0.95rem, 800);
+    }
+
+    &>img{
+      @include mixin.size(90%,45%);
+    }
+
+    &>div:nth-child(3){
+      @include mixin.container-style(95%, 35%, space-around, center, column);
+
+      &>div{
+        @include mixin.container-style(90%,30%,flex-start,center);
+        @include mixin.font(0.8rem, 800);
+        text-align: center;
+        line-height: 1.8;
+      }
+    }
+  }
+
+  &>div:last-child{
+    @include mixin.add-explain(90%, 5%,0.6rem);
+  }
+}
+
+.azam4-bot{
+
+  &>div:nth-child(1){
+    @include mixin.container-style(100%,35%,space-around,center,column);
+  }
+
+  &>div:nth-child(2){
+    @include mixin.container-style(100%,30%,space-around,center,column);
+  }
+
+  &>div:nth-child(3){
+    @include mixin.container-style(100%,25%,space-around,center,column);
+  }
+}
+
+.azam4-bot-top{
+  &>div{
+    @include mixin.container-style(90%,25%, space-around, center,column);
+    &>div:nth-child(1){
+      @include mixin.container-style(90%,25%, center, center);
+      @include mixin.font(0.9rem, 700);
+    }
+
+    &>div:nth-child(2){
+      @include mixin.container-style(90%,60%, center, center);
+      @include mixin.font(1.1rem, 700, var.$col-azam-2);
+      text-align: center;
+    }
+  }
+
+  &>img{
+    @include mixin.size(90%, 65%);
+  }
+}
+
+.azam4-bot-mid{
+  &>div:nth-child(1){
+    @include mixin.container-style(80%, 8%, space-between,center);
+    position: relative;
+    &>div{
+      @include mixin.container-style(40%, 100%, center,center);
+      @include mixin.font(0.8rem,600);
+    }
+
+    &>div:nth-child(1){
+      @include mixin.posi(absolute,10px,-5px,0);
+    }
+
+    &>div:nth-child(2){
+      @include mixin.posi(absolute,10px,192px,0);
+    }
+  }
+
+  @for $i from 2 through 3{
+    &>div:nth-child(#{$i}){
+      @include mixin.container-style(80%, 40%, space-between, center);
+
+      &>img:nth-child(1){
+        @include mixin.size(110px,110px);
+      }
+
+      &>img:nth-child(2){
+        @include mixin.size(40px,auto);
+      }
+
+      &>img:nth-child(3){
+        @include mixin.size(110px,110px);
+      }
+
+    }
+  }
+}
+
+.azam4-bot-bot{
+  &>div:first-child{
+    @include mixin.container-style(300px,40px,center,center);
+    border: var.$col-azam-2 solid 3px;
+    &>p{
+      @include mixin.size(290px,30px);
+      border: var.$col-azam-2 solid 1px;
+      text-align: center;
+      @include mixin.font(1.1rem,700);
+      letter-spacing: 1.5px;
+    }
+  }
+
+  &>img{
+    @include mixin.size(240px,auto);
+  }
+
+  &>div:last-child{
+    @include mixin.add-explain(90%,10%,0.6rem);
+  }
+}
+
+.azam5{
+  @include mixin.container-style(100%, 2000px, space-between, center, column);
+  background-color:aliceblue;
+
+  &>div{
+    border: #036EB7 dotted 2px;
+  }
+  
+  &>div:nth-child(1){
+    @include mixin.container-style(100%,28%,space-around,center,column);
+
+    &>div:first-child{
+      @include mixin.container-style(90%, 25%,space-around,flex-start,column);
+      
+      &>div:nth-child(2){
+        @include mixin.container-style(100%, 50%, flex-start, center);
+        @include mixin.font(1.3rem, 800);
+        line-height: 1.8;
+        padding-left: 10px;
+      }
+    }
+
+    &>div:last-child{
+      @include mixin.container-style(100%, 70%,space-between,center,column);
+      &>img{
+        @include mixin.size(90%,70%);
+      }
+      &>div{
+        @include mixin.container-style(90%,25%,center,flex-start,column);
+
+        &>p:nth-child(1){
+          @include mixin.font(0.8rem, 800);
+          margin-bottom: 10px;
+        }
+        &>p:nth-child(2){
+          @include mixin.font(0.85rem, 800);
+          line-height: 2;
+        }
+      }
+    }
+  }
+
+  &>div:nth-child(2){
+    @include mixin.container-style(100%,40%,space-around,center,column);
+  }
+
+  &>div:nth-child(3){
+    @include mixin.container-style(100%,28%,space-around,center);
+  }
+}
+
+.azam5-mid{
+  &>div:first-child{
+    @include mixin.container-style(100%,50%,space-evenly,center);
+
+    &>div:nth-child(1){
+      @include mixin.container-style(30%,100%,space-evenly,center,column);
+      &>img{
+        @include mixin.size(100%,40%);
+      }
+    }
+
+    &>div:nth-child(2){
+      @include mixin.container-style(20%,100%,space-evenly,center,column);
+
+      @for $i from 2 through 3{
+        &>div:nth-child(#{$i}){
+          @include mixin.container-style(100%,40%,center,center);
+          &>img{
+            @include mixin.size(100%,15%);
+          }
+        }
+      }
+    }
+
+    &>div:nth-child(3){
+      @include mixin.container-style(30%,100%,space-evenly,center,column);
+      &>img{
+        @include mixin.size(100%,40%);
+      }
+    }
+
+    &>div{
+      &>div:nth-child(1){
+        @include mixin.container-style(100%,10%,center,center);
+        @include mixin.font(0.8rem, 600);
+      }
+    }
+  }
+
+  &>div:last-child{
+    @include mixin.container-style(100%,45%,space-around,center,column);
+    
+    &>div:first-child{
+      @include mixin.container-style(95%,30%,space-evenly,center,column);
+
+      &>div:nth-child(1){
+        @include mixin.container-style(100%,15%,center,center);
+        @include mixin.font(0.9rem,700);
+      }
+
+      &>div:nth-child(2){
+        @include mixin.container-style(100%,60%,center,center);
+        @include mixin.font(1.2rem,700,var.$col-azam-2);
+        text-align: center;
+      }
+    }
+  
+    &>img{
+      @include mixin.size(60%,50%);
+    }
+  
+    &>div:last-child{
+      @include mixin.add-explain(90%,10%,0.6rem);
+    }
+  }
+}
+
+
+
+.azam6{
+  @include mixin.container-style(100%, 2000px, space-around, center, column);
+}
+
+.azam7{
+  @include mixin.container-style(100%, 700px, space-around, center, column);
+}
+
+.azam8{
+  @include mixin.container-style(100%, 1220px, space-around, center, column);
+}
+
+.azam9{
+  @include mixin.container-style(100%, 990px, space-around, center, column);
+}
+
+.azam10{
+  @include mixin.container-style(100%, 1540px, space-around, center, column);
+}
+

@@ -1,0 +1,16 @@
+@use './var'as var;
+@use './mixin' as mixin;
+@use './basic';
+// -------------------------------------------
+
+// text-style -------------------------------------------
+
+// -------------------------------------------
+
+
+@media(min-width:550px){
+  #root{
+    @include mixin.container-style(600px, 20000px, space-between, center, column);
+  }
+
+}
