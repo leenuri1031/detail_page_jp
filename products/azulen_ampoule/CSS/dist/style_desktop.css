@@ -20,13 +20,1519 @@
   font-family: "Noto Sans", "Noto Sans JP", sans-serif;
 }
 
+.text-check-title {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 2;
+  letter-spacing: 0.5px;
+}
+
+.partial-col {
+  color: #872659;
+}
+
+.text-deco {
+  text-decoration: underline #4571B8;
+}
+
+.review-box {
+  color: #036EB7;
+  border: solid #036EB7 1px;
+  border-radius: 5px;
+}
+
+.col-blue {
+  color: #4571B8;
+}
+
+.col-dark-blue {
+  color: #0F2FB1;
+}
+
+.col-violet {
+  background-color: #CBCBE5;
+}
+
+.col-yellow-green {
+  background-color: #D1E6C5;
+}
+
+.col-pink {
+  background-color: #E7D3DE;
+}
+
+.qa-title {
+  font-family: "Almarai";
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #111;
+}
+
+.qa-num {
+  font-family: "Poppins";
+  letter-spacing: 2px;
+}
+
+.recommend-blue {
+  font-weight: 700;
+  color: #17438B;
+  letter-spacing: 1px;
+}
+
+.recommend-purple {
+  font-weight: 700;
+  color: #872659;
+  letter-spacing: 1px;
+}
+
+.recommend-gold {
+  font-weight: 700;
+  color: #C5A16C;
+  letter-spacing: 1px;
+}
+
+.strong {
+  font-weight: 800;
+}
+
+.font-serif-outline {
+  font-family: "Noto Serif";
+  -webkit-text-stroke: 1px #353535;
+}
+
 @media (min-width: 550px) {
   #root {
     width: 600px;
-    height: 20000px;
+    height: 22000px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+  }
+
+  .azam1 {
+    width: 600px;
+    height: 1180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .azam1 > div {
+    padding-top: 60px;
+    padding-left: 60px;
+  }
+  .azam1 > div > div:first-child > div:first-child {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: row;
+  }
+  .azam1 > div > div:first-child > div:first-child > div {
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  .azam1 > div > div:first-child > div:first-child > div:nth-child(1) {
+    left: 8px;
+  }
+  .azam1 > div > div:first-child > div:first-child > div:nth-child(2) {
+    left: 25px;
+  }
+  .azam1 > div > div:first-child > div:first-child > div:nth-child(3) {
+    left: 42px;
+  }
+  .azam1 > div > div:first-child > div:first-child > div:nth-child(4) {
+    left: 60px;
+  }
+  .azam1 > div > div:first-child > div:first-child > div:nth-child(5) {
+    left: 76px;
+  }
+  .azam1 > div > div:first-child > div:first-child > div:nth-child(6) {
+    left: 112px;
+  }
+  .azam1 > div > div:first-child > div:first-child > div:nth-child(7) {
+    left: 128px;
+  }
+  .azam1 > div > div:first-child > div:first-child > div:nth-child(8) {
+    left: 148px;
+  }
+  .azam1 > div > div:first-child > div:first-child > div:nth-child(9) {
+    left: 164px;
+  }
+  .azam1 > div > div:first-child > div:first-child > div:nth-child(10) {
+    left: 180px;
+  }
+  .azam1 > div > div:first-child > div:first-child > div:nth-child(11) {
+    left: 198px;
+  }
+  .azam1 > div > div:first-child > div:first-child > div:nth-child(12) {
+    left: 214px;
+  }
+  .azam1 > div > div:first-child > div:last-child {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+  }
+  .azam1 > div > div:last-child {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+  }
+
+  .azam2 {
+    width: 600px;
+    height: 1320px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .azam2 > div:first-child {
+    background-color: #2C2477;
+    overflow: hidden;
+  }
+  .azam2 > div:first-child > div:nth-child(1) {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  .azam2 > div:first-child > div:last-child {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  .azam2 > div:last-child > div:nth-child(1) > div:first-child {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #111;
+    line-height: 2;
+  }
+  .azam2 > div:last-child > div:nth-child(1) > div:last-child {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #4571B8;
+  }
+  .azam2 > div:last-child > div:nth-child(2) > img {
+    width: 480px;
+    height: 340px;
+  }
+  .azam2 > div:last-child > div:nth-child(2) > div {
+    width: 10%;
+    height: 340px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #111;
+    letter-spacing: 1.5px;
+  }
+
+  .azam-check-point > div:nth-child(1) > img {
+    width: 80px;
+    height: 80px;
+  }
+  .azam-check-point > div:nth-child(1) > div {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .azam-check-point > div:nth-child(1) > div > div:first-child {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #4571B8;
+  }
+  .azam-check-point > div:nth-child(1) > div > div:last-child {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #111;
+    line-height: 1.8;
+  }
+  .azam-check-point > div:nth-child(2) > img {
+    width: 80px;
+    height: 80px;
+  }
+  .azam-check-point > div:nth-child(2) > div {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .azam-check-point > div:nth-child(2) > div > div:first-child {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #4571B8;
+  }
+  .azam-check-point > div:nth-child(2) > div > div:last-child {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #111;
+    line-height: 1.8;
+  }
+  .azam-check-point > div:nth-child(3) > img {
+    width: 80px;
+    height: 80px;
+  }
+  .azam-check-point > div:nth-child(3) > div {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .azam-check-point > div:nth-child(3) > div > div:first-child {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #4571B8;
+  }
+  .azam-check-point > div:nth-child(3) > div > div:last-child {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #111;
+    line-height: 1.8;
+  }
+  .azam-check-point > img {
+    width: 160px;
+    height: auto;
+    position: absolute;
+    top: -5%;
+    left: 87%;
+    z-index: 100;
+  }
+
+  .azam-brand-story {
+    width: 600px;
+    height: 1800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .azam-brand-story > div:first-child {
+    width: 100%;
+    height: 660px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .azam-brand-story > div:first-child > div:nth-child(1) > p {
+    width: 90%;
+    height: 40%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #111;
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    z-index: 100;
+  }
+  .azam-brand-story > div:first-child > img {
+    width: 100%;
+    height: 165px;
+  }
+  .azam-brand-story > div:last-child {
+    width: 100%;
+    height: 1140px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .azam-brand-story > div:last-child > div:first-child > div:nth-child(1) > div:first-child {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #111;
+  }
+  .azam-brand-story > div:last-child > div:first-child > div:nth-child(1) > div:last-child {
+    width: 70%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .azam-brand-story > div:last-child > div:first-child > div:nth-child(2) > div:first-child {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  .azam-brand-story > div:last-child > div:first-child > div:nth-child(3) > div:first-child {
+    width: 80%;
+    height: 2%;
+    background-color: #872659;
+    border-radius: 0;
+  }
+  .azam-brand-story > div:last-child > div:first-child > div:nth-child(3) > div:last-child {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #111;
+  }
+
+  .azam-brand-mid-bot > div:first-child > div:nth-child(1) {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #111;
+  }
+  .azam-brand-mid-bot > div:first-child > div:nth-child(2) {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #111;
+  }
+  .azam-brand-mid-bot > div:first-child > div:nth-child(3) {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #111;
+  }
+  .azam-brand-mid-bot > div:first-child > div:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    z-index: 1;
+  }
+  .azam-brand-mid-bot > div:first-child > div:nth-child(3) {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    z-index: 2;
+  }
+  .azam-brand-mid-bot > div:first-child > div:nth-child(4) {
+    width: 20%;
+    height: 2%;
+    background-color: #872659;
+    border-radius: 0;
+    position: absolute;
+    top: 65px;
+    left: 320px;
+    z-index: 4;
+  }
+  .azam-brand-mid-bot > div:first-child > div:nth-child(5) {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #111;
+    position: absolute;
+    top: 0;
+    left: 400px;
+    z-index: 3;
+  }
+  .azam-brand-mid-bot > div:last-child > div {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111;
+  }
+
+  .azam-brand-story-bot > div:first-child > img {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  .azam-brand-story-bot > div:first-child > div {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111;
+  }
+  .azam-brand-story-bot > div:last-child > div:first-child {
+    width: 90%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .azam-brand-story-bot > div:last-child > div:first-child > p {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #111;
+    line-height: 2;
+  }
+
+  .azam-add-explain {
+    width: 95%;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #979797;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .azam3 {
+    width: 600px;
+    height: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .azam3 > div:first-child > div:nth-child(1) > div {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+  }
+  .azam3 > div:first-child > div:nth-child(2) {
+    width: 85%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .azam3 > div:first-child > div:nth-child(2) > div:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111;
+  }
+  .azam3 > div:first-child > div:nth-child(2) > div:nth-child(2) {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #111;
+    letter-spacing: 2px;
+  }
+
+  .azam3-bot > img {
+    width: 160px;
+    height: auto;
+    position: absolute;
+    top: 140px;
+    left: 200px;
+    z-index: 0;
+  }
+  .azam3-bot > div {
+    width: 150px;
+    height: 45%;
+  }
+  .azam3-bot > div > img {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  .azam3-bot > div > div {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #111;
+  }
+  .azam3-bot > div:nth-child(2) {
+    position: absolute;
+    top: 10%;
+    left: 68%;
+    z-index: 1;
+  }
+  .azam3-bot > div:nth-child(3) {
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    z-index: 1;
+  }
+  .azam3-bot > div:nth-child(4) {
+    position: absolute;
+    top: 55%;
+    left: 68%;
+    z-index: 1;
+  }
+
+  .azam4 {
+    width: 600px;
+    height: 3340px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .azam4 > div:first-child > div:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .azam4-top-title > div:first-child > div:nth-child(2) {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #111;
+  }
+  .azam4-top-title > div:last-child {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .azam4-top-title > div:last-child > div:nth-child(2) {
+    width: 95%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .azam4-top-title > div:last-child > div:nth-child(2) > p:nth-child(1) {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #111;
+  }
+  .azam4-top-title > div:last-child > div:nth-child(2) > p:nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #111;
+  }
+
+  .point-box {
+    width: 100px;
+    height: 40px;
+    border: solid #4571B8 3px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #111;
+  }
+
+  .azam4-top-contents > div:first-child > div:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #111;
+  }
+  .azam4-top-contents > div:first-child > div:nth-child(3) > div {
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #111;
+  }
+  .azam4-top-contents > div:last-child {
+    width: 90%;
+    height: 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #979797;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .azam4-bot-top > div > div:nth-child(1) {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #111;
+  }
+  .azam4-bot-top > div > div:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #4571B8;
+  }
+
+  .azam4-bot-mid > div > div:nth-child(1) {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111;
+  }
+
+  .azam4-bot-bot > div:first-child {
+    width: 480px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: #4571B8 solid 3.5px;
+  }
+  .azam4-bot-bot > div:first-child > p {
+    width: 470px;
+    height: 50px;
+    border: #4571B8 solid 2px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111;
+    padding-top: 5px;
+  }
+  .azam4-bot-bot > img {
+    width: 320px;
+    height: auto;
+  }
+  .azam4-bot-bot > div:last-child {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #979797;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .azam5 {
+    width: 600px;
+    height: 3000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .azam5 > div:nth-child(1) {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .azam5 > div:nth-child(1) > div:first-child > div:nth-child(2) {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #111;
+  }
+  .azam5 > div:nth-child(1) > div:last-child > img {
+    width: 80%;
+    height: 70%;
+  }
+  .azam5 > div:nth-child(1) > div:last-child > div > p:nth-child(1) {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #111;
+  }
+  .azam5 > div:nth-child(1) > div:last-child > div > p:nth-child(2) {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #111;
+  }
+  .azam5 > div:nth-child(2) {
+    width: 100%;
+    height: 38%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .azam5 > div:nth-child(3) {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .azam5-mid > div:first-child {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+  }
+  .azam5-mid > div:first-child > div:nth-child(1) > img {
+    width: 90%;
+    height: 40%;
+  }
+  .azam5-mid > div:first-child > div:nth-child(3) > img {
+    width: 90%;
+    height: 40%;
+  }
+  .azam5-mid > div:first-child > div > div:nth-child(1) {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111;
+  }
+  .azam5-mid > div:last-child > div:first-child {
+    width: 95%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .azam5-mid > div:last-child > div:first-child > div:nth-child(1) {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111;
+  }
+  .azam5-mid > div:last-child > div:first-child > div:nth-child(2) {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #4571B8;
+  }
+  .azam5-mid > div:last-child > img {
+    width: 60%;
+    height: 60%;
+  }
+  .azam5-mid > div:last-child > div:last-child {
+    width: 90%;
+    height: 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #979797;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .azam5-bot > div:nth-child(1) > div:nth-child(1) {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: row;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111;
+  }
+  .azam5-bot > div:nth-child(1) > div:nth-child(2) {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #4571B8;
+    line-height: 1.6;
+  }
+  .azam5-bot > div:nth-child(2) > div > div {
+    border: #4571B8 solid 3px;
+  }
+  .azam5-bot > div:nth-child(2) > div > div > p {
+    width: 98%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: #4571B8 solid 2px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #4571B8;
+  }
+  .azam5-bot > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111;
+  }
+  .azam5-bot > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #4571B8;
+  }
+  .azam5-bot > div:nth-child(3) > div:nth-child(2) {
+    width: 90%;
+    height: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #979797;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .azam6 {
+    width: 600px;
+    height: 3000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .azam6 > div:nth-child(1) > div:first-child > div:nth-child(2) {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #111;
+  }
+  .azam6 > div:nth-child(1) > div:last-child > div:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #4571B8;
+    line-height: 1.6;
+  }
+  .azam6 > div:nth-child(1) > div:last-child > div:nth-child(2) {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #111;
+  }
+
+  .azam6-mid > div:nth-child(1) > img {
+    width: 70%;
+    height: 50%;
+  }
+  .azam6-mid > div:nth-child(1) > div > div:nth-child(1) {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #111;
+  }
+  .azam6-mid > div:nth-child(1) > div > div:nth-child(2) > p:nth-child(1) {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #111;
+  }
+  .azam6-mid > div:nth-child(1) > div > div:nth-child(2) > p:nth-child(2) {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #111;
+  }
+  .azam6-mid > div:nth-child(2) {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .azam6-mid > div:nth-child(2) > div {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .azam6-mid > div:nth-child(2) > div > img {
+    width: 48px;
+    height: 48px;
+  }
+  .azam6-mid > div:nth-child(2) > div > div > img {
+    width: 160px;
+    height: 160px;
+    border: solid #4571B8 3px;
+    border-radius: 50%;
+  }
+  .azam6-mid > div:nth-child(2) > div > div > div > div:nth-child(1) {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #4571B8;
+  }
+  .azam6-mid > div:nth-child(2) > div > div > div > div:nth-child(2) {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #979797;
+  }
+  .azam6-mid > div:nth-child(2) > div > div > div > div:nth-child(3) {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #979797;
+    line-height: 1.8;
+  }
+  .azam6-mid > div:nth-child(3) {
+    width: 90%;
+    height: 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #979797;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .azam6-bot > div:first-child > div {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #4571B8;
+    line-height: 1.8;
+  }
+  .azam6-bot > div:last-child > div:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #4571B8;
+    letter-spacing: 1.5px;
+  }
+  .azam6-bot > div:last-child > div:nth-child(2) {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #111;
+    letter-spacing: 1.5px;
+  }
+  .azam6-bot > div:last-child > div:nth-child(3) > div:nth-child(1) {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .azam6-bot > div:last-child > div:nth-child(3) > div:nth-child(2) {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .azam6-bot > div:last-child > div:nth-child(3) > div:nth-child(1) {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #4571B8;
+  }
+  .azam6-bot > div:last-child > div:nth-child(3) > div:nth-child(2) {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #111;
+  }
+  .azam6-bot > div:last-child > div:nth-child(3) > div:nth-child(3) {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #979797;
+  }
+
+  .azam7 {
+    width: 600px;
+    height: 1040px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .azam7 > div:nth-child(1) {
+    width: 90%;
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .azam7 > div:nth-child(1) > div:first-child {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #4571B8;
+  }
+  .azam7 > div:nth-child(1) > div:last-child {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #111;
+    text-align: center;
+  }
+  .azam7 > div:nth-child(2) {
+    width: 90%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .azam7 > div:nth-child(3) {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #111;
+    line-height: 2;
+  }
+
+  .azam7-mid > div {
+    width: 100%;
+    height: 28%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+  .azam7-mid > div > div:first-child {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .azam7-mid > div > div:first-child > img {
+    width: 140px;
+    height: 140px;
+  }
+  .azam7-mid > div > div:last-child > div:nth-child(1) {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+  }
+  .azam7-mid > div > div:last-child > div:nth-child(1) > p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111;
+  }
+  .azam7-mid > div > div:last-child > div:nth-child(2) {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #6a6a6a;
+  }
+  .azam7-mid > div > div:last-child > div:nth-child(3) {
+    width: 90%;
+    height: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #6a6a6a;
+  }
+  .azam7-mid > div:nth-child(1) > div:last-child > div:nth-child(3) {
+    line-height: 2;
+  }
+  .azam7-mid > div:nth-child(2) > div:last-child > div:nth-child(3) {
+    line-height: 2;
+  }
+  .azam7-mid > div:nth-child(3) > div:last-child > div:nth-child(3) {
+    line-height: 1.7;
+  }
+
+  .azam8 {
+    width: 600px;
+    height: 1840px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .azam8 > div:nth-child(2) > div:first-child {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #111;
+  }
+  .azam8 > div:nth-child(2) > div:last-child {
+    width: 95%;
+    height: 8%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #979797;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .azam8 > div:nth-child(3) {
+    width: 100%;
+    height: 28%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #B5D3EF;
+  }
+  .azam8 > div:nth-child(3) > div:first-child {
+    width: 95%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #111;
+    letter-spacing: 1px;
+  }
+  .azam8 > div:nth-child(3) > div:last-child {
+    width: 95%;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .azam8 > div:nth-child(3) > div:last-child > img {
+    width: 90%;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+  }
+  .azam8 > div:nth-child(3) > div:last-child > div:nth-child(2) {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111;
+  }
+  .azam8 > div:nth-child(3) > div:last-child > div:last-child {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 700;
+  }
+  .azam8 > div:nth-child(3) > div:last-child > div:last-child > div:nth-child(1) {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #0F2FB1;
+    margin-bottom: 10px;
+  }
+  .azam8 > div:nth-child(3) > div:last-child > div:last-child > div:nth-child(2) {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #111;
+  }
+
+  .azam8-top > div:first-child {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: row;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #111;
+    line-height: 2;
+  }
+  .azam8-top > div:last-child > div:first-child > div:nth-child(1) > div:nth-child(1) {
+    left: 12px;
+  }
+  .azam8-top > div:last-child > div:first-child > div:nth-child(1) > div:nth-child(2) {
+    left: 48px;
+  }
+  .azam8-top > div:last-child > div:first-child > div:nth-child(1) > div:nth-child(3) {
+    left: 80px;
+  }
+  .azam8-top > div:last-child > div:first-child > div:nth-child(1) > div:nth-child(4) {
+    left: 116px;
+  }
+  .azam8-top > div:last-child > div:first-child > div:nth-child(2) {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #4571B8;
+  }
+  .azam8-top > div:last-child > div:last-child {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #4571B8;
+  }
+
+  .azam8-ingredient > div:first-child > div {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #111;
+  }
+  .azam8-ingredient > div:last-child > div > div {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #111;
+  }
+
+  .azam9 {
+    width: 600px;
+    height: 1480px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .azam9 > div:first-child {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #111;
+  }
+  .azam9 > div:last-child > div:nth-child(1) > div {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #111;
+  }
+  .azam9 > div:last-child > div:nth-child(2) > div:first-child {
+    width: 180px;
+    height: 180px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  .azam9 > div:last-child > div:nth-child(2) > div:first-child > img {
+    width: 120px;
+    height: auto;
+  }
+  .azam9 > div:last-child > div:nth-child(2) > div:last-child > div:first-child > div:nth-child(1) {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #4571B8;
+  }
+  .azam9 > div:last-child > div:nth-child(2) > div:last-child > div:first-child > div:nth-child(2) {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #111;
+  }
+  .azam9 > div:last-child > div:nth-child(2) > div:last-child > div:last-child {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #111;
+  }
+  .azam9 > div:last-child > div:nth-child(3) > div:first-child {
+    width: 180px;
+    height: 180px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  .azam9 > div:last-child > div:nth-child(3) > div:first-child > img {
+    width: 120px;
+    height: auto;
+  }
+  .azam9 > div:last-child > div:nth-child(3) > div:last-child > div:first-child > div:nth-child(1) {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #4571B8;
+  }
+  .azam9 > div:last-child > div:nth-child(3) > div:last-child > div:first-child > div:nth-child(2) {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #111;
+  }
+  .azam9 > div:last-child > div:nth-child(3) > div:last-child > div:last-child {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #111;
+  }
+  .azam9 > div:last-child > div:nth-child(4) > div:first-child {
+    width: 180px;
+    height: 180px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  .azam9 > div:last-child > div:nth-child(4) > div:first-child > img {
+    width: 120px;
+    height: auto;
+  }
+  .azam9 > div:last-child > div:nth-child(4) > div:last-child > div:first-child > div:nth-child(1) {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #4571B8;
+  }
+  .azam9 > div:last-child > div:nth-child(4) > div:last-child > div:first-child > div:nth-child(2) {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #111;
+  }
+  .azam9 > div:last-child > div:nth-child(4) > div:last-child > div:last-child {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #111;
+  }
+  .azam9 > div:last-child > div:nth-child(5) > div:first-child {
+    width: 180px;
+    height: 180px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  .azam9 > div:last-child > div:nth-child(5) > div:first-child > img {
+    width: 120px;
+    height: auto;
+  }
+  .azam9 > div:last-child > div:nth-child(5) > div:last-child > div:first-child > div:nth-child(1) {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #4571B8;
+  }
+  .azam9 > div:last-child > div:nth-child(5) > div:last-child > div:first-child > div:nth-child(2) {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #111;
+  }
+  .azam9 > div:last-child > div:nth-child(5) > div:last-child > div:last-child {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #111;
+  }
+  .azam9 > div:last-child > div:nth-child(3) > div:first-child > img {
+    width: 168px;
+    height: 176px;
+  }
+
+  .azam10 {
+    width: 600px;
+    height: 2320px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .azam10 > div:last-child {
+    border-bottom: solid 3px #872659;
+  }
+  .azam10 > div:last-child > div:first-child {
+    border-top: solid 4px #872659;
+  }
+  .azam10 > div:last-child > div:first-child > img {
+    width: 90px;
+    height: auto;
+  }
+  .azam10 > div:last-child > div:last-child {
+    border-bottom: solid 2px #872659;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #872659;
+  }
+
+  .azam10-top > div:last-child > div:nth-child(1) > div:first-child {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #A5A4A4;
+  }
+  .azam10-top > div:last-child > div:nth-child(1) > div:last-child > div:nth-child(1) {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111;
+  }
+  .azam10-top > div:last-child > div:nth-child(1) > div:last-child > div:nth-child(2) {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111;
+    line-height: 2;
+  }
+  .azam10-top > div:last-child > div:nth-child(2) > div:first-child {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #A5A4A4;
+  }
+  .azam10-top > div:last-child > div:nth-child(2) > div:last-child > div:nth-child(1) {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111;
+  }
+  .azam10-top > div:last-child > div:nth-child(2) > div:last-child > div:nth-child(2) {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111;
+    line-height: 2;
+  }
+  .azam10-top > div:last-child > div:nth-child(3) > div:first-child {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #A5A4A4;
+  }
+  .azam10-top > div:last-child > div:nth-child(3) > div:last-child > div:nth-child(1) {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111;
+  }
+  .azam10-top > div:last-child > div:nth-child(3) > div:last-child > div:nth-child(2) {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111;
+    line-height: 2;
+  }
+  .azam10-top > div:last-child > div:nth-child(4) > div:first-child {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #A5A4A4;
+  }
+  .azam10-top > div:last-child > div:nth-child(4) > div:last-child > div:nth-child(1) {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111;
+  }
+  .azam10-top > div:last-child > div:nth-child(4) > div:last-child > div:nth-child(2) {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111;
+    line-height: 2;
+  }
+  .azam10-top > div:last-child > div:nth-child(5) > div:first-child {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #A5A4A4;
+  }
+  .azam10-top > div:last-child > div:nth-child(5) > div:last-child > div:nth-child(1) {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111;
+  }
+  .azam10-top > div:last-child > div:nth-child(5) > div:last-child > div:nth-child(2) {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111;
+    line-height: 2;
+  }
+
+  .azam10-mid > div:first-child {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  .azam10-mid > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(1) {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #111;
+  }
+  .azam10-mid > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) {
+    font-size: 1rem;
+  }
+  .azam10-mid > div:nth-child(2) > div:first-child > div:last-child {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #BCB6B7;
+  }
+  .azam10-mid > div:nth-child(3) > div:first-child > div:first-child > div:nth-child(1) {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #111;
+  }
+  .azam10-mid > div:nth-child(3) > div:first-child > div:first-child > div:nth-child(2) {
+    font-size: 1rem;
+  }
+  .azam10-mid > div:nth-child(3) > div:first-child > div:last-child {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #BCB6B7;
   }
 }

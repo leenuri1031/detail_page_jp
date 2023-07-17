@@ -4,13 +4,966 @@
 // -------------------------------------------
 
 // text-style -------------------------------------------
+.text-check-title{
+  @include mixin.font(1.7rem, 600, var.$col-3);
+  line-height: 2;
+  letter-spacing: 0.5px;
+}
 
+.partial-col{
+  color: var.$col-1;
+}
+
+.text-deco{
+  text-decoration: underline var.$col-azam-2;
+}
+
+.review-box{
+  color: #036EB7;
+  @include mixin.border(1px, #036EB7,5px);
+}
+
+.col-blue{
+  color: var.$col-azam-2;
+}
+
+.col-dark-blue{
+  color: var.$col-azam-5;
+
+}
+
+.col-violet{
+  background-color: #CBCBE5;
+}
+
+.col-yellow-green{
+  background-color: #D1E6C5;
+}
+
+.col-pink{
+  background-color: #E7D3DE;
+}
+
+.qa-title{
+  font-family: 'Almarai';
+  @include mixin.font(1.5rem, 800);
+}
+
+.qa-num{
+  font-family: 'Poppins';
+  letter-spacing: 2px;
+}
+
+.recommend-blue{
+  font-weight: 700;
+  color: var.$col-blue;
+  letter-spacing: 1px;
+}
+
+.recommend-purple{
+  font-weight: 700;
+  color: var.$col-1;
+  letter-spacing: 1px;
+}
+
+.recommend-gold{
+  font-weight: 700;
+  color: #C5A16C;
+  letter-spacing: 1px;
+}
+
+.strong{
+  font-weight: 800;
+}
+
+.font-serif-outline{
+  font-family: 'Noto Serif';
+  -webkit-text-stroke: 1px #353535;
+}
 // -------------------------------------------
 
 
 @media(min-width:550px){
   #root{
-    @include mixin.container-style(600px, 20000px, space-between, center, column);
+    @include mixin.container-style(600px, 22000px, space-between, center, column);
+  }
+
+  .azam1{
+    @include mixin.container-style(600px, 1180px, space-around, center, column);
+    &>div{
+      padding-top: 60px;
+      padding-left: 60px;
+      &>div:first-child{
+        &>div:first-child{
+          @include mixin.container-style(100%, 15%, flex-start, flex-end);
+          &>div{
+            @include mixin.box-style(4px, 4px, var.$col-3, 50%);
+          }
+          &>div:nth-child(1){
+            left: 8px;
+          }
+          &>div:nth-child(2){
+            left: 25px;
+          }
+          &>div:nth-child(3){
+            left: 42px;
+          }
+          &>div:nth-child(4){
+            left: 60px;
+          }
+          &>div:nth-child(5){
+            left: 76px;
+          }
+          &>div:nth-child(6){
+            left: 112px;
+          }
+          &>div:nth-child(7){
+            left: 128px;
+          }
+          &>div:nth-child(8){
+            left: 148px;
+          }
+          &>div:nth-child(9){
+            left: 164px;
+          }
+          &>div:nth-child(10){
+            left: 180px;
+          }
+          &>div:nth-child(11){
+            left: 198px;
+          }
+          &>div:nth-child(12){
+            left: 214px;
+          }
+        }
+        &>div:last-child{
+          @include mixin.font(1.3rem, 500, var.$col-3);
+        }
+      }
+      &>div:last-child{
+        @include mixin.font(3rem, 800, var.$col-3);
+      }
+    }
+  }
+
+  .azam2{
+    @include mixin.container-style(600px, 1320px, space-around, center, column);
+    &>div:first-child{
+      background-color: var.$col-azam-1;
+      overflow: hidden;
+      &>div:nth-child(1){
+        @include mixin.font(1.7rem, 600, var.$col-3);
+      }
+      &>div:last-child{
+        @include mixin.font(0.8rem, 600, var.$col-3);
+      }
+    }
+    &>div:last-child{
+      &>div:nth-child(1){
+        &>div:first-child{
+          @include mixin.font(1.2rem, 700);
+          line-height: 2;
+        }
+        &>div:last-child{
+          @include mixin.font(1.6rem, 800,var.$col-azam-2);
+      }
+    }
+  
+      &>div:nth-child(2){
+        &>img{
+          @include mixin.size(480px, 340px);
+        }
+        &>div{
+          @include mixin.container-style(10%, 340px, flex-start, center);
+          @include mixin.font(1rem,500);
+          letter-spacing: 1.5px;
+        }
+      }
+    }
+  }
+
+  .azam-check-point{
+    @for $i from 1 through 3{
+      &>div:nth-child(#{$i}){
+        &>img{
+          @include mixin.size(80px, 80px);
+        }
+        &>div{
+          @include mixin.container-style(65%, 100%, space-around, flex-start, column);
+          &>div:first-child{
+            @include mixin.font(1.2rem, 800, var.$col-azam-2);
+          }
+          &>div:last-child{
+            @include mixin.font(0.95rem, 600);
+            line-height: 1.8;
+          }
+        }
+      }
+    }
+    &>img{
+      @include mixin.size(160px,auto);
+      @include mixin.posi(absolute, -5%, 87%);
+    }
+  }
+  
+  .azam-brand-story{
+    @include mixin.container-style(600px, 1800px, space-around, center, column);
+  
+    &>div:first-child{
+      @include mixin.container-style(100%, 660px, center, center, column);
+      
+      &>div:nth-child(1){
+        &>p{
+          @include mixin.size(90%, 40%);
+          @include mixin.font(1.1rem, 600);
+          @include mixin.posi(absolute, 180px, 20px);
+        }
+      }
+  
+      &>img{
+        @include mixin.size(100%, 165px);
+      }
+    }
+  
+    &>div:last-child{
+      @include mixin.container-style(100%,1140px,space-evenly,center,column);
+      &>div:first-child{
+        &>div:nth-child(1){
+          &>div:first-child{
+            @include mixin.container-style(30%,100%,center,center);
+            @include mixin.font(1.3rem, 600);
+          }
+          &>div:last-child{
+            @include mixin.container-style(70%,10%,center,center);
+          }
+        }
+        &>div:nth-child(2){
+          &>div:first-child{
+            @include mixin.font(1.2rem, 600, var.$col-3);
+          }
+        }
+        &>div:nth-child(3){
+          &>div:first-child{
+            @include mixin.box-style(80%,2%, var.$col-1);
+          }
+          &>div:last-child{
+            @include mixin.font(1.1rem, 600);
+          }
+        }
+      }
+    }
+  }
+  
+  .azam-brand-mid-bot{
+    &>div:first-child{
+      @for$i from 1 through 3{
+        &>div:nth-child(#{$i}){
+          @include mixin.container-style(130px, 130px, center, center);
+          @include mixin.font(1rem, 800);
+        }
+      }
+  
+      &>div:nth-child(2){
+        @include mixin.posi(absolute,0,100px,1);
+      }
+  
+      &>div:nth-child(3){
+        @include mixin.posi(absolute,0,200px,2);
+      }
+  
+      &>div:nth-child(4){
+        @include mixin.box-style(20%,2%, var.$col-1);
+        @include mixin.posi(absolute,65px,320px,4);
+      }
+  
+      &>div:nth-child(5){
+        @include mixin.container-style(130px, 130px, center, center);
+        @include mixin.font(1rem, 800);
+        @include mixin.posi(absolute,0,400px,3);
+      }
+    }
+  
+    &>div:last-child{
+      &>div{
+        @include mixin.font(1rem, 600);
+      }
+    }
+  }
+  
+  .azam-brand-story-bot{
+    &>div:first-child{
+      &>img{
+        @include mixin.box-style(120px, 120px, var.$col-3, 50%);
+      }
+      &>div{
+        @include mixin.font(1.1rem, 700);
+      }
+    }
+  
+    &>div:last-child{
+      &>div:first-child{
+        @include mixin.container-style(90%,65%,center,center);
+        &>p{
+          @include mixin.font(1rem, 800);
+          line-height: 2;
+        }
+      }
+    }
+  }
+  
+  .azam-add-explain{
+    @include mixin.add-explain(95%,20px,0.9rem);
+  }
+
+  .azam3{
+    @include mixin.container-style(600px, 1080px, center, center, column);
+    &>div:first-child{
+      &>div:nth-child(1){
+        &>div{
+          @include mixin.font(1.1rem, 500,var.$col-3);
+        }
+      }
+      &>div:nth-child(2){
+        @include mixin.container-style(85%, 60%, center,flex-start,column);
+        &>div:nth-child(1){
+          @include mixin.font(1.5rem,700);
+        }
+        &>div:nth-child(2){
+          @include mixin.font(2rem,800);
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+  
+  .azam3-bot{
+    &>img{
+      @include mixin.size(160px,auto);
+      @include mixin.posi(absolute,140px,200px,0);
+    }
+    &>div{
+      @include mixin.size(150px,45%);
+      &>img{
+        @include mixin.box-style(120px,120px,var.$col-3,50%);
+      }
+      &>div{
+        @include mixin.font(0.9rem, 700);
+      }
+    }
+    &>div:nth-child(2){
+      @include mixin.posi(absolute,10%,68%,1);
+    }
+    &>div:nth-child(3){
+      @include mixin.posi(absolute,40%,8%,1);
+    }
+    &>div:nth-child(4){
+      @include mixin.posi(absolute,55%,68%,1);
+    }
+  }
+
+  .azam4{
+    @include mixin.container-style(600px, 3340px, space-around, center, column);
+    &>div:first-child{
+      &>div:nth-child(1){
+        @include mixin.font(1.5rem, 600, var.$col-3);
+      }
+    }
+  }
+  
+  .azam4-top-title{
+    &>div:first-child{
+      &>div:nth-child(2){
+        @include mixin.font(1.8rem, 800);
+      }
+    }
+    &>div:last-child{
+      @include mixin.container-style(90%, 70%,space-around,center,column);
+      &>div:nth-child(2){
+        @include mixin.container-style(95%, 25%, center,flex-start,column);
+        &>p:nth-child(1){
+          @include mixin.font(1.1rem,800);
+        }
+        &>p:nth-child(2){
+          @include mixin.font(1.2rem,800);
+        }
+      }
+    }
+  }
+  
+  .point-box{
+    @include mixin.point-box(100px, 40px, 3px, var.$col-azam-2, 10px);
+    @include mixin.font(1rem, 700);
+  }
+  
+  .azam4-top-contents{
+    &>div:first-child{
+      &>div:nth-child(1){
+        @include mixin.font(1.5rem, 800);
+      }
+      &>div:nth-child(3){
+        &>div{
+          @include mixin.container-style(90%,30%,center,center);
+          @include mixin.font(1rem, 800);
+        }
+      }
+    }
+    &>div:last-child{
+      @include mixin.add-explain(90%, 5%);
+    }
+  }
+  
+  .azam4-bot-top{
+    &>div{
+      &>div:nth-child(1){
+        @include mixin.font(1rem, 700);
+      }
+      &>div:nth-child(2){
+        @include mixin.font(1.5rem, 700, var.$col-azam-2);
+      }
+    }
+  }
+  
+  .azam4-bot-mid{
+    &>div{
+      &>div:nth-child(1){
+        @include mixin.font(1rem, 600);
+      }
+    }
+  }
+  
+  .azam4-bot-bot{
+    &>div:first-child{
+      @include mixin.container-style(480px,60px,center,center);
+      border: var.$col-azam-2 solid 3.5px;
+      &>p{
+        @include mixin.size(470px,50px);
+        border: var.$col-azam-2 solid 2px;
+        @include mixin.font(1.5rem,700);
+        padding-top: 5px;
+      }
+    }
+    &>img{
+      @include mixin.size(320px,auto);
+    }
+    &>div:last-child{
+      @include mixin.add-explain(90%,10%);
+    }
+  }
+
+  .azam5{
+    @include mixin.container-style(600px, 3000px, space-between, center, column);
+    
+    &>div:nth-child(1){
+      @include mixin.container-style(100%,25%,space-evenly,center,column);
+      &>div:first-child{
+        &>div:nth-child(2){
+          @include mixin.font(1.8rem, 800);
+        }
+      }
+  
+      &>div:last-child{
+        &>img{
+          @include mixin.size(80%,70%);
+        }
+        &>div{
+          &>p:nth-child(1){
+            @include mixin.font(1.05rem, 800);
+          }
+          &>p:nth-child(2){
+            @include mixin.font(1.1rem, 800);
+          }
+        }
+      }
+    }
+  
+    &>div:nth-child(2){
+      @include mixin.container-style(100%,38%,space-around,center,column);
+    }
+  
+    &>div:nth-child(3){
+      @include mixin.container-style(100%,35%,space-around,center,column);
+    }
+  }
+  
+  .azam5-mid{
+    &>div:first-child{
+    @include mixin.container-style(100%,50%,space-evenly,center);
+
+      &>div:nth-child(1){
+        &>img{
+          @include mixin.size(90%,40%);
+        }
+      }
+      &>div:nth-child(3){
+        &>img{
+          @include mixin.size(90%,40%);
+        }
+      }
+      &>div{
+        &>div:nth-child(1){
+          @include mixin.font(1rem, 600);
+        }
+      }
+    }
+  
+    &>div:last-child{
+      &>div:first-child{
+        @include mixin.container-style(95%,25%,space-between,center,column);
+        &>div:nth-child(1){
+          @include mixin.font(1.1rem,700);
+        }
+        &>div:nth-child(2){
+          @include mixin.font(1.3rem,700,var.$col-azam-2);
+        }
+      }
+      &>img{
+        @include mixin.size(60%,60%);
+      }
+      &>div:last-child{
+        @include mixin.add-explain(90%,5%);
+      }
+    }
+  }
+  
+  .azam5-bot{
+    &>div:nth-child(1){
+      &>div:nth-child(1){
+        @include mixin.container-style(90%,20%,flex-start,flex-end);
+        @include mixin.font(1.1rem, 700);
+      }
+  
+      &>div:nth-child(2){
+        @include mixin.font(1.4rem, 700, var.$col-azam-2);
+        line-height: 1.6;
+      }
+    }
+  
+    &>div:nth-child(2){
+      &>div{
+        &>div{
+          border: var.$col-azam-2 solid 3px;
+          &>p{
+            @include mixin.container-style(98%,90%,center,center);
+            border: var.$col-azam-2 solid 2px;
+            @include mixin.font(1.2rem, 700,var.$col-azam-2);
+          }
+        }
+      }
+    }
+  
+    &>div:nth-child(3){
+      &>div:nth-child(1){
+        &>div:nth-child(1){
+          @include mixin.font(1.1rem, 700);
+        }
+        &>div:nth-child(2){
+          @include mixin.font(1.5rem, 800,var.$col-azam-2);
+        }
+      }
+      &>div:nth-child(2){
+        @include mixin.add-explain(90%,25%);
+      }
+    }
+  }
+
+  .azam6{
+    @include mixin.container-style(600px, 3000px, space-around, center, column);
+  
+    &>div:nth-child(1){
+      &>div:first-child{
+        &>div:nth-child(2){
+          @include mixin.font(1.8rem, 800);
+        }
+      }
+      &>div:last-child{
+        &>div:nth-child(1){
+          @include mixin.font(1.5rem, 800, var.$col-azam-2);
+          line-height: 1.6;
+        }
+        &>div:nth-child(2){
+          @include mixin.font(1rem, 800);
+        }
+      }
+    }
+  }
+  
+  .azam6-mid{
+    &>div:nth-child(1){
+      &>img{
+        @include mixin.size(70%,50%);
+      }
+      &>div{
+        &>div:nth-child(1){
+          @include mixin.font(1.1rem,800);
+        }
+        &>div:nth-child(2){
+          &>p:nth-child(1){
+            @include mixin.font(1rem,700);
+          }
+          &>p:nth-child(2){
+            @include mixin.font(1.3rem,800);
+          }
+        }
+      }
+    }
+  
+    &>div:nth-child(2){
+      @include mixin.container-style(100%,50%,space-around,center,column);
+      &>div{
+        @include mixin.container-style(100%,45%,space-between,center,column);
+        &>img{
+          @include mixin.size(48px,48px);
+        }
+        &>div{
+          &>img{
+            @include mixin.point-box(160px,160px,3px,var.$col-azam-2,50%);
+          }
+          &>div{
+            &>div:nth-child(1){
+              @include mixin.font(1.1rem,800, var.$col-azam-2);
+            }
+            &>div:nth-child(2){
+              @include mixin.font(0.9rem,600, var.$col-6);
+              
+            }
+            &>div:nth-child(3){
+              @include mixin.font(0.9rem,600, var.$col-6);
+              line-height: 1.8;
+            }
+          }
+        }
+      }
+    }
+    &>div:nth-child(3){
+      @include mixin.add-explain(90%,5%);
+    }
+  }
+  
+  .azam6-bot{
+    &>div:first-child{
+      &>div{
+        @include mixin.font(1.2rem,800, var.$col-azam-2);
+        line-height: 1.8;
+      }
+    }
+    &>div:last-child{
+      &>div:nth-child(1){
+        @include mixin.font(1.5rem,800, var.$col-azam-2);
+        letter-spacing: 1.5px;
+      }
+      &>div:nth-child(2){
+        @include mixin.font(1.1rem,800);
+        letter-spacing: 1.5px;
+      }
+      &>div:nth-child(3){
+        @for $i from 1 through 2{
+          &>div:nth-child(#{$i}){
+            @include mixin.container-style(100%, 35%,center,center);
+          }
+        }
+        &>div:nth-child(1){
+          @include mixin.font(1rem,700, var.$col-azam-2);
+          
+        }
+        &>div:nth-child(2){
+          @include mixin.font(1rem,700);
+        }
+        &>div:nth-child(3){
+          @include mixin.font(0.9rem,700, var.$col-6);
+        }
+      }
+    }
+  }
+
+  .azam7{
+    @include mixin.container-style(600px, 1040px, space-around, center, column);
+  
+    &>div:nth-child(1){
+      @include mixin.container-style(90%, 15%, space-around,center,column);
+  
+      &>div:first-child{
+        @include mixin.container-style(100%,45%, center, center);
+        @include mixin.font(1.8rem, 800, var.$col-azam-2);
+      }
+  
+      &>div:last-child{
+        @include mixin.container-style(100%,50%, center, center);
+        @include mixin.font(1.2rem, 600);
+        text-align: center;
+      }
+    }
+  
+    &>div:nth-child(2){
+      @include mixin.container-style(90%, 60%, space-between,center,column);
+    }
+  
+    &>div:nth-child(3){
+      @include mixin.container-style(90%, 10%, center,center,column);
+      @include mixin.font(0.9rem, 600);
+      line-height: 2;
+    }
+  }
+  
+  .azam7-mid{
+    &>div{
+        @include mixin.container-style(100%,28%, space-around, center);
+  
+        &>div:first-child{
+          @include mixin.container-style(180px,180px,center,center);
+  
+          &>img{
+            @include mixin.size(140px, 140px);
+          }
+        }
+  
+        &>div:last-child{
+  
+          &>div:nth-child(1){
+            @include mixin.container-style(90%,10%,flex-start,center);
+            &>p{
+              @include mixin.font(1rem, 600);
+            }
+          }
+  
+          &>div:nth-child(2){
+            @include mixin.container-style(90%,10%,flex-start,center);
+            @include mixin.font(1rem, 500, #6a6a6a);
+          }
+  
+          &>div:nth-child(3){
+            @include mixin.container-style(90%,60%,flex-start,center);
+            @include mixin.font(0.85rem, 500, #6a6a6a);
+          }
+        }
+    }
+  
+    @for $i from 1 through 2 {
+      &>div:nth-child(#{$i}){
+        &>div:last-child{
+          &>div:nth-child(3){
+            line-height: 2;
+          }
+        }
+      }
+    }
+  
+    &>div:nth-child(3){
+      &>div:last-child{
+        &>div:nth-child(3){
+          line-height: 1.7;
+        }
+      }
+    }
+  }
+
+  .azam8{
+    @include mixin.container-style(600px, 1840px, space-between, center, column);
+  
+    &>div:nth-child(2){
+      &>div:first-child{
+        @include mixin.font(1.5rem,800);
+      }
+      &>div:last-child{
+        @include mixin.add-explain(95%,8%);
+      }
+    }
+  
+    &>div:nth-child(3){
+      @include mixin.container-style(100%, 28%,space-around,center,column);
+      background-color: #B5D3EF;
+  
+      &>div:first-child{
+        @include mixin.container-style(95%, 10%,center,center);
+        @include mixin.font(1.5rem,800);
+        letter-spacing: 1px;
+      }
+  
+      &>div:last-child{
+        @include mixin.container-style(95%,80%,space-evenly,center,column);
+        &>img{
+          @include mixin.box-style(90%,auto,white,20px);
+        }
+  
+        &>div:nth-child(2){
+          @include mixin.container-style(100%,20%,center,center);
+          @include mixin.font(1.1rem,700);
+        }
+  
+        &>div:last-child{
+          @include mixin.container-style(100%,25%,center,center,column);
+          font-weight: 700;
+          &>div:nth-child(1){
+            @include mixin.font(1.2rem,800,var.$col-azam-5);
+            margin-bottom: 10px;
+          }
+          &>div:nth-child(2){
+            @include mixin.font(1.1rem,800);
+          }
+        }
+      }
+    }
+  }
+  
+  .azam8-top{
+    &>div:first-child{
+      @include mixin.container-style(90%, 20%, flex-start,flex-end);
+      @include mixin.font(1.3rem,800);
+      line-height: 2;
+    }
+    
+    &>div:last-child{
+      &>div:first-child{
+        &>div:nth-child(1){
+          &>div:nth-child(1){
+            left: 12px;
+          }
+          &>div:nth-child(2){
+            left: 48px;
+          }
+          &>div:nth-child(3){
+            left: 80px;
+          }
+          &>div:nth-child(4){
+            left: 116px;
+          }
+        }
+    
+        &>div:nth-child(2){
+          @include mixin.font(2rem, 800, var.$col-azam-2);
+        }
+      }
+  
+      &>div:last-child{
+        @include mixin.font(2rem, 800, var.$col-azam-2);
+      }
+    }
+  }
+  
+  .azam8-ingredient{
+    &>div:first-child{
+      &>div{
+        @include mixin.font(1.2rem, 800);
+      }
+    }
+  
+    &>div:last-child{
+      &>div{
+        &>div{
+          @include mixin.font(1rem, 700);
+        }
+      }
+    }
+  }
+
+  .azam9{
+    @include mixin.container-style(600px, 1480px, space-around, center, column);
+  
+    &>div:first-child{
+      @include mixin.font(1.8rem,800);
+    }
+  
+    &>div:last-child{
+  
+      &>div:nth-child(1){
+        &>div{
+          @include mixin.font(1.2rem,800);
+        }
+      }
+  
+      @for $i from 2 through 5{
+        &>div:nth-child(#{$i}){
+          &>div:first-child{
+            @include mixin.box-style(180px, 180px, var.$col-3, 50%);
+            &>img{
+              @include mixin.size(120px, auto);
+            }
+          }
+  
+          &>div:last-child{
+            &>div:first-child{
+              &>div:nth-child(1){
+                @include mixin.font(1.7rem,700, var.$col-azam-2);
+              }
+              &>div:nth-child(2){
+                @include mixin.font(0.9rem,600);
+              }
+            }
+            &>div:last-child{
+              @include mixin.font(0.8rem,500);
+            }
+          }
+        }
+      }
+  
+      &>div:nth-child(3){
+        &>div:first-child{
+          &>img{
+            @include mixin.size(168px, 176px);
+          }
+        }
+      }
+    }
+  }
+
+  .azam10{
+    @include mixin.container-style(600px, 2320px, space-evenly, center, column);
+    &>div:last-child{
+      border-bottom: solid 3px var.$col-1;
+      &>div:first-child{
+        border-top: solid 4px var.$col-1;
+        &>img{
+          @include mixin.size(90px, auto);
+        }
+      }
+      &>div:last-child{
+        border-bottom: solid 2px var.$col-1;
+        @include mixin.font(1.2rem,600,var.$col-1);
+      }
+    }
+  }
+  
+  .azam10-top{
+    &>div:last-child{
+      @for $i from 1 through 5{
+        &>div:nth-child(#{$i}){
+          &>div:first-child{
+            @include mixin.font(2.5rem, 600,var.$col-7);
+          }
+          &>div:last-child{
+            &>div:nth-child(1){
+              @include mixin.font(1.1rem,700);
+            }
+            &>div:nth-child(2){
+              @include mixin.font(1rem,600);
+              line-height: 2;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .azam10-mid{
+    &>div:first-child{
+      @include mixin.font(1.5rem, 600, var.$col-3);
+    }
+    @for $i from 2 through 3{
+      &>div:nth-child(#{$i}){
+        &>div:first-child{
+          &>div:first-child{
+            &>div:nth-child(1){
+              @include mixin.font(1.3rem, 800);
+            }
+            &>div:nth-child(2){
+              font-size: 1rem;
+            }
+          }
+          &>div:last-child{
+            @include mixin.font(0.9rem, 500, var.$col-bright-gray);
+          }
+        }
+      }
+    }
   }
 
 }
