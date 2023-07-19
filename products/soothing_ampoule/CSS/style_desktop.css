@@ -118,8 +118,8 @@
 
 @media (min-width: 550px) {
   #root-sooam {
-    width: 100vw;
-    height: 20000px;
+    width: 600px;
+    height: 17200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -594,8 +594,8 @@
     color: #111;
   }
   .sooam4 > div:first-child > div:last-child > img {
-    width: 280px;
-    height: 280px;
+    width: 300px;
+    height: 300px;
     background-color: #fff;
     border-radius: 50%;
   }
@@ -616,10 +616,17 @@
     flex-direction: column;
   }
   .sooam4-mid > div:first-child > div > div:first-child {
+    width: 65%;
+    height: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
     font-size: 1.5rem;
     font-weight: 700;
     color: #111;
     letter-spacing: 1.5px;
+    padding-left: 10px;
   }
   .sooam4-mid > div:first-child > div > div:last-child {
     width: 100%;
@@ -631,7 +638,7 @@
     font-size: 1.1rem;
     font-weight: 700;
     color: #111;
-    padding-left: 5px;
+    padding-left: 10px;
     line-height: 2.2;
   }
   .sooam4-mid > div:first-child > img {
@@ -797,7 +804,6 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    border: #036EB7 solid 1px;
   }
   .sooam5-bot-mid > div:nth-child(1) > img {
     width: 200px;
@@ -809,144 +815,58 @@
     color: #111;
   }
   .sooam5-bot-mid > div:nth-child(2) {
-    width: 95%;
-    height: 25%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #111;
-    text-align: center;
-    line-height: 1.8;
+    line-height: 2;
   }
   .sooam5-bot-mid > div:nth-child(3) {
-    width: 95%;
-    height: 15%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 800;
     color: #111;
-    text-align: center;
-    line-height: 1.8;
-  }
-  .sooam5-bot-bot > div:nth-child(1) {
-    width: 95%;
-    height: 85%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-  }
-  .sooam5-bot-bot > div:nth-child(1) > div {
-    width: 65%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    line-height: 2;
   }
   .sooam5-bot-bot > div:nth-child(1) > div > div:nth-child(1) {
-    width: 100%;
-    height: 20%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 800;
     color: #4571B8;
   }
   .sooam5-bot-bot > div:nth-child(1) > div > div:nth-child(2) {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: #979797;
   }
   .sooam5-bot-bot > div:nth-child(1) > div > div:nth-child(3) {
-    width: 100%;
-    height: 60%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     font-weight: 700;
     color: #111;
-    line-height: 2;
   }
   .sooam5-bot-bot > div:nth-child(1) > img {
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
     background-color: #fff;
     border-radius: 50%;
-    border: 3px solid #4571B8;
-  }
-  .sooam5-bot-bot > div:nth-child(2) {
-    width: 95%;
-    height: 85%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-  }
-  .sooam5-bot-bot > div:nth-child(2) > div {
-    width: 65%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
   }
   .sooam5-bot-bot > div:nth-child(2) > div > div:nth-child(1) {
-    width: 100%;
-    height: 20%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 800;
     color: #4571B8;
   }
   .sooam5-bot-bot > div:nth-child(2) > div > div:nth-child(2) {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: #979797;
   }
   .sooam5-bot-bot > div:nth-child(2) > div > div:nth-child(3) {
-    width: 100%;
-    height: 60%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     font-weight: 700;
     color: #111;
-    line-height: 2;
   }
   .sooam5-bot-bot > div:nth-child(2) > img {
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
     background-color: #fff;
     border-radius: 50%;
-    border: 3px solid #4571B8;
   }
   .sooam5-bot-bot > div:last-child {
     width: 95%;
@@ -955,12 +875,12 @@
     justify-content: flex-end;
     align-items: center;
     color: #979797;
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     font-weight: 600;
   }
   .sooam6 {
     width: 600px;
-    height: 2200px;
+    height: 2000px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -977,89 +897,42 @@
     font-weight: 700;
     color: #fff;
   }
-  .sooam6 > div:nth-child(1) > div:last-child {
-    font-size: 1.8rem;
+  .sooam6 > div:nth-child(1) > div:last-child > div:nth-child(1) {
+    font-size: 1.6em;
     font-weight: 700;
-    color: #fff;
-    line-height: 1.8;
+    color: #111;
   }
-  .sooam6 > div:nth-child(3) {
-    width: 90%;
-    height: 2%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: row;
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: #1E65A7;
-    letter-spacing: 2px;
-  }
-  .sooam6-mid > div:nth-child(1) > div:first-child {
-    font-size: 1.5rem;
+  .sooam6 > div:nth-child(1) > div:last-child > div:nth-child(2) {
+    font-size: 1.8rem;
     font-weight: 800;
     color: #111;
   }
-  .sooam6-mid > div:nth-child(1) > div:last-child {
-    width: 95%;
-    height: 35%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
+  .sooam6-bot > div:nth-child(1) > div:first-child {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #111;
   }
-  .sooam6-mid > div:nth-child(1) > div:last-child > div:nth-child(1) {
+  .sooam6-bot > div:nth-child(1) > div:last-child > div:nth-child(1) {
     font-size: 1.5rem;
     font-weight: 800;
     color: #4571B8;
-    letter-spacing: 2px;
     line-height: 1.8;
   }
-  .sooam6-mid > div:nth-child(1) > div:last-child > div:nth-child(2) {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .sooam6-mid > div:nth-child(1) > div:last-child > div:nth-child(2) > p {
-    font-size: 1.1rem;
+  .sooam6-bot > div:nth-child(1) > div:last-child > div:nth-child(2) > p {
+    font-size: 1.2rem;
     font-weight: 600;
     color: #111;
-    line-height: 2;
   }
-  .sooam6-mid > div:nth-child(1) > div:last-child > div:nth-child(2) > div {
-    width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+  .sooam6-bot > div:nth-child(1) > div:last-child > div:nth-child(2) > div {
     font-size: 0.9rem;
     font-weight: 500;
     color: #979797;
   }
-  .sooam6-mid > div:nth-child(2) > div > div:first-child {
-    font-size: 2rem;
+  .sooam6-bot > div:nth-child(2) > p {
+    width: 85%;
+    height: 80%;
+    font-size: 1.3rem;
     font-weight: 800;
-    color: #111;
-  }
-  .sooam6-mid > div:nth-child(2) > div > div:last-child {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #111;
-    line-height: 2;
-  }
-  .sooam6-mid > div:nth-child(3) > div {
-    width: 90%;
-    height: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    font-size: 1.5rem;
-    font-weight: 700;
     color: #111;
     line-height: 2;
   }
@@ -1072,7 +945,7 @@
     flex-direction: column;
   }
   .sooam7 > div:nth-child(1) > div:first-child {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: 800;
     color: #4F70A3;
   }
@@ -1121,6 +994,10 @@
     align-items: center;
     flex-direction: row;
   }
+  .sooam7-mid > div > div:last-child > div:nth-child(1) > img {
+    width: auto;
+    height: 90%;
+  }
   .sooam7-mid > div > div:last-child > div:nth-child(1) > p {
     width: 10%;
     height: 100%;
@@ -1146,7 +1023,7 @@
   }
   .sooam8 {
     width: 600px;
-    height: 2600px;
+    height: 2000px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -1160,27 +1037,12 @@
     align-items: center;
     flex-direction: column;
   }
-  .sooam8 > div:first-child > div:nth-child(1) {
-    width: 80%;
-    height: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-  }
   .sooam8 > div:first-child > div:nth-child(1) > p {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 800;
     color: #111;
     line-height: 1.8;
-  }
-  .sooam8 > div:first-child > div:nth-child(2) {
-    width: 95%;
-    height: 70%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
+    text-align: center;
   }
   .sooam8 > div:first-child > div:last-child {
     width: 95%;
@@ -1191,382 +1053,239 @@
     color: #979797;
     font-size: 0.9rem;
     font-weight: 600;
-  }
-  .sooam8 > div:last-child {
-    width: 95%;
-    height: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .sooam8-ingredient > div:first-child {
-    width: 100%;
-    height: 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
-  .sooam8-ingredient > div:first-child > div {
-    font-size: 1.1rem;
-    font-weight: 800;
-    color: #111;
     letter-spacing: 1.5px;
   }
-  .sooam8-ingredient > div:last-child {
-    width: 100%;
-    height: 80%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
+  .sooam8-ingredient > div:first-child > div {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #111;
   }
   .sooam8-ingredient > div:last-child > div {
     font-size: 0.9rem;
-    font-weight: 600;
+    font-weight: 700;
     color: #111;
   }
-  .sooam8-ingredient > div:last-child > div:nth-child(1) {
-    width: 100%;
-    height: 12%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
-  .sooam8-ingredient > div:last-child > div:nth-child(2) {
-    width: 100%;
-    height: 12%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
-  .sooam8-ingredient > div:last-child > div:nth-child(3) {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
-  .sooam8-ingredient > div:last-child > div:nth-child(4) {
-    width: 100%;
-    height: 15%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
-  .sooam8-ingredient > div:last-child > div:nth-child(5) {
-    width: 100%;
-    height: 15%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
-  .sooam8-ingredient > div:last-child > div:nth-child(6) {
-    width: 100%;
-    height: 15%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
-  .sooam8-ingredient > div:last-child > div:nth-child(7) {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
-  .sooam8-mid > div:first-child {
-    width: 95%;
-    height: 8%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
+  .sooam8-bot > div:first-child {
     font-size: 1.5rem;
     font-weight: 800;
     color: #111;
   }
-  .sooam8-mid > div:last-child > div:nth-child(1) > div {
+  .sooam8-bot > div:last-child > div:nth-child(1) {
+    width: 45%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(1) > div {
     font-size: 1.2rem;
     font-weight: 800;
     color: #111;
   }
-  .sooam8-mid > div:last-child > div:nth-child(2) > div:first-child {
+  .sooam8-bot > div:last-child > div:nth-child(2) {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(2) > div:first-child {
     width: 180px;
     height: 180px;
     background-color: #fff;
     border-radius: 50%;
   }
-  .sooam8-mid > div:last-child > div:nth-child(2) > div:first-child > img {
+  .sooam8-bot > div:last-child > div:nth-child(2) > div:first-child > img {
     width: 120px;
     height: auto;
   }
-  .sooam8-mid > div:last-child > div:nth-child(2) > div:last-child {
+  .sooam8-bot > div:last-child > div:nth-child(2) > div:last-child {
     width: 55%;
-    height: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-  }
-  .sooam8-mid > div:last-child > div:nth-child(2) > div:last-child > div:first-child {
-    width: 100%;
     height: 85%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    flex-direction: column;
-    box-shadow: 3px 4px 4px 0px rgba(202, 197, 216, 0.5);
-  }
-  .sooam8-mid > div:last-child > div:nth-child(2) > div:last-child > div:first-child > div:nth-child(1) {
-    width: 90%;
-    height: 20%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    font-size: 1.7rem;
-    font-weight: 700;
-    color: #C5A16C;
-  }
-  .sooam8-mid > div:last-child > div:nth-child(2) > div:last-child > div:first-child > div:nth-child(2) {
-    width: 100%;
-    height: 65%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #111;
-  }
-  .sooam8-mid > div:last-child > div:nth-child(2) > div:last-child > div:last-child {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: #111;
-  }
-  .sooam8-mid > div:last-child > div:nth-child(3) > div:first-child {
-    width: 180px;
-    height: 180px;
-    background-color: #fff;
-    border-radius: 50%;
-  }
-  .sooam8-mid > div:last-child > div:nth-child(3) > div:first-child > img {
-    width: 120px;
-    height: auto;
-  }
-  .sooam8-mid > div:last-child > div:nth-child(3) > div:last-child {
-    width: 55%;
-    height: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-  }
-  .sooam8-mid > div:last-child > div:nth-child(3) > div:last-child > div:first-child {
-    width: 100%;
-    height: 85%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    flex-direction: column;
-    box-shadow: 3px 4px 4px 0px rgba(202, 197, 216, 0.5);
-  }
-  .sooam8-mid > div:last-child > div:nth-child(3) > div:last-child > div:first-child > div:nth-child(1) {
-    width: 90%;
-    height: 20%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    font-size: 1.7rem;
-    font-weight: 700;
-    color: #C5A16C;
-  }
-  .sooam8-mid > div:last-child > div:nth-child(3) > div:last-child > div:first-child > div:nth-child(2) {
-    width: 100%;
-    height: 65%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #111;
-  }
-  .sooam8-mid > div:last-child > div:nth-child(3) > div:last-child > div:last-child {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: #111;
-  }
-  .sooam8-mid > div:last-child > div:nth-child(4) > div:first-child {
-    width: 180px;
-    height: 180px;
-    background-color: #fff;
-    border-radius: 50%;
-  }
-  .sooam8-mid > div:last-child > div:nth-child(4) > div:first-child > img {
-    width: 120px;
-    height: auto;
-  }
-  .sooam8-mid > div:last-child > div:nth-child(4) > div:last-child {
-    width: 55%;
-    height: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-  }
-  .sooam8-mid > div:last-child > div:nth-child(4) > div:last-child > div:first-child {
-    width: 100%;
-    height: 85%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    flex-direction: column;
-    box-shadow: 3px 4px 4px 0px rgba(202, 197, 216, 0.5);
-  }
-  .sooam8-mid > div:last-child > div:nth-child(4) > div:last-child > div:first-child > div:nth-child(1) {
-    width: 90%;
-    height: 20%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    font-size: 1.7rem;
-    font-weight: 700;
-    color: #C5A16C;
-  }
-  .sooam8-mid > div:last-child > div:nth-child(4) > div:last-child > div:first-child > div:nth-child(2) {
-    width: 100%;
-    height: 65%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #111;
-  }
-  .sooam8-mid > div:last-child > div:nth-child(4) > div:last-child > div:last-child {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: #111;
-  }
-  .sooam8-mid > div:last-child > div:nth-child(5) > div:first-child {
-    width: 180px;
-    height: 180px;
-    background-color: #fff;
-    border-radius: 50%;
-  }
-  .sooam8-mid > div:last-child > div:nth-child(5) > div:first-child > img {
-    width: 120px;
-    height: auto;
-  }
-  .sooam8-mid > div:last-child > div:nth-child(5) > div:last-child {
-    width: 55%;
-    height: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-  }
-  .sooam8-mid > div:last-child > div:nth-child(5) > div:last-child > div:first-child {
-    width: 100%;
-    height: 85%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    flex-direction: column;
-    box-shadow: 3px 4px 4px 0px rgba(202, 197, 216, 0.5);
-  }
-  .sooam8-mid > div:last-child > div:nth-child(5) > div:last-child > div:first-child > div:nth-child(1) {
-    width: 90%;
-    height: 20%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    font-size: 1.7rem;
-    font-weight: 700;
-    color: #C5A16C;
-  }
-  .sooam8-mid > div:last-child > div:nth-child(5) > div:last-child > div:first-child > div:nth-child(2) {
-    width: 100%;
-    height: 65%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #111;
-  }
-  .sooam8-mid > div:last-child > div:nth-child(5) > div:last-child > div:last-child {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: #111;
-  }
-  .sooam8-mid > div:last-child > div:nth-child(3) > div:first-child > img {
-    width: 168px;
-    height: 176px;
-  }
-  .sooam8-bot > div {
-    width: 100%;
-    height: 45%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
   }
-  .sooam8-bot > div > div > div:first-child {
-    font-size: 1.2rem;
-    font-weight: 800;
-    color: #111;
-    line-height: 2;
-  }
-  .sooam8-bot > div > div > div:last-child {
-    width: 80%;
-    height: 30%;
+  .sooam8-bot > div:last-child > div:nth-child(2) > div:last-child > div:first-child {
+    width: 100%;
+    height: 85%;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(2) > div:last-child > div:first-child > div:nth-child(1) {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #036EB7;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(2) > div:last-child > div:first-child > div:nth-child(2) {
     font-size: 0.9rem;
     font-weight: 600;
     color: #111;
+    line-height: 1.8;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(2) > div:last-child > div:last-child {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #111;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(3) {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(3) > div:first-child {
+    width: 180px;
+    height: 180px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(3) > div:first-child > img {
+    width: 120px;
+    height: auto;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(3) > div:last-child {
+    width: 55%;
+    height: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(3) > div:last-child > div:first-child {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(3) > div:last-child > div:first-child > div:nth-child(1) {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #036EB7;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(3) > div:last-child > div:first-child > div:nth-child(2) {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #111;
+    line-height: 1.8;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(3) > div:last-child > div:last-child {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #111;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(4) {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(4) > div:first-child {
+    width: 180px;
+    height: 180px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(4) > div:first-child > img {
+    width: 120px;
+    height: auto;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(4) > div:last-child {
+    width: 55%;
+    height: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(4) > div:last-child > div:first-child {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(4) > div:last-child > div:first-child > div:nth-child(1) {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #036EB7;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(4) > div:last-child > div:first-child > div:nth-child(2) {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #111;
+    line-height: 1.8;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(4) > div:last-child > div:last-child {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #111;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(5) {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(5) > div:first-child {
+    width: 180px;
+    height: 180px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(5) > div:first-child > img {
+    width: 120px;
+    height: auto;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(5) > div:last-child {
+    width: 55%;
+    height: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(5) > div:last-child > div:first-child {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(5) > div:last-child > div:first-child > div:nth-child(1) {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #036EB7;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(5) > div:last-child > div:first-child > div:nth-child(2) {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #111;
+    line-height: 1.8;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(5) > div:last-child > div:last-child {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #111;
+  }
+  .sooam8-bot > div:last-child > div:nth-child(3) > div:first-child > img {
+    width: 168px;
+    height: 176px;
   }
   .sooam9 {
     width: 600px;
@@ -1576,8 +1295,16 @@
     align-items: center;
     flex-direction: column;
   }
+  .sooam9 > div:nth-child(1) {
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
   .sooam9 > div:nth-child(1) > div:first-child > div {
-    width: 60%;
+    width: 70%;
     height: 20%;
     display: flex;
     justify-content: center;
@@ -1586,10 +1313,18 @@
   }
   .sooam9 > div:nth-child(1) > div:last-child {
     width: 100%;
-    height: 70%;
+    height: 75%;
     display: flex;
-    justify-content: flex-end;
-    align-items: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .sooam9 > div:nth-child(2) {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     flex-direction: column;
   }
   .sooam9 > div:nth-child(2) > div:nth-child(1) {
@@ -1597,460 +1332,240 @@
     font-weight: 600;
     color: #fff;
     line-height: 2;
-    letter-spacing: 1px;
   }
   .sooam9-top > div:last-child > div:nth-child(1) > div:first-child {
-    width: 10%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
     font-size: 2.5rem;
     font-weight: 600;
     color: #A5A4A4;
   }
   .sooam9-top > div:last-child > div:nth-child(1) > div:last-child {
-    width: 80%;
+    width: 85%;
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    letter-spacing: 1.5px;
   }
   .sooam9-top > div:last-child > div:nth-child(1) > div:last-child > div:nth-child(1) {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #111;
+    padding-left: 20px;
+    letter-spacing: 1.5px;
   }
   .sooam9-top > div:last-child > div:nth-child(1) > div:last-child > div:nth-child(2) {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #111;
-    line-height: 2;
+    padding-left: 22px;
+    letter-spacing: 1.5px;
+    line-height: 1.8;
   }
   .sooam9-top > div:last-child > div:nth-child(2) > div:first-child {
-    width: 10%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
     font-size: 2.5rem;
     font-weight: 600;
     color: #A5A4A4;
   }
   .sooam9-top > div:last-child > div:nth-child(2) > div:last-child {
-    width: 80%;
+    width: 85%;
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    letter-spacing: 1.5px;
   }
   .sooam9-top > div:last-child > div:nth-child(2) > div:last-child > div:nth-child(1) {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #111;
+    padding-left: 20px;
+    letter-spacing: 1.5px;
   }
   .sooam9-top > div:last-child > div:nth-child(2) > div:last-child > div:nth-child(2) {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #111;
-    line-height: 2;
+    padding-left: 22px;
+    letter-spacing: 1.5px;
+    line-height: 1.8;
   }
   .sooam9-top > div:last-child > div:nth-child(3) > div:first-child {
-    width: 10%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
     font-size: 2.5rem;
     font-weight: 600;
     color: #A5A4A4;
   }
   .sooam9-top > div:last-child > div:nth-child(3) > div:last-child {
-    width: 80%;
+    width: 85%;
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    letter-spacing: 1.5px;
   }
   .sooam9-top > div:last-child > div:nth-child(3) > div:last-child > div:nth-child(1) {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #111;
+    padding-left: 20px;
+    letter-spacing: 1.5px;
   }
   .sooam9-top > div:last-child > div:nth-child(3) > div:last-child > div:nth-child(2) {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #111;
-    line-height: 2;
+    padding-left: 22px;
+    letter-spacing: 1.5px;
+    line-height: 1.8;
   }
   .sooam9-top > div:last-child > div:nth-child(4) > div:first-child {
-    width: 10%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
     font-size: 2.5rem;
     font-weight: 600;
     color: #A5A4A4;
   }
   .sooam9-top > div:last-child > div:nth-child(4) > div:last-child {
-    width: 80%;
+    width: 85%;
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    letter-spacing: 1.5px;
   }
   .sooam9-top > div:last-child > div:nth-child(4) > div:last-child > div:nth-child(1) {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #111;
+    padding-left: 20px;
+    letter-spacing: 1.5px;
   }
   .sooam9-top > div:last-child > div:nth-child(4) > div:last-child > div:nth-child(2) {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #111;
-    line-height: 2;
+    padding-left: 22px;
+    letter-spacing: 1.5px;
+    line-height: 1.8;
   }
   .sooam9-top > div:last-child > div:nth-child(5) > div:first-child {
-    width: 10%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
     font-size: 2.5rem;
     font-weight: 600;
     color: #A5A4A4;
   }
   .sooam9-top > div:last-child > div:nth-child(5) > div:last-child {
-    width: 80%;
+    width: 85%;
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    letter-spacing: 1.5px;
   }
   .sooam9-top > div:last-child > div:nth-child(5) > div:last-child > div:nth-child(1) {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #111;
+    padding-left: 20px;
+    letter-spacing: 1.5px;
   }
   .sooam9-top > div:last-child > div:nth-child(5) > div:last-child > div:nth-child(2) {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #111;
-    line-height: 2;
+    padding-left: 22px;
+    letter-spacing: 1.5px;
+    line-height: 1.8;
   }
   .sooam9-top > div:last-child > div:nth-child(1) {
     width: 95%;
-    height: 18%;
+    height: 15%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-  }
-  .sooam9-top > div:last-child > div:nth-child(1) > div:last-child > div:nth-child(1) {
-    width: 100%;
-    height: 25%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-  }
-  .sooam9-top > div:last-child > div:nth-child(1) > div:last-child > div:nth-child(2) {
-    width: 100%;
-    height: 65%;
-    display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
   }
   .sooam9-top > div:last-child > div:nth-child(2) {
     width: 95%;
-    height: 20%;
+    height: 23%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-  }
-  .sooam9-top > div:last-child > div:nth-child(2) > div:last-child > div:nth-child(1) {
-    width: 100%;
-    height: 20%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-  }
-  .sooam9-top > div:last-child > div:nth-child(2) > div:last-child > div:nth-child(2) {
-    width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
   }
   .sooam9-top > div:last-child > div:nth-child(3) {
     width: 95%;
-    height: 18%;
+    height: 15%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-  }
-  .sooam9-top > div:last-child > div:nth-child(3) > div:last-child > div:nth-child(1) {
-    width: 100%;
-    height: 25%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-  }
-  .sooam9-top > div:last-child > div:nth-child(3) > div:last-child > div:nth-child(2) {
-    width: 100%;
-    height: 65%;
-    display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
   }
   .sooam9-top > div:last-child > div:nth-child(4) {
     width: 95%;
-    height: 12%;
+    height: 10%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-  }
-  .sooam9-top > div:last-child > div:nth-child(4) > div:last-child > div:nth-child(1) {
-    width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-  }
-  .sooam9-top > div:last-child > div:nth-child(4) > div:last-child > div:nth-child(2) {
-    width: 100%;
-    height: 60%;
-    display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
   }
   .sooam9-top > div:last-child > div:nth-child(5) {
     width: 95%;
-    height: 22%;
+    height: 20%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
   }
   .sooam9-top > div:last-child > div:nth-child(5) > div:last-child > div:nth-child(1) {
-    width: 100%;
-    height: 20%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #111;
+    padding-left: 20px;
+    letter-spacing: 1.5px;
+  }
+  .sooam9-top > div:last-child > div:nth-child(5) > div:last-child > div:nth-child(2) {
     font-size: 1rem;
     font-weight: 600;
     color: #111;
-  }
-  .sooam9-top > div:last-child > div:nth-child(5) > div:last-child > div:nth-child(2) {
-    width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-  }
-  .sooam9-bot > div:nth-child(2) {
-    width: 85%;
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    background-color: #fff;
-    position: relative;
-  }
-  .sooam9-bot > div:nth-child(2) > div:first-child {
-    width: 90%;
-    height: 90%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-  }
-  .sooam9-bot > div:nth-child(2) > div:first-child > div:first-child {
-    width: 90%;
-    height: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
+    padding-left: 22px;
+    letter-spacing: 1.5px;
+    line-height: 1.8;
   }
   .sooam9-bot > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(1) {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
     font-size: 1.3rem;
     font-weight: 800;
     color: #111;
-    line-height: 1.8;
   }
   .sooam9-bot > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) {
-    width: 100%;
-    height: 40%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    flex-direction: row;
-    line-height: 1.8;
+    line-height: 1.6;
     font-size: 0.9rem;
   }
   .sooam9-bot > div:nth-child(2) > div:first-child > div:last-child {
-    width: 90%;
-    height: 25%;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-direction: column;
     font-size: 0.9rem;
     font-weight: 500;
     color: #BCB6B7;
-    line-height: 1.8;
-  }
-  .sooam9-bot > div:nth-child(2) > div:nth-child(2) {
-    width: 80%;
-    height: 1%;
-    background-color: #D4D4D4;
-    border-radius: 0;
-    position: absolute;
-    top: 65%;
-    left: 9%;
-    z-index: 0;
   }
   .sooam9-bot > div:nth-child(2) > img {
-    width: auto;
-    height: 95%;
     position: absolute;
     top: 5%;
-    left: 78%;
+    left: 80%;
     z-index: 1;
-  }
-  .sooam9-bot > div:nth-child(3) > img {
-    width: auto;
-    height: 95%;
-    position: absolute;
-    top: 5%;
-    left: 70%;
-    z-index: 1;
-  }
-  .sooam9-bot > div:nth-child(3) {
-    width: 85%;
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    background-color: #fff;
-    position: relative;
-  }
-  .sooam9-bot > div:nth-child(3) > div:first-child {
-    width: 90%;
-    height: 90%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-  }
-  .sooam9-bot > div:nth-child(3) > div:first-child > div:first-child {
-    width: 90%;
-    height: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
   }
   .sooam9-bot > div:nth-child(3) > div:first-child > div:first-child > div:nth-child(1) {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
     font-size: 1.3rem;
     font-weight: 800;
     color: #111;
-    line-height: 1.8;
   }
   .sooam9-bot > div:nth-child(3) > div:first-child > div:first-child > div:nth-child(2) {
-    width: 100%;
-    height: 40%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    flex-direction: row;
-    line-height: 1.8;
+    line-height: 1.6;
     font-size: 0.9rem;
   }
   .sooam9-bot > div:nth-child(3) > div:first-child > div:last-child {
-    width: 90%;
-    height: 25%;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-direction: column;
     font-size: 0.9rem;
     font-weight: 500;
     color: #BCB6B7;
-    line-height: 1.8;
-  }
-  .sooam9-bot > div:nth-child(3) > div:nth-child(2) {
-    width: 80%;
-    height: 1%;
-    background-color: #D4D4D4;
-    border-radius: 0;
-    position: absolute;
-    top: 65%;
-    left: 9%;
-    z-index: 0;
   }
   .sooam9-bot > div:nth-child(2) > img {
-    width: auto;
-    height: 95%;
     position: absolute;
     top: 5%;
-    left: 78%;
+    left: 80%;
     z-index: 1;
-  }
-  .sooam9-bot > div:nth-child(3) > img {
-    width: auto;
-    height: 95%;
-    position: absolute;
-    top: 5%;
-    left: 70%;
-    z-index: 1;
-  }
-  .sooam9-bot > img {
-    width: 35%;
-    height: auto;
   }
 }/*# sourceMappingURL=style_desktop.css.map */
