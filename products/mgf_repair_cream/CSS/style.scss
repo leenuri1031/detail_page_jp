@@ -15,7 +15,7 @@
   color: var.$col-1;
 }
 
-.mgfp-explain-title{
+.mgfr-explain-title{
   @include mixin.font(1.5rem, 600, var.$col-3);
   line-height: 2;
   letter-spacing: 1px;
@@ -51,7 +51,7 @@
 }
 
 .txt-deco{
-  text-emphasis: filled;
+  text-decoration: underline;
 }
 
 .ingredient-font-big{
@@ -96,20 +96,20 @@
   letter-spacing: 1px;
 }
 // -------------------------------------------
-#root-mgfp{
-  @include mixin.container-style(100vw, 12400px, space-between, center, column);
+#root-mgfr{
+  @include mixin.container-style(100vw, 12000px, space-between, center, column);
 }
 
-.mgfp1{
-  @include mixin.container-style(100%, 820px, space-around, center, column);
-  background-image: url(https://elmundo-lee.com/wp/wp-content/uploads/2023/07/mgfplus1.png);
+.mgfr1{
+  @include mixin.container-style(100%, 780px, space-around, center, column);
+  background-image: url(https://elmundo-lee.com/wp/wp-content/uploads/2023/07/mgfrepair1.png);
   background-size: cover;
 
   &>div:first-child{
-    @include mixin.container-style(90%,15%,center,center,column);
+    @include mixin.container-style(85%,15%,center,center,column);
     &>div{
-      @include mixin.container-style(90%,30%,flex-start,center);
-      @include mixin.font(1.3rem, 500, var.$col-3);
+      @include mixin.container-style(100%,30%,flex-start,center);
+      @include mixin.font(1.2rem, 500, var.$col-3);
     }
 
     &>div:nth-child(1){
@@ -119,23 +119,13 @@
   }
 
   &>div:last-child{
-    @include mixin.container-style(90%, 80%, space-between,center,column);
-
-    &>div:nth-child(1){
-      @include mixin.container-style(90%,60%,flex-start,flex-start);
-      @include mixin.font(2rem, 800, var.$col-3);
-      line-height: 1.8;
-    }
-
-    &>div:nth-child(2){
-      @include mixin.container-style(90%,20%,flex-start,center);
-      @include mixin.font(0.8rem, 600, var.$col-6);
-      line-height: 1.8;
-    }
+    @include mixin.container-style(85%, 80%, flex-start,flex-start);
+    @include mixin.font(2rem, 800, var.$col-3);
+    line-height: 1.8;
   }
 }
 
-.mgfp2{
+.mgfr2{
   @include mixin.container-style(100%, 950px, center, center, column);
 
   &>div{
@@ -171,6 +161,13 @@
       @include mixin.container-style(100%, 50%, flex-start, center);
       @include mixin.font(0.9rem, 600);
       line-height: 1.8;
+      position: relative;
+
+      &>div{
+        @include mixin.size(158px,2px);
+        @include mixin.posi(absolute,48%,0,0);
+        background-color: var.$col-1;
+      }
     }
 
     &>div:last-child{
@@ -181,10 +178,11 @@
   }
 
     &>div:nth-child(2){
-    @include mixin.container-style(80%, 60%, center, center);
+    @include mixin.container-style(85%, 60%, flex-start, center);
 
     &>img{
       @include mixin.size(250px, auto);
+      margin-right: 10px;
     }
 
     &>div{
@@ -229,9 +227,8 @@
   }
 
   &>img{
-    @include mixin.size(100px,auto);
-    @include mixin.posi(absolute, 0, 90%);
-    transform: rotate(8deg);
+    @include mixin.size(90px,auto);
+    @include mixin.posi(absolute, 5%, 88%);
   }
 }
 
@@ -411,16 +408,14 @@
   }
 }
 
-
 .add-explain{
   @include mixin.add-explain(90%,20px,0.6rem);
   // background-color: #202020;
 }
 
-.mgfp3{
-  @include mixin.container-style(100%, 720px, center, center, column);
-  background-image: url(https://elmundo-lee.com/wp/wp-content/uploads/2023/07/mgfplus3.png);
-  background-size: cover;
+.mgfr3{
+  @include mixin.container-style(100%, 660px, center, center, column);
+  background-color: var.$col-2;
 
   &>div:first-child{
     
@@ -435,11 +430,11 @@
       }
 
       &>div:nth-child(1){
-        @include mixin.container-style(40%, 90%, space-around,center);
+        @include mixin.container-style(38%, 90%, space-around,center);
       }
 
       &>div:nth-child(2){
-        @include mixin.container-style(45%, 90%, space-around,center);
+        @include mixin.container-style(52%, 90%, space-around,center);
       }
     }
 
@@ -462,7 +457,7 @@
   }
 }
 
-.mgfp3-bot{
+.mgfr3-bot{
   position: relative;
 
   &>img{
@@ -475,12 +470,11 @@
     @include mixin.size(140px,45%);
     &>img{
       @include mixin.box-style(100px,100px,var.$col-3,50%);
-      border: dotted 1.7px var.$col-8;
     }
 
     &>div{
       margin-top: 10px;
-      @include mixin.font(0.7rem, 700);
+      @include mixin.font(0.7rem, 800);
       line-height: 1.8;
     }
   }
@@ -504,7 +498,7 @@
   }
 }
 
-.mgfp4{
+.mgfr4{
   @include mixin.container-style(100%, 1420px,space-between, center, column);
 
   &>div:first-child{
@@ -542,7 +536,7 @@
   }
 }
 
-.mgfp4-top{
+.mgfr4-top{
   &>div:last-child{
     @include mixin.container-style(100%,40%,space-around,center,column);
     &>div:nth-child(1){
@@ -579,6 +573,11 @@
   }
 }
 
+.sub-big{
+  @include mixin.font(0.4rem,700,var.$col-1);
+  @include mixin.posi(relative,-12px);
+}
+
 .sub{
   @include mixin.font(0.4rem,700);
   @include mixin.posi(relative,-8px);
@@ -590,7 +589,7 @@
   @include mixin.font(0.9rem, 700);
 }
   
-.mgfp4-bot{
+.mgfr4-bot{
   &>div:nth-child(1){
     @include mixin.container-style(90%, 40%,space-around,center,column);
     
@@ -643,7 +642,7 @@
   }
 }
 
-.mgfp5{
+.mgfr5{
   @include mixin.container-style(100%, 960px,space-around, center, column);
   &>div:nth-child(1){
     @include mixin.container-style(100%, 55%,space-around, center, column);
@@ -666,7 +665,7 @@
   }
 }
 
-.mgfp5-bot{
+.mgfr5-bot{
   &>div:first-child{
     @include mixin.container-style(90%, 40%,space-around, flex-start, column);
     &>div:first-child{
@@ -723,125 +722,114 @@
   }
 }
 
-.mgfp6{
-  @include mixin.container-style(100%, 1800px,space-around, center, column);
-  background-color: var.$col-2;
+.mgfr6{
+  @include mixin.container-style(100%, 1360px,space-around, center, column);
+  background-color: var.$col-1;
 
   &>div:nth-child(1){
-    @include mixin.container-style(100%, 30%, space-around,center,column);
+    @include mixin.container-style(90%, 10%, space-around,flex-start,column);
+    color: var.$col-3;
 
-    &>div:first-child{
-      @include mixin.container-style(90%, 30%,space-around, flex-start, column);
-      &>div:last-child{
-        @include mixin.container-style(95%,60%,flex-start,center);
-        @include mixin.font(1.2rem, 800);
-        padding-left: 10px;
-        line-height: 2;
-      }
+    &>div:nth-child(1){
+      @include mixin.point-box(100px, 36px, 3px, var.$col-3, 10px);
+      @include mixin.flex(center,center);
+      @include mixin.font(0.9rem, 700, var.$col-3);
     }
 
-    &>div:last-child{
-      @include mixin.container-style(90%, 55%,space-around, center, column);
-      &>img{
-        @include mixin.size(90%, auto);
-      }
+    &>div:nth-child(2){
+      @include mixin.container-style(95%,60%,flex-start,center);
+      @include mixin.font(1.2rem, 700,var.$col-3);
+      padding-left: 10px;
+      line-height: 2;
+      letter-spacing: 1px;
+    }
+  }
+
+  &>div:nth-child(2){
+    @include mixin.container-style(85%, 85%,space-evenly, center, column);
+    background-color: var.$col-3;
+  }
+}
+
+.mgfr6-bot{
+  &>div:nth-child(1){
+    @include mixin.container-style(90%, 32%,space-around, center, column);
+    &>img{
+      @include mixin.size(90%, auto);
+    }
+    &>div{
+      @include mixin.container-style(90%, 30%, space-evenly,center,column);
       &>div{
-        @include mixin.container-style(90%, 20%, center,center,column);
-        &>div{
-          @include mixin.container-style(100%,40%,center,center);
-          @include mixin.font(0.9rem,700);
-        }
-        &>div:last-child{
-          color: var.$col-1;
-        }
+        @include mixin.container-style(100%,40%,center,center);
+        @include mixin.font(1rem,800);
+        text-align: center;
+      }
+      &>div:last-child{
+        color: var.$col-1;
       }
     }
   }
 
   &>div:nth-child(2){
-    @include mixin.container-style(100%, 25%, flex-start,center,column);
+    @include mixin.container-style(90%, 42%,space-around, center, column);
+    &>div:nth-child(1){
+      @include mixin.container-style(100%,60%,space-around,center,column);
+  
+      &>div{
+        @include mixin.container-style(95%,30%,center,center);
+        text-align: center;
+        @include mixin.font(1.1rem,800);
+        line-height: 1.8;
+      }
+  
+      &>img{
+        @include mixin.size(95%,auto);
+      }
+    }
+  
+    &>div:nth-child(2){
+      @include mixin.container-style(100%,30%,space-around,center,column);
+      text-align: center;
+      &>div:first-child{
+        @include mixin.container-style(100%,30%,center,center);
+        @include mixin.font(1rem,800,var.$col-1);
+        line-height: 1.8;
+      }
+  
+      &>div:last-child{
+        @include mixin.container-style(100%,55%,space-around,center,column);
+        &>p{
+          @include mixin.font(0.8rem,700);
+          line-height: 2;
+        }
+        &>div{
+          @include mixin.container-style(100%,20%,center,center);
+          @include mixin.font(0.7rem,600,var.$col-6);
+        }
+      }
+    }
+
   }
 
   &>div:nth-child(3){
-    @include mixin.container-style(100%, 35%, space-around,center,column);
-  }
-
-  &>div:nth-child(4){
-    @include mixin.container-style(100%, 15%, space-around,center,column);
-    &>div{
-      @include mixin.container-style(82%,95%,space-around,center,column);
-      background-color: var.$col-3;
-
-      &>img{
-        @include mixin.size(80%,auto);
-      }
-
-      &>div{
-        @include mixin.container-style(95%,25%,center,center);
-        font-weight: 800;
-        line-height: 1.8;
-        text-align: center;
-      }
-    }
-  }
-}
-
-.mgfp6-2{
-  background-image: url(https://elmundo-lee.com/wp/wp-content/uploads/2023/07/mgfplus6_img_2.png);
-  background-size: contain;
-
-  &>div:first-child{
-    @include mixin.container-style(82%, 30%,flex-start,center);
-    @include mixin.font(0.9rem,800);
-    line-height: 2;
-  }
-  &>div:last-child{
-    @include mixin.container-style(82%, 20%,flex-start,flex-start);
-    @include mixin.font(1.2rem,800,var.$col-1);
-  }
-}
-
-.mgfp6-3{
-  &>div:nth-child(1){
-    @include mixin.container-style(82%,60%,space-around,center,column);
-    background-color: var.$col-3;
-
-    &>div{
-      @include mixin.container-style(95%,30%,center,center);
-      text-align: center;
-      @include mixin.font(1.1rem,800);
-      line-height: 1.8;
-    }
+    @include mixin.container-style(90%, 20%,space-between, center, column);
 
     &>img{
-      @include mixin.size(95%,auto);
+      @include mixin.size(90%,auto);
     }
-  }
 
-  &>div:nth-child(2){
-    @include mixin.container-style(82%,30%,space-around,center,column);
-    text-align: center;
-    &>div:first-child{
-      @include mixin.container-style(100%,30%,center,center);
-      @include mixin.font(1rem,800,var.$col-1);
+    &>div{
+      @include mixin.container-style(95%,25%,center,center);
+      font-weight: 700;
       line-height: 1.8;
+      text-align: center;
     }
 
-    &>div:last-child{
-      @include mixin.container-style(100%,65%,space-around,center,column);
-      &>p{
-        @include mixin.font(0.85rem,600);
-        line-height: 2;
-      }
-      &>div{
-        @include mixin.container-style(100%,20%,center,center);
-        @include mixin.font(0.7rem,600,var.$col-6);
-      }
-    }
   }
+
 }
 
-.mgfp7{
+.mgfr7{
   @include mixin.container-style(100%, 1000px,space-around, center, column);
   background-color: #EAEBF7;
 
@@ -867,7 +855,6 @@
 
   &>div:nth-child(3){
     @include mixin.container-style(90%, 5%, center,center,column);
-    // border: #202020 solid 1px;
 
     &>div{
       @include mixin.container-style(100%, 40%, flex-start,center);
@@ -876,7 +863,7 @@
   }
 }
 
-.mgfp7-mid{
+.mgfr7-mid{
   &>div{
     @include mixin.container-style(100%,15%, space-around, center);
     position: relative;
@@ -884,7 +871,7 @@
     background-color: var.$col-3;
 
     &>div:first-child{
-      @include mixin.container-style(120px,120px,center,center);
+      @include mixin.container-style(110px,120px,center,center);
       background-color: #DFE4F1;
       border-radius: 50%;
       @include mixin.posi(relative,0,-5px);
@@ -895,7 +882,7 @@
     }
 
     &>div:last-child{
-      @include mixin.container-style(70%,90%, space-around, center,column);
+      @include mixin.container-style(67%,90%, space-around, center,column);
 
       &>div:nth-child(1){
         @include mixin.container-style(100%,10%,flex-start,center);
@@ -920,106 +907,84 @@
         @include mixin.container-style(100%,65%,flex-start,center);
         // border: #202020 solid 1px;
         @include mixin.font(0.6rem, 500, #6a6a6a);
-        line-height: 1.5;
+        line-height: 1.6;
       }
     }
   }
 }
 
-.mgfp8{
-  @include mixin.container-style(100%, 480px,space-between, center, column);
+.mgfr8{
+  @include mixin.container-style(100%, 1600px,space-around, center, column);
 
-  &>div:nth-child(1){
-    @include mixin.container-style(95%, 10%, center,center);
+  &>div:first-child{
+    @include mixin.container-style(100%,30%,space-evenly,center,column);
+    &>div:nth-child(1){
+      @include mixin.container-style(95%, 15%, center,center);
     @include mixin.font(1.2rem,700);
+    }
+  
+    &>div:nth-child(2){
+    @include mixin.container-style(95%, 75%, space-around,center,column);
+    }
+    
+    &>div:last-child{
+      @include mixin.add-explain(95%,5%,0.6rem);
+    }
   }
 
-  &>div:nth-child(2){
-    @include mixin.container-style(95%, 82%, space-between,center,column);
-  }
-  
   &>div:last-child{
-    @include mixin.add-explain(95%,4%,0.6rem);
+    @include mixin.container-style(100%,60%,space-evenly,center,column);
   }
 }
 
-.mgfp8-ingredient{
+.mgfr8-ingredient{
   &>div:first-child{
-    @include mixin.container-style(100%, 30px, space-between, center);
+    @include mixin.container-style(100%, 10%, space-between, center);
+
     &>div{
-      @include mixin.container-style(32%, 100%, center, center);
+      @include mixin.container-style(30%, 100%, center, center);
       @include mixin.font(0.9rem, 800);
     }
   }
 
   &>div:last-child{
-    @include mixin.container-style(100%, 360px, space-evenly, center,column);
+    @include mixin.container-style(100%, 85%, space-between, center,column);
 
     &>div{
+      @include mixin.container-style(100%, 8%, space-around, center);
       @include mixin.font(0.6rem, 700);
       text-align: center;
-    }
 
-
-
-    @for $i from 1 through 5{
-      &>div:nth-child(#{$i}){
-        @include mixin.container-style(100%, 20px, space-around, center);
-        &>div{
-          @include mixin.container-style(32%, 90%, space-around, center);
-        }
-      }
-    }
-
-    @for $i from 6 through 7{
-      &>div:nth-child(#{$i}){
-        @include mixin.container-style(100%, 35px, space-around, center);
-        &>div{
-          @include mixin.container-style(32%, 90%, space-around, center);
-        }
-      }
-    }
-
-    @for $i from 8 through 9{
-      &>div:nth-child(#{$i}){
-        @include mixin.container-style(100%, 20px, space-around, center);
-        &>div{
-          @include mixin.container-style(32%, 90%, space-around, center);
-        }
-      }
-    }
-
-    &>div:nth-child(10){
-      @include mixin.container-style(100%, 35px, space-around, center);
       &>div{
-        @include mixin.container-style(32%, 90%, space-around, center);
+        @include mixin.container-style(30%, 90%, space-around, center);
       }
+    }
+
+    &>div:nth-child(3){
+      @include mixin.container-style(100%, 12%, space-around, center);
     }   
 
-    @for $i from 11 through 12{
-      &>div:nth-child(#{$i}){
-        @include mixin.container-style(100%, 20px, space-around, center);
-        &>div{
-          @include mixin.container-style(32%, 90%, space-around, center);
-        }
-      }
-    }
+    &>div:nth-child(5){
+      @include mixin.container-style(100%, 12%, space-around, center);
+    }  
+
+    &>div:nth-child(7){
+      @include mixin.container-style(100%, 12%, space-around, center);
+    }   
   }
 }
 
-
-.mgfp9{
-  @include mixin.container-style(100%, 960px,space-evenly, center, column);
+.mgfr8-bot{
   &>div:first-child{
-    @include mixin.container-style(92%, 8%, flex-start, center);
+    @include mixin.container-style(92%, 10%, flex-start, center);
     @include mixin.font(1.2rem,800);
     line-height: 2;
   }
 
-    &>div:last-child{
-    @include mixin.container-style(95%, 84%, space-around,center, column);
+  &>div:last-child{
+    @include mixin.container-style(95%, 85%, space-around,center, column);
     background-color: #F8F9FA;
-
+    
     &>div:nth-child(1){
       @include mixin.container-style(50%, 5%, center, center);
       background-color: #F6F2F6;
@@ -1080,159 +1045,98 @@
         }
       }
     }
-
   }
-
 }
 
-.mgfp10{
+.mgfr9{
   @include mixin.container-style(100%, 1800px,space-around, center, column);
   // border: #036EB7 solid 1px;
 
   &>div:nth-child(1){
-    @include mixin.container-style(100%,40%,space-around,center,column);
-
+    @include mixin.container-style(100%,55%,space-around,center,column);
     &>div:first-child{
-      @include mixin.container-style(100%,15%,center,center);
-      border-top: 2px solid var.$col-1;
-      border-bottom: 2px solid var.$col-1;
-      position: relative;
+      @include mixin.container-style(100%,30%,center,flex-start);
+      background-image: url(https://elmundo-lee.com/wp/wp-content/uploads/2023/07/mgfrepair_qa.png);
+      background-size: contain;
+      background-repeat: no-repeat;
 
-      &>img{
-        @include mixin.size(auto,100%);
-      }
-      &>div:nth-child(2){
-        @include mixin.container-style( 35%,100%,center,center);
-        @include mixin.font(0.9rem, 800, var.$col-1);
-      }
-
-      &>div:last-child{
-        @include mixin.container-style(15%,100%,flex-start,center);
-        @include mixin.font(0.9rem, 800);
+      &>div:nth-child(1){
+        margin-top: 10px;
+        @include mixin.container-style(70%,20%,center,center);
+        border-bottom: 1.5px solid black;
       }
     }
-
     &>div:last-child{
-      @include mixin.container-style(100%,85%,space-evenly,center,column);
-      background-color: var.$col-4;
+      @include mixin.container-style(100%,70%,space-around,center,column);
     }
   }
 
   &>div:nth-child(2){
-    @include mixin.container-style(100%,45%,space-evenly,center,column);
-    background-color: var.$col-8;
-
+    @include mixin.container-style(100%,45%,space-around,center,column);
+    background-color: var.$col-1;
     &>div:nth-child(1){
       @include mixin.container-style(85%, 10%, flex-start, center);
       @include mixin.font(1.2rem, 600, var.$col-3);
       line-height: 2;
       letter-spacing: 1px;
     }
-  }
 
-  &>div:nth-child(3){
-    @include mixin.container-style(100%,8%,center,center,column);
-    border-bottom: solid 2.5px var.$col-1;
-    &>div:first-child{
-      @include mixin.container-style(100%,70%,center,center);
-      border-top: solid 3px var.$col-1;
-      &>img{
-        @include mixin.size(80px, auto);
-      }
-    }
-
-    &>div:last-child{
-      @include mixin.container-style(100%,28%,center,center);
-      border-bottom: solid 1.5px var.$col-1;
-      @include mixin.font(0.9rem,600,var.$col-1);
+    &>img{
+      @include mixin.size(35%,auto);
     }
   }
-
 }
 
-.mgfp10-top{
+.mgfr9-top{
   &>div:last-child{
-    &>div{
-      &>div{
-        @include mixin.flex(flex-start,center);
-        @include mixin.font(0.7rem, 600);
-        padding-left: 10px;
-        line-height: 1.6;
-      }
-    }
-    
-    &>div:nth-child(1){
-      @include mixin.container-style(90%,8%,flex-end,center);
-      &>div{
-        @include mixin.box-style(60%,90%,var.$col-5,20px);
-      }
-    }
+    @for $i from 1 through 5{
+      &>div:nth-child(#{$i}){
+        @include mixin.container-style(95%, 17%, space-between, center);
 
-    &>div:nth-child(2){
-      @include mixin.container-style(90%,17%,flex-start,center);
-      &>div{
-        @include mixin.box-style(80%,100%,var.$col-3,20px);
-        @include mixin.flex(flex-start,center);
-      }
-    }
+        &>div:first-child{
+          @include mixin.container-style(10%,100%,center,flex-start);
+          @include mixin.font(2rem, 600,var.$col-7);
+        }
 
-    &>div:nth-child(3){
-      @include mixin.container-style(90%,5%,flex-end,center);
-      &>div{
-        @include mixin.box-style(60%,90%,var.$col-5,20px);
-        @include mixin.flex(flex-start,center);
-      }
-    }
-
-    &>div:nth-child(4){
-      @include mixin.container-style(90%,11%,flex-start,center);
-      &>div{
-        @include mixin.box-style(80%,100%,var.$col-3,20px);
-        @include mixin.flex(flex-start,center);
+        &>div:last-child{
+          @include mixin.container-style(85%,100%,space-evenly,center,column);
+          
+          &>div:nth-child(1){
+            @include mixin.container-style(100%,20%,flex-start,center);
+            @include mixin.font(1rem,600);
+          }
+          &>div:nth-child(2){
+            @include mixin.container-style(100%,75%,flex-start,center);
+            @include mixin.font(0.8rem,600);
+            line-height: 1.8;
+          }
+        }
       }
     }
 
     &>div:nth-child(5){
-      @include mixin.container-style(90%,5%,flex-end,center);
-      &>div{
-        @include mixin.box-style(60%,90%,var.$col-5,20px);
-        @include mixin.flex(flex-start,center);
-      }
-    }
+      @include mixin.container-style(95%, 25%, space-between, center);
 
-    &>div:nth-child(6){
-      @include mixin.container-style(90%,8%,flex-start,center);
-      &>div{
-        @include mixin.box-style(80%,100%,var.$col-3,20px);
-        @include mixin.flex(flex-start,center);
-      }
-    }
-
-    &>div:nth-child(7){
-      @include mixin.container-style(90%,5%,flex-end,center);
-      &>div{
-        @include mixin.box-style(60%,90%,var.$col-5,20px);
-        @include mixin.flex(flex-start,center);
-      }
-    }
-
-    &>div:nth-child(8){
-      @include mixin.container-style(90%,17%,flex-start,center);
-      &>div{
-        @include mixin.box-style(80%,100%,var.$col-3,20px);
-        @include mixin.flex(flex-start,center);
+      &>div:last-child{
+        &>div:nth-child(1){
+          @include mixin.container-style(100%,20%,flex-start,center);
+          @include mixin.font(1rem,600);
+        }
+        &>div:nth-child(2){
+          @include mixin.container-style(100%,75%,flex-start,center);
+        }
       }
     }
   }
 }
 
-.mgfp10-mid{
-  @for $i from 2 through 4{
-    &>div:nth-child(#{$i}){
-      @include mixin.container-style(85%,24%, center,center);
+.mgfr9-bot{
+  &>div:nth-child(2){
+    @include mixin.container-style(100%,75%,space-between,center,column);
+    &>div{
+      @include mixin.container-style(85%,30%, center,center);
       background-color: var.$col-3;
       position: relative;
-
       &>div:first-child{
         @include mixin.container-style(85%, 90%, space-around, center,column);
         // border: #036EB7 solid 1px;

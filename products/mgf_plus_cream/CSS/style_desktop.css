@@ -1278,7 +1278,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 800;
     color: #111;
   }
@@ -1286,13 +1286,13 @@
     width: 95%;
     height: 20%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
   }
   .mgfp9 > div:last-child > div:nth-child(2) > div:first-child {
-    width: 140px;
-    height: 140px;
+    width: 180px;
+    height: 180px;
     background-color: #fff;
     border-radius: 50%;
     display: flex;
@@ -1306,7 +1306,7 @@
     overflow: hidden;
   }
   .mgfp9 > div:last-child > div:nth-child(2) > div:first-child > img {
-    width: 100px;
+    width: 120px;
     height: auto;
   }
   .mgfp9 > div:last-child > div:nth-child(2) > div:last-child {
@@ -1334,7 +1334,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 700;
     color: #9C3993;
     padding-left: 10px;
@@ -1350,7 +1350,7 @@
     font-weight: 600;
     color: #111;
     padding-left: 10px;
-    line-height: 1.5;
+    line-height: 2;
   }
   .mgfp9 > div:last-child > div:nth-child(2) > div:last-child > div:last-child {
     width: 100%;
@@ -1359,7 +1359,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     font-weight: 500;
     color: #111;
   }
@@ -1367,13 +1367,13 @@
     width: 95%;
     height: 20%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
   }
   .mgfp9 > div:last-child > div:nth-child(3) > div:first-child {
-    width: 140px;
-    height: 140px;
+    width: 180px;
+    height: 180px;
     background-color: #fff;
     border-radius: 50%;
     display: flex;
@@ -1387,7 +1387,7 @@
     overflow: hidden;
   }
   .mgfp9 > div:last-child > div:nth-child(3) > div:first-child > img {
-    width: 100px;
+    width: 120px;
     height: auto;
   }
   .mgfp9 > div:last-child > div:nth-child(3) > div:last-child {
@@ -1415,7 +1415,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 700;
     color: #9C3993;
     padding-left: 10px;
@@ -1431,7 +1431,7 @@
     font-weight: 600;
     color: #111;
     padding-left: 10px;
-    line-height: 1.5;
+    line-height: 2;
   }
   .mgfp9 > div:last-child > div:nth-child(3) > div:last-child > div:last-child {
     width: 100%;
@@ -1440,7 +1440,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     font-weight: 500;
     color: #111;
   }
@@ -1448,13 +1448,13 @@
     width: 95%;
     height: 20%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
   }
   .mgfp9 > div:last-child > div:nth-child(4) > div:first-child {
-    width: 140px;
-    height: 140px;
+    width: 180px;
+    height: 180px;
     background-color: #fff;
     border-radius: 50%;
     display: flex;
@@ -1468,7 +1468,7 @@
     overflow: hidden;
   }
   .mgfp9 > div:last-child > div:nth-child(4) > div:first-child > img {
-    width: 100px;
+    width: 120px;
     height: auto;
   }
   .mgfp9 > div:last-child > div:nth-child(4) > div:last-child {
@@ -1496,7 +1496,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 700;
     color: #9C3993;
     padding-left: 10px;
@@ -1512,7 +1512,7 @@
     font-weight: 600;
     color: #111;
     padding-left: 10px;
-    line-height: 1.5;
+    line-height: 2;
   }
   .mgfp9 > div:last-child > div:nth-child(4) > div:last-child > div:last-child {
     width: 100%;
@@ -1521,7 +1521,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     font-weight: 500;
     color: #111;
   }
@@ -1529,13 +1529,13 @@
     width: 95%;
     height: 20%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
   }
   .mgfp9 > div:last-child > div:nth-child(5) > div:first-child {
-    width: 140px;
-    height: 140px;
+    width: 180px;
+    height: 180px;
     background-color: #fff;
     border-radius: 50%;
     display: flex;
@@ -1549,7 +1549,7 @@
     overflow: hidden;
   }
   .mgfp9 > div:last-child > div:nth-child(5) > div:first-child > img {
-    width: 100px;
+    width: 120px;
     height: auto;
   }
   .mgfp9 > div:last-child > div:nth-child(5) > div:last-child {
@@ -1577,7 +1577,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 700;
     color: #9C3993;
     padding-left: 10px;
@@ -1593,7 +1593,7 @@
     font-weight: 600;
     color: #111;
     padding-left: 10px;
-    line-height: 1.5;
+    line-height: 2;
   }
   .mgfp9 > div:last-child > div:nth-child(5) > div:last-child > div:last-child {
     width: 100%;
@@ -1602,8 +1602,192 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     font-weight: 500;
     color: #111;
+  }
+  .mgfp10 {
+    width: 600px;
+    height: 2520px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mgfp10 > div:nth-child(1) > div:first-child {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .mgfp10 > div:nth-child(1) > div:first-child > div:nth-child(2) {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #872659;
+  }
+  .mgfp10 > div:nth-child(1) > div:first-child > div:last-child {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #111;
+  }
+  .mgfp10 > div:nth-child(2) > div:nth-child(1) {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  .mgfp10 > div:nth-child(3) {
+    border-bottom: solid 3px #872659;
+  }
+  .mgfp10 > div:nth-child(3) > div:first-child {
+    border-top: solid 4px #872659;
+  }
+  .mgfp10 > div:nth-child(3) > div:first-child > img {
+    width: 110px;
+    height: auto;
+  }
+  .mgfp10 > div:nth-child(3) > div:last-child {
+    border-bottom: solid 2px #872659;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #872659;
+  }
+  .mgfp10-top > div:last-child > div > div {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111;
+    padding-left: 15px;
+  }
+  .mgfp10-top > div:last-child > div:nth-child(1) > div {
+    width: 50%;
+    height: 90%;
+    background-color: #FCF59B;
+    border-radius: 20px;
+  }
+  .mgfp10-top > div:last-child > div:nth-child(2) > div {
+    width: 75%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+  .mgfp10-top > div:last-child > div:nth-child(3) > div {
+    width: 55%;
+    height: 90%;
+    background-color: #FCF59B;
+    border-radius: 20px;
+  }
+  .mgfp10-top > div:last-child > div:nth-child(4) > div {
+    width: 75%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+  .mgfp10-top > div:last-child > div:nth-child(5) > div {
+    width: 50%;
+    height: 90%;
+    background-color: #FCF59B;
+    border-radius: 20px;
+  }
+  .mgfp10-top > div:last-child > div:nth-child(6) > div {
+    width: 75%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+  .mgfp10-top > div:last-child > div:nth-child(7) > div {
+    width: 55%;
+    height: 90%;
+    background-color: #FCF59B;
+    border-radius: 20px;
+  }
+  .mgfp10-top > div:last-child > div:nth-child(8) {
+    width: 90%;
+    height: 17%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+  }
+  .mgfp10-top > div:last-child > div:nth-child(8) > div {
+    width: 75%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+  .mgfp10-mid > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #111;
+  }
+  .mgfp10-mid > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) {
+    font-size: 0.9rem;
+  }
+  .mgfp10-mid > div:nth-child(2) > div:first-child > div:last-child {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #BCB6B7;
+  }
+  .mgfp10-mid > div:nth-child(2) > div:nth-child(2) {
+    width: 80%;
+    height: 1%;
+    background-color: #D4D4D4;
+    border-radius: 0;
+  }
+  .mgfp10-mid > div:nth-child(2) > img {
+    width: auto;
+    height: 95%;
+  }
+  .mgfp10-mid > div:nth-child(3) > div:first-child > div:first-child > div:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #111;
+  }
+  .mgfp10-mid > div:nth-child(3) > div:first-child > div:first-child > div:nth-child(2) {
+    font-size: 0.9rem;
+  }
+  .mgfp10-mid > div:nth-child(3) > div:first-child > div:last-child {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #BCB6B7;
+  }
+  .mgfp10-mid > div:nth-child(3) > div:nth-child(2) {
+    width: 80%;
+    height: 1%;
+    background-color: #D4D4D4;
+    border-radius: 0;
+  }
+  .mgfp10-mid > div:nth-child(3) > img {
+    width: auto;
+    height: 95%;
+  }
+  .mgfp10-mid > div:nth-child(4) > div:first-child > div:first-child > div:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #111;
+  }
+  .mgfp10-mid > div:nth-child(4) > div:first-child > div:first-child > div:nth-child(2) {
+    font-size: 0.9rem;
+  }
+  .mgfp10-mid > div:nth-child(4) > div:first-child > div:last-child {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #BCB6B7;
+  }
+  .mgfp10-mid > div:nth-child(4) > div:nth-child(2) {
+    width: 80%;
+    height: 1%;
+    background-color: #D4D4D4;
+    border-radius: 0;
+  }
+  .mgfp10-mid > div:nth-child(4) > img {
+    width: auto;
+    height: 95%;
   }
 }/*# sourceMappingURL=style_desktop.css.map */

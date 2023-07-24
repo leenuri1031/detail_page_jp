@@ -13,7 +13,7 @@
   color: var.$col-1;
 }
 
-.mgfp-explain-title{
+.mgfr-explain-title{
   @include mixin.font(1.5rem, 600, var.$col-3);
   line-height: 2;
   letter-spacing: 1px;
@@ -49,7 +49,7 @@
 }
 
 .txt-deco{
-  text-emphasis: filled;
+  text-decoration: underline;
 }
 
 .ingredient-font-big{
@@ -96,71 +96,64 @@
 // -------------------------------------------
 @media(min-width:500px){
 
-  #root-mgfp{
-    @include mixin.container-style(100vw, 18000px, space-between, center, column);
+  #root-mgfr{
+    @include mixin.container-style(100vw, 17600px, space-between, center, column);
   }
 
-  .mgfp1{
-    @include mixin.container-style(600px, 1230px, space-around, center, column);
+  .mgfr1{
+    @include mixin.container-style(600px, 1200px, space-around, center, column);
+  
     &>div:first-child{
       &>div{
         @include mixin.font(1.5rem, 500, var.$col-3);
       }
     }
+  
     &>div:last-child{
-      &>div:nth-child(1){
-        @include mixin.font(3rem, 800, var.$col-3);
-      }
-      &>div:nth-child(2){
-        @include mixin.font(1rem, 600, var.$col-6);
-      }
+      @include mixin.font(3rem, 800, var.$col-3);
     }
   }
 
-  .mgfp2{
-    @include mixin.container-style(600px, 1440px, space-around, center, column);
+  .mgfr2{
+    @include mixin.container-style(600px, 1360px, space-around, center, column);
     &>div:first-child{
       &>div:nth-child(1){
         @include mixin.font(1.8rem, 600, var.$col-3);
       }
-  
+      &>div:nth-child(2){
+        @include mixin.container-style(80%,70%, space-evenly, center, column);
+      }
       &>div:last-child{
         @include mixin.font(0.9rem, 600, var.$col-3);
         letter-spacing: 1.5px;
       }
     }
-  
+
     &>div:last-child{
       &>div:nth-child(1){
-      &>div:first-child{
-        @include mixin.font(1.2rem, 600);
+        &>div:first-child{
+          @include mixin.font(1.2rem, 600);
+          &>div{
+            @include mixin.size(210px,2.5px);
+          }
+        }
+        &>div:last-child{
+          @include mixin.font(1.6rem, 800);
+        }
       }
-      &>div:last-child{
-        @include mixin.font(1.6rem, 800);
-        line-height: 1.8;
-      }
-    }
       &>div:nth-child(2){
-      @include mixin.container-style(85%, 60%, flex-start, center);
-  
-      &>img{
-        @include mixin.size(420px, auto);
+        &>img{
+          @include mixin.size(320px, auto);
+        }
+        &>div{
+          @include mixin.container-style(10%, 320px, flex-start, center);
+          @include mixin.font(1rem,500);
+        }
       }
-  
-      &>div{
-        @include mixin.container-style(10%, 420px, flex-start, center);
-        @include mixin.font(1rem,500);
-        letter-spacing: 1.5px;
-      }
-    }
     }
   }
 
   .check-point{
-    &>div{
-      @include mixin.container-style(95%, 30%, space-around, center);
-    }
-  
     @for $i from 1 through 3{
       &>div:nth-child(#{$i}){
         &>img{
@@ -169,29 +162,23 @@
   
         &>div{
           @include mixin.container-style(70%, 100%, space-evenly, flex-start, column);
-          
           &>div:first-child{
             @include mixin.font(1.2rem, 800, var.$col-1);
           }
-  
           &>div:last-child{
-            @include mixin.container-style(100%, 55%, flex-start, center);
             @include mixin.font(0.95rem, 600);
-            line-height: 1.8;
           }
         }
       }
     }
-  
     &>img{
-      @include mixin.size(150px,auto);
-      @include mixin.posi(absolute, 3%, 88%);
-      transform: rotate(5deg);
+      @include mixin.size(120px,auto);
+      @include mixin.posi(absolute, -3%, 90%);
     }
   }
 
   .brand-story{
-    @include mixin.container-style(600px, 1800px, space-around, center, column);
+    @include mixin.container-style(600px, 1840px, space-around, center, column);
 
     // border: solid black 2px;
   
@@ -309,11 +296,11 @@
     @include mixin.add-explain(90%,40px,0.9rem);
   }
 
-  .mgfp3{
+  .mgfr3{
     @include mixin.container-style(600px, 1000px, space-around, center, column);
   
     &>div:first-child{
-    @include mixin.container-style(100%, 30%, center, center,column);
+      @include mixin.container-style(100%, 30%, center, center,column);
 
       &>div:nth-child(1){
         @include mixin.container-style(85%, 15%, space-evenly,center);
@@ -339,7 +326,7 @@
     }
   }
   
-  .mgfp3-bot{
+  .mgfr3-bot{
     &>img{
       @include mixin.size(160px,auto);
       @include mixin.posi(absolute,10%,38%,0);
@@ -364,12 +351,12 @@
     }
   }
 
-  .mgfp4{
-    @include mixin.container-style(600px, 2160px, space-around, center, column);
+  .mgfr4{
+    @include mixin.container-style(600px, 2120px, space-around, center, column);
   
     &>div:first-child{
       &>div:first-child{
-        @include mixin.container-style(100%,4%, center, center);
+        @include mixin.container-style(100%,5%, center, center);
         @include mixin.font(1.5rem, 600, var.$col-3);
       }
       &>div:nth-child(2){
@@ -387,35 +374,41 @@
     }
   }
   
-  .mgfp4-top{
+  .mgfr4-top{
     &>div:last-child{
       &>div:nth-child(1){
-        @include mixin.container-style(80%,25%,flex-start,flex-start);
+        @include mixin.container-style(80%,30%,flex-start,center);
         &>p{
-          @include mixin.font(1.1rem,700);
+          @include mixin.font(1.1rem,800);
           line-height: 2;
           letter-spacing: 1px;
         }
       }
       &>div:nth-child(2){
+        @include mixin.container-style(90%,50%,space-evenly,center,column);
         @include mixin.border(5px,var.$col-1, 20px);
         &>p:nth-child(1){
-          @include mixin.font(1.5rem,700);
+          @include mixin.font(1.5rem,800);
         }
         &>p:nth-child(2){
-          @include mixin.font(1.1rem,700);
+          @include mixin.font(1.1rem,800);
         }
       }
       &>div:nth-child(3){
+        @include mixin.add-explain(90%,5%,0.9rem);
           letter-spacing: 1px;
-          @include mixin.add-explain(90%,5%,0.9rem);
       }
     }
   }
+
+  .sub-big{
+    @include mixin.font(0.7rem,800,var.$col-1);
+    @include mixin.posi(relative,-15px);
+  }
   
   .sub{
-    @include mixin.font(0.4rem,700);
-    @include mixin.posi(relative,-8px);
+    @include mixin.font(0.7rem,800);
+    @include mixin.posi(relative,-10px);
   }
   
   .point-box{
@@ -423,7 +416,7 @@
     @include mixin.font(1rem, 800);
   }
     
-  .mgfp4-bot{
+  .mgfr4-bot{
     &>div:nth-child(1){
       @include mixin.container-style(90%, 40%,space-between,center,column);
       &>div{
@@ -463,7 +456,7 @@
     }
   }
 
-  .mgfp5{
+  .mgfr5{
     @include mixin.container-style(600px, 1440px, space-evenly, center, column);
     &>div:nth-child(1){
       &>div{
@@ -474,32 +467,31 @@
     }
   }
   
-  .mgfp5-bot{
+  .mgfr5-bot{
     &>div:first-child{
       &>div:first-child{
         @include mixin.container-style(55%, 25%, flex-start, center);
-        @include mixin.font(1.5rem, 700);
+        @include mixin.font(1.6rem, 700);
         letter-spacing: 1.5px;
       }
       &>div:last-child{
-        @include mixin.font(1rem, 700);
+        @include mixin.font(1.1rem, 700);
       }
     }
   
     &>div:last-child{
-      @include mixin.container-style(90%, 55%,space-around, center, column);
       &>div:nth-child(1){
-        @include mixin.container-style(95%,70%,space-between,center);
         &>div{
-          @include mixin.container-style(65%,100%,center,center,column);
+          @include mixin.container-style(65%,80%,center,center,column);
           &>div:nth-child(1){
-            @include mixin.font(1.2rem, 800,var.$col-1);
+            @include mixin.font(1.3rem, 800,var.$col-1);
           }
           &>div:nth-child(2){
             @include mixin.font(0.9rem, 600,var.$col-6);
+            margin-bottom: 15px;
           }
           &>div:nth-child(3){
-            @include mixin.font(0.9rem, 800);
+            @include mixin.font(1rem, 800);
           }
         }
         &>img{
@@ -509,74 +501,69 @@
       }
       &>div:nth-child(2){
         @include mixin.add-explain(95%,5%,0.9rem);
+        letter-spacing: 1px;
       }
     }
   }
 
-  .mgfp6{
-    @include mixin.container-style(600px, 2600px, space-evenly, center, column);
+  .mgfr6{
+    @include mixin.container-style(600px, 2000px,space-around, center, column);
     &>div:nth-child(1){
-      &>div:first-child{
-        &>div:last-child{
-          @include mixin.font(2rem, 800);
-        }
+      &>div:nth-child(1){
+        @include mixin.point-box(100px, 40px, 3px, var.$col-3, 10px);
+        @include mixin.font(1rem, 700, var.$col-3);
       }
   
-      &>div:last-child{
-        &>img{
-          @include mixin.size(85%, auto);
-        }
-        &>div{
-          @include mixin.container-style(90%, 25%, center,center,column);
-          &>div{
-            @include mixin.font(1.2rem,700);
-          }
-        }
+      &>div:nth-child(2){
+        @include mixin.font(2rem, 700,var.$col-3);
       }
     }
-    &>div:nth-child(4){
+  }
+  
+  .mgfr6-bot{
+    &>div:nth-child(1){
       &>div{
         &>div{
+          @include mixin.container-style(100%,45%,center,center);
           @include mixin.font(1.2rem,800);
+          letter-spacing: 1px;
+          line-height: 1.6;
         }
-      }
-    }
-  }
-  
-  .mgfp6-2{
-    &>div:first-child{
-      @include mixin.container-style(82%, 25%,flex-start,center);
-      @include mixin.font(1.1rem,800);
-    }
-    &>div:last-child{
-      @include mixin.font(1.8rem,800,var.$col-1);
-    }
-  }
-  
-  .mgfp6-3{
-    &>div:nth-child(1){
-      &>div{
-        @include mixin.font(1.5rem,800);
-        line-height: 1.8;
       }
     }
   
     &>div:nth-child(2){
-      &>div:first-child{
-        @include mixin.font(1.2rem,800,var.$col-1);
-      }
-      &>div:last-child{
-        &>p{
-          @include mixin.font(1.1rem,600);
-        }
+      &>div:nth-child(1){
         &>div{
-          @include mixin.font(1rem,600,var.$col-6);
+          @include mixin.font(1.5rem,800);
         }
+      }
+    
+      &>div:nth-child(2){
+        &>div:first-child{
+          @include mixin.font(1.3rem,800,var.$col-1);
+        }
+    
+        &>div:last-child{
+          &>p{
+            @include mixin.font(1rem,700);
+            line-height: 2;
+          }
+          &>div{
+            @include mixin.font(0.9rem,600,var.$col-6);
+          }
+        }
+      }
+    }
+  
+    &>div:nth-child(3){
+      &>div{
+        @include mixin.font(1.3rem,700);
       }
     }
   }
 
-  .mgfp7{
+  .mgfr7{
     @include mixin.container-style(600px, 1500px,space-around, center, column);
     &>div:nth-child(1){
       &>div:first-child{
@@ -593,7 +580,7 @@
     }
   }
   
-  .mgfp7-mid{
+  .mgfr7-mid{
     &>div{
       &>div:first-child{
         @include mixin.container-style(180px,180px,center,center);
@@ -621,268 +608,188 @@
     }
   }
 
-  .mgfp8{
-    @include mixin.container-style(600px, 640px,space-between, center, column);
+  .mgfr8{
+    @include mixin.container-style(600px, 2000px,space-around, center, column);
   
-    &>div:nth-child(1){
-      @include mixin.font(1.5rem,700);
-    }
-  
-    &>div:nth-child(2){
-      @include mixin.container-style(95%, 80%, space-between,center,column);
-    }
-    
-    &>div:last-child{
-      @include mixin.add-explain(95%,4%,0.9rem);
+    &>div:first-child{
+      &>div:nth-child(1){
+      @include mixin.font(1.5rem,800);
+      }
+      &>div:last-child{
+        @include mixin.add-explain(95%,5%);
+        letter-spacing: 1px;
+      }
     }
   }
   
-  .mgfp8-ingredient{
+  .mgfr8-ingredient{
     &>div:first-child{
-      @include mixin.container-style(100%, 40px, space-between, center);
       &>div{
-        @include mixin.container-style(32%, 100%, center, center);
         @include mixin.font(1.2rem, 800);
       }
     }
   
     &>div:last-child{
-      @include mixin.container-style(100%, 480px, space-evenly, center,column);
-  
       &>div{
         @include mixin.font(0.9rem, 700);
-        text-align: center;
-      }
-  
-  
-  
-      @for $i from 1 through 5{
-        &>div:nth-child(#{$i}){
-          @include mixin.container-style(100%, 30px, space-around, center);
-          &>div{
-            @include mixin.container-style(32%, 90%, space-around, center);
-          }
-        }
-      }
-  
-      @for $i from 6 through 7{
-        &>div:nth-child(#{$i}){
-          @include mixin.container-style(100%, 40px, space-around, center);
-          &>div{
-            @include mixin.container-style(32%, 90%, space-around, center);
-          }
-        }
-      }
-  
-      @for $i from 8 through 9{
-        &>div:nth-child(#{$i}){
-          @include mixin.container-style(100%, 30px, space-around, center);
-          &>div{
-            @include mixin.container-style(32%, 90%, space-around, center);
-          }
-        }
-      }
-  
-      &>div:nth-child(10){
-        @include mixin.container-style(100%, 35px, space-around, center);
-        &>div{
-          @include mixin.container-style(32%, 90%, space-around, center);
-        }
-      }   
-  
-      @for $i from 11 through 12{
-        &>div:nth-child(#{$i}){
-          @include mixin.container-style(100%, 30px, space-around, center);
-          &>div{
-            @include mixin.container-style(32%, 90%, space-around, center);
-          }
-        }
       }
     }
   }
-
-  .mgfp9{
-    @include mixin.container-style(600px, 1400px,space-evenly, center, column);
+  
+  .mgfr8-bot{
     &>div:first-child{
-      @include mixin.container-style(92%, 8%, flex-start, center);
-      @include mixin.font(1.7rem,800);
-      line-height: 2;
+      @include mixin.font(1.5rem,800);
     }
   
-      &>div:last-child{
-      @include mixin.container-style(95%, 84%, space-around,center, column);
-      background-color: #F8F9FA;
-  
+    &>div:last-child{
+      @include mixin.container-style(95%, 85%, space-around,center, column);
       &>div:nth-child(1){
-        @include mixin.container-style(50%, 5%, center, center);
-        background-color: #F6F2F6;
-        border-radius: 50px;
-        box-shadow: 1px 4px 9px rgba(0,0,0,0.25) ;
-  
         &>div{
-          @include mixin.container-style(45%, 90%, center, center);
-          @include mixin.font(1.5rem,800);
+          @include mixin.font(1.2rem,800);
         }
       }
   
       @for $i from 2 through 5{
         &>div:nth-child(#{$i}){
-          @include mixin.container-style(95%, 20%, space-around, center);
-          // border: #036EB7 solid 1px;
-  
           &>div:first-child{
             @include mixin.box-style(180px, 180px, var.$col-3, 50%);
-            @include mixin.flex(center,center);
-            @include mixin.posi(relative,-3%,0,0);
-            overflow: hidden;
-            // border: #202020 solid 1px;
             &>img{
               @include mixin.size(120px, auto);
             }
           }
   
           &>div:last-child{
-            @include mixin.container-style(55%,100%, space-around, center, column);
+            @include mixin.container-style(55%,95%, space-around, center, column);
   
             &>div:first-child{
-              @include mixin.container-style(100%,80%,space-around,flex-start,column);
-              background-color: #EBE9F1;
-              box-shadow: 3px 5px 5px 0px rgba(202, 197, 216, 0.50);
-  
               &>div:nth-child(1){
-                @include mixin.container-style(90%,15%,flex-start,center);
                 @include mixin.font(1.7rem,700, #9C3993);
-                padding-left: 10px;
               }
   
               &>div:nth-child(2){
-                @include mixin.container-style(100%,60%,flex-start,center);
                 @include mixin.font(0.9rem,600);
-                padding-left: 10px;
-                line-height: 2;
+                line-height: 1.8;
               }
             }
   
             &>div:last-child{
-              @include mixin.container-style(100%,15%,flex-start,center);
-              // border: #036EB7 solid 1px;
-              @include mixin.font(0.8rem,500);
+              @include mixin.font(0.75rem,500);
             }
           }
         }
       }
-  
     }
-  
   }
   
-  .mgfp10{
-    @include mixin.container-style(600px, 2520px,space-around, center, column);
+  .mgfr9{
+    @include mixin.container-style(600px, 2640px,space-around, center, column);
+    // border: #036EB7 solid 1px;
+  
     &>div:nth-child(1){
       &>div:first-child{
-        @include mixin.container-style(100%,10%,center,center);
-        &>div:nth-child(2){
-          @include mixin.container-style( 45%,100%,center,center);
-          @include mixin.font(1.5rem, 800, var.$col-1);
-        }
-        &>div:last-child{
-          @include mixin.font(1.5rem, 800);
+        &>div:nth-child(1){
+          margin-top: 20px;
+          @include mixin.container-style(70%,15%,center,center);
+          border-bottom: 2px solid black;
         }
       }
     }
+  
     &>div:nth-child(2){
       &>div:nth-child(1){
-        @include mixin.font(2rem, 600, var.$col-3);
+        @include mixin.font(1.7rem, 600, var.$col-3);
       }
-    }
-    &>div:nth-child(3){
-      border-bottom: solid 3px var.$col-1;
-      &>div:first-child{
-        border-top: solid 4px var.$col-1;
-        &>img{
-          @include mixin.size(110px, auto);
-        }
-      }
-      &>div:last-child{
-        border-bottom: solid 2px var.$col-1;
-        @include mixin.font(1.1rem,600,var.$col-1);
+  
+      &>img{
+        @include mixin.size(30%,auto);
       }
     }
   }
   
-  .mgfp10-top{
+  .mgfr9-top{
     &>div:last-child{
-      &>div{
-        &>div{
-          @include mixin.font(1rem, 600);
-          padding-left: 15px;
-        }
-      }
-      &>div:nth-child(1){
-        &>div{
-          @include mixin.box-style(50%,90%,var.$col-5,20px);
-        }
-      }
-      &>div:nth-child(2){
-        &>div{
-          @include mixin.box-style(75%,100%,var.$col-3,20px);
-        }
-      }
-      &>div:nth-child(3){
-        &>div{
-          @include mixin.box-style(55%,90%,var.$col-5,20px);
-        }
-      }
-      &>div:nth-child(4){
-        &>div{
-          @include mixin.box-style(75%,100%,var.$col-3,20px);
-        }
-      }
-      &>div:nth-child(5){
-        &>div{
-          @include mixin.box-style(50%,90%,var.$col-5,20px);
-        }
-      }
-      &>div:nth-child(6){
-        &>div{
-          @include mixin.box-style(75%,100%,var.$col-3,20px);
-        }
-      }
-      &>div:nth-child(7){
-        &>div{
-          @include mixin.box-style(55%,90%,var.$col-5,20px);
-        }
-      }
-      &>div:nth-child(8){
-        @include mixin.container-style(90%,17%,flex-start,center);
-        &>div{
-          @include mixin.box-style(75%,100%,var.$col-3,20px);
-        }
-      }
-    }
-  }
-  
-  .mgfp10-mid{
-    @for $i from 2 through 4{
-      &>div:nth-child(#{$i}){
-        &>div:first-child{
+      @for $i from 1 through 5{
+        &>div:nth-child(#{$i}){
           &>div:first-child{
+            @include mixin.font(2.5rem, 600,var.$col-7);
+          }
+  
+          &>div:last-child{
+            @include mixin.container-style(85%,100%,space-around,center,column);
+            
             &>div:nth-child(1){
-              @include mixin.font(1.5rem, 800);
+              @include mixin.font(1.2rem,600);
+              padding-left: 20px;
+              letter-spacing: 1.5px;
             }
             &>div:nth-child(2){
-              font-size: 0.9rem;
+              @include mixin.font(1rem,600);
+              padding-left: 22px;
+              letter-spacing: 1.5px;
             }
           }
-          &>div:last-child{
-            @include mixin.font(0.9rem, 500, var.$col-bright-gray);
+        }
+      }
+  
+      &>div:nth-child(5){
+        @include mixin.container-style(95%, 22%, space-between, center);
+  
+        &>div:last-child{
+          &>div:nth-child(1){
+            @include mixin.font(1.2rem,600);
+          }
+          &>div:nth-child(2){
+            @include mixin.container-style(100%,75%,flex-start,center);
+            @include mixin.font(1rem,600);
           }
         }
+      }
+    }
+  }
+  
+  .mgfr9-bot{
+    &>div:nth-child(2){
+      @include mixin.container-style(100%,75%,space-between,center,column);
+      &>div{
+        @include mixin.container-style(85%,30%, center,center);
+        background-color: var.$col-3;
+        position: relative;
+        &>div:first-child{
+          @include mixin.container-style(85%, 90%, space-around, center,column);
+          // border: #036EB7 solid 1px;
+          
+          &>div:first-child{
+            @include mixin.container-style(100%, 60%, space-evenly, flex-start,column);
+            
+            &>div:nth-child(1){
+              @include mixin.container-style(100%, 50%, flex-start,center);
+              @include mixin.font(1.3rem, 800);
+            }
+  
+            &>div:nth-child(2){
+              @include mixin.container-style(100%, 40%, flex-start,flex-end);
+              line-height: 1.5;
+              font-size: 0.9rem;
+            }
+  
+          }
+  
+          &>div:last-child{
+            @include mixin.container-style(100%, 20%, space-around, flex-start,column);
+  
+            @include mixin.font(0.9rem, 500, var.$col-bright-gray);
+            line-height: 1.8;
+          }
+        }
+  
         &>div:nth-child(2){
           @include mixin.box-style(80%,1%, var.$col-gray);
+          @include mixin.posi(absolute, 65%,6%,0);
         }
+  
         &>img{
           @include mixin.size(auto, 95%);
+          @include mixin.posi(absolute, 5%,78%,1);
         }
       }
     }
